@@ -12,7 +12,7 @@ export const useGrillaHome = (url, user) => {
         axios.post(url, {
             "IdSucursal": 1,
             "Id": 1204,
-            "MobileMonoMarca": true,
+            "MobileMonoMarca": false,
             "IdSucursalCompra": IdSucursalConfig,
             "IdCategoria": 1
     })

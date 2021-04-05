@@ -73,10 +73,10 @@ export const useFetchHome = (url,user) => {
             "IdSucursalCompra":IdSucursalConfig,
             "Lat": -34.5009741,
             "Lng": -58.497270699999994,
-            "MobileMonoMarca": true,
+            "MobileMonoMarca": false,
             "MobileUser": null,
             "ModeEmpresas": false,
-            "Monomarca": 1,
+            "Monomarca":  false,
             "Platform": "Browser",
             "UnidadNegocioCaller": 201      
     })

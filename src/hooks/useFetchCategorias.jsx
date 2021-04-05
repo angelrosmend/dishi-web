@@ -13,7 +13,7 @@ export const useFetchCategorias = (urlCategorias, id) => {
             "IdSucursalCompra": 0,
             "SucursalCompra": null,
             "ModeEmpresas": false,
-            "MobileMonoMarca": true 
+            "MobileMonoMarca": false 
     })
              .then(response => {
                  let result = response.data;

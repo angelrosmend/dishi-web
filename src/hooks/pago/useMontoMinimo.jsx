@@ -21,7 +21,7 @@ export const useMontoMinimo =  (user, logged, estado, descuento) => {
                 }else{
                     axios.post(urlProductos, {
                         "IdSucursal": 1,
-                        "MobileMonoMarca": true,
+                        "MobileMonoMarca": false,
                         "IdSucursalCompra": user.IdSucursalCompra,
                         "IdCategoria": 1
                 })
@@ -38,7 +38,7 @@ export const useMontoMinimo =  (user, logged, estado, descuento) => {
             }else{
             axios.post(urlProductos, {
                 "IdSucursal": 1,
-                "MobileMonoMarca": true,
+                "MobileMonoMarca": false,
                 "IdSucursalCompra": 835,
                 "IdCategoria": 1
         })

@@ -11,7 +11,7 @@ export const useFetchProductos = (url, id, user) => {
         axios.post(url, {
             "IdSucursal": 1,
             "Id": 1204,
-            "MobileMonoMarca": true,
+            "MobileMonoMarca": false,
             "IdSucursalCompra": IdSucursalConfig,
             "orderby": {
                 "Direction": direction ,

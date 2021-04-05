@@ -35,7 +35,7 @@ export const useGetMisCompras = (user, count) => {
                      IdSucursalCompra: IdSucursalCompra,
                      SucursalCompra:null,
                      ModeEmpresas:false,
-                     MobileMonoMarca:true,
+                     MobileMonoMarca: false,
                      ReadCountMode:false,
                      PageFrom:0,
                      PageCount: count + 5,

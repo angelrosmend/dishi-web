@@ -1,6 +1,6 @@
 .header-container{
     height: 15vh;
-    background: #DBDCDB;
+    background: var(--headerGrdDishi);
     position: sticky!important;
     top: 0;
     z-index: 100;
@@ -31,7 +31,7 @@
 }
 
 .nav-link {
-    color: #056ae0!important;
+    color: var(--colorNavLink)!important;
 }
 
 .search-aplicar {

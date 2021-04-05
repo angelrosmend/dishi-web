@@ -58,7 +58,7 @@ export const useUpdateCarrito = (url, user, cartItems, logged, setCartItems) => 
             IdSucursalCompra: IdSucursalConfig,
             SucursalCompra: null,
             ModeEmpresas: false,
-            MobileMonoMarca: true
+            MobileMonomarca: false
         })
              .then(response => {
                  const Promociones = response.data.Promociones.map(item => {

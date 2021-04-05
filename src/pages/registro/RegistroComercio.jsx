@@ -67,7 +67,7 @@ const registroConfig = {
   gender: "o",
   razonSocial: values.razonSocial,
   idCondicionIva: values.condicionIva,
-  MobileMonoMarca: true,
+  MobileMonomarca: false,
   APP_ConfigurationID: "20033",
   Fecha: new Date().toISOString(),
   AppVersion: "1.0.0,1.0.0",

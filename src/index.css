@@ -18,6 +18,11 @@ body{
   --azulCeleste: #82b4ef;
   --mainBeige: #DBDCDB;
   --azulMedio: #056ae0;
+  --azulLightDishi: #0083C4;
+  --azulMediumDishi:#0060a0;
+  --azulDarkDishi: #00416fe3;
+  --headerGrdDishi: linear-gradient(180deg, #0083C4 65%, #0060a0, #00416fe3);
+  --colorNavLink: #FFF;
 }
 .app{
   width: 100%;

@@ -44,7 +44,7 @@ function FramePago() {
   CantidadCajas: cantidadCajas,
   ModoCreacionPedidoPostPago: true,
   DescuentoCuponesList: [cupon],
-  MobileMonoMarca: true,
+  MobileMonomarca: false,
   MobileUser: {
     Id: user.Id,
     Email: user.Email,

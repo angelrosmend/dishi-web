@@ -18,7 +18,7 @@ export const useFormToken = (url, id, precio, user) => {
                     IdSucursalCompra: user.IdSucursalCompra,
                     Lat: -34.5009741,
                     Lng: -58.497270699999994,
-                    MobileMonoMarca: true,
+                    MobileMonomarca: false,
                     MobileUser:  {Id: user.Id, Email: user.Email, RolId: user.RolId},
                     ModeEmpresas: false,
                     Platform: "Browser",

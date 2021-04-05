@@ -17,7 +17,7 @@ export const useBusqueda = (keyWord, user) => {
              SucursalesFilter:''
         },
         ModeEmpresas: false,
-        MobileMonoMarca: true,
+        MobileMonomarca: false,
         IdSucursalCompra: IdSucursalConfig
     }
 

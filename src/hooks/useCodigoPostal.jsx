@@ -10,7 +10,7 @@ export const useCodigoPostal = (url, zipcode, direccionEnvio, user) => {
         axios.post(url,  
             {
                 Value: zipcode,
-                MobileMonoMarca: true,
+                MobileMonomarca: false,
                 MobileUser: {
                   Id: user.Id,
                   Email: user.Email,

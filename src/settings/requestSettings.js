@@ -18,7 +18,7 @@ export const urlChangePWD = `${process.env.REACT_APP_BASE_URL}api/Registro/Olvid
 export const sucursalMedioPagoConfig ={ "IdSucursales": [
     1
   ],
-  "MobileMonoMarca": true,
+  "MobileMonoMarca": false,
   "MobileUser": {
     "Id": 8026,
     "Email": "dbertero@clickaut.com",
@@ -73,7 +73,7 @@ export const  postPedidoConfig = {
     "CantidadCajas": 1,
     "ModoCreacionPedidoPostPago": true,
     "DescuentoCuponesList": [],
-    "MobileMonoMarca": true,
+    "MobileMonoMarca": false,
     "MobileUser": {
       "Id": 8026,
       "Email": "dbertero@clickaut.com",
@@ -137,7 +137,7 @@ export const payClickautPedidoConfig = {
     "ModoCreacionPedidoPostPago": true,
     "DescuentoCuponesList": [],
     "PagandoQRDistribuidorIdPedido": 8669,
-    "MobileMonoMarca": true,
+    "MobileMonoMarca": false,
     "MobileUser": {
       "Id": 37648,
       "Email": "test3@mail.com",
@@ -213,9 +213,9 @@ export const config = {
         "IdSucursalCompra": 0,
         "Lat": -34.5009741,
         "Lng": -58.497270699999994,
-        "MobileMonoMarca": true,
+        "MobileMonoMarca": false,
         "ModeEmpresas": false,
-        "Monomarca": 1,
+        "Monomarca":  false,
         "Platform": "Browser",
         "UnidadNegocioCaller": 201      
 }
@@ -247,7 +247,7 @@ export const configRecetas = {
     "IdSucursalCompra": 0,
     "Lat": "-34.5009741",
     "Lng": "-58.497270699999994",
-    "MobileMonoMarca": true,
+    "MobileMonoMarca": false,
     "MobileUser": null,
     "ModeEmpresas": false,
     "PageCount": 10,
@@ -265,7 +265,7 @@ export const configDetalle = {
         "IdSucursalCompra": 0,
         "SucursalCompra": null,
         "ModeEmpresas": false,
-        "MobileMonoMarca": true 
+        "MobileMonoMarca": false 
 }
  
 

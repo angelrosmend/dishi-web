@@ -15,7 +15,7 @@ export const useFetchDetail = (id, urlDetalle, user) => {
             "IdCategoria":1,
             "IdSucursalCompra": IdSucursalConfig,
             "ModeEmpresas": false,
-            "MobileMonoMarca": true 
+            "MobileMonoMarca": false 
         })
              .then(response => {
                  setState({

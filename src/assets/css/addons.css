@@ -37,9 +37,9 @@ h3{
 	width: 100%!important;
 }
 .nav-icon-1{
-	border: solid 1px #056ae0;
+	border: solid 1px var(--colorNavLink);
 	padding: 0.6rem;
-	color: #056ae0;
+	color: var(--colorNavLink);
 	border-radius: 50%;
 	transition: 0.3s ease-in-out;
 }
@@ -559,7 +559,7 @@ h3{
 
 .text-nav{
 	text-decoration: none;
-	color: #056ae0;
+	color: white;
 
 }
 

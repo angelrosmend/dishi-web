@@ -35,7 +35,7 @@ export const useNotificaciones = (user) => {
                 IdSucursalCompra: IdSucursalCompra,
                 SucursalCompra:null,
                 ModeEmpresas:false,
-                MobileMonoMarca:true,
+                MobileMonoMarca: false,
                 IdEmpresa:0,
                 Lng:null,
                 Lat:null,

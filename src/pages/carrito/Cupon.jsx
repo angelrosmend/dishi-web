@@ -53,7 +53,7 @@ function Cupon() {
     }else{
     axios.post(urlCupon,  {
       Codigo: cupon,
-      MobileMonoMarca: true,
+      MobileMonomarca: false,
       MobileUser: {
         Id: user.Id,
         Email: user.Email,

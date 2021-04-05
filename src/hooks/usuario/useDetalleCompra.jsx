@@ -35,7 +35,7 @@ export const useDetalleCompra = (user,id) => {
                      IdSucursalCompra: IdSucursalCompra,
                      SucursalCompra:null,
                      ModeEmpresas:false,
-                     MobileMonoMarca:true,
+                     MobileMonoMarca: false,
                      ReadCountMode:false,
                      PageFrom:0,
                      PageCount:5,

@@ -20,6 +20,7 @@ import ModalPWDSuccess from '../../components/modals/password/ModalPWDSuccess'
 function Home() {
   const {user} = useContext(ContextUser)
   const {data, loading} = useFetchHome(urlHome, user)
+  console.log(data)
   const {banners, destacados, promociones, categorias} = data
   const {monomarca} = useContext(ContextProducts)
     if(loading) return <CustomSpinner/>
@@ -39,8 +40,8 @@ function Home() {
             <div className="espaciado-wrapper" id='categoriasPage'>
             <CategoriasGrilla categorias={categorias}/>
            </div>
-           {monomarca ? null : <div className="espaciado-wrapper"><Tiendas/></div>}
-           {monomarca ? null : <div className="espaciado-wrapper"><Oportunidades/></div>}
+           {/* {monomarca ? null : <div className="espaciado-wrapper"><Tiendas/></div>}
+           {monomarca ? null : <div className="espaciado-wrapper"><Oportunidades/></div>} */}
            <div className="espaciado-wrapper d-flex">
              <GrillaProductos/>
             </div>

@@ -22,7 +22,7 @@ export const useFetchCostoEnvio = (url, items, total) => {
     const configEnvio =             
     {Items: itemsConfig , /* <--- ITEMS EN EL CARRITO */
     Total: total,
-    MobileMonoMarca: true,
+    MobileMonomarca: false,
     MobileUser: {
       Id: 8026,
       Email: "dbertero@clickaut.com",

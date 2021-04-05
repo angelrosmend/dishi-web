@@ -40,7 +40,7 @@ function BotonPagoCupon() {
         CantidadCajas: cantidadCajas,
         ModoCreacionPedidoPostPago: false,
         DescuentoCuponesList: [cuponRequest],
-        MobileMonoMarca: true,
+        MobileMonomarca: false,
         MobileUser: {
           Id: user.Id,
           Email: user.Email,

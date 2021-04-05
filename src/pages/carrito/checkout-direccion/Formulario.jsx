@@ -102,7 +102,7 @@ function Formulario({areaCobertura}) {
       CantidadCajas: cantidadCajas,
       ModoCreacionPedidoPostPago: true,
       DescuentoCuponesList: [cuponRequest],
-      MobileMonoMarca: true,
+      MobileMonomarca: false,
       MobileUser: {
         Id: user.Id,
         Email: user.Email,
