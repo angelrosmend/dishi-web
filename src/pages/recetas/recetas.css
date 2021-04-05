@@ -1,0 +1,119 @@
+.header-recetas {
+    background-image: url("../../assets/img/Header-Recetas.png"); /* The image used */
+    background-color: #97ccf6; /* Used if the image is unavailable */
+    height: 200px; /* You must set a specified height */
+    background-position:right; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    /*background-size: cover; /* Resize the background image to cover the entire container */
+  }
+
+  .fecha-recetas{
+	font-family: 'Inter', sans-serif;
+	font-size: 14px;
+	color: var( --azulPantoneBimbo);
+	padding-top: 0.5rem;
+	margin-bottom: 0rem;
+}
+
+.titulo-recetas{
+	font-family: 'Inter', sans-serif!important;
+	font-weight: normal!important;
+    color: #4b4f4d!important;
+    
+}
+.titulo-header-recetas{
+	font-family: 'Inter', sans-serif!important;
+	font-weight: bold!important;
+    color: #fff!important;
+    font-size: 3rem;
+    
+}
+
+#ingredientes  {
+    -webkit-column-count: 3;
+       -moz-column-count: 3;
+            column-count: 3;
+            list-style-type:circle;
+    padding-left: 0;
+  }
+  
+  #ingredientes li {
+    font-family: 'Inter', sans-serif!important;
+    font-size: 0.9rem;
+    color: #4b4f4d;
+    text-align: left;
+    display: inline-block;
+    width: 100%;
+    padding-bottom: 0.5rem;
+    padding-left: 0;
+    list-style-type:circle;
+  }
+  
+  #ingredientes li:before {
+    content:"• ";
+    color: #056ae0;
+}
+
+.texto-azul {
+    color: #056ae0;
+    font-size: 1rem;
+}
+
+.arrow-recetas-prev{
+    bottom:15rem!important;
+}
+.arrow-recetas-next{
+    bottom:18rem!important;
+}
+
+.text-vermas {
+    position: relative;
+    top: 3rem;
+    color: #056ae0;
+    z-index: 1;
+}
+
+.img-product-list-recetas {
+    width:150px;
+    height: auto;
+}
+
+.img-receta{
+    object-fit: fill;
+    width: auto;
+    height: 300px!important;
+}
+.card-fondo-recetas{
+	background-image: url('../../assets/img/Header-Recetas.png')!important; 
+   background-size: cover;
+   background-position: 50% 50%;
+}
+.card-fondo-comercio{
+   background-image: url('../../assets/img/pill-comercio.png')!important; 
+   background-size: cover;
+   background-position: 50% 50%;
+}
+.card-fondo-casa{
+	background-image: url('../../assets/img/pill-desde-casa.png')!important; 
+   background-size: cover;
+   background-position: 50% 50%;
+}
+
+/*RESPONSIVE*/
+@media only screen and (max-width: 600px)  {
+    #ingredientes {
+        -webkit-column-count: 2;
+       -moz-column-count: 2;
+            column-count: 2;
+            list-style-type:circle;
+    padding-left: 0;
+    }
+    .text-vermas {
+        position: relative;
+        top: 0rem;
+        color: #056ae0;
+    }
+    .img-product-list-recetas{
+        width: 100%;
+    }
+}

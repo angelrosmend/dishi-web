@@ -1,0 +1,19 @@
+.icon-success {
+    color: rgb(51, 189, 51);
+    font-size: 4rem;
+}
+
+.compra-fail{
+    color: rgb(230, 46, 46);
+    font-size: 4rem;
+}
+
+.alerta-comercio-casa{
+    color: rgb(230, 202, 46);
+    font-size: 4rem;
+}
+.terminos-bimbo{
+    height: 60vh;
+    padding: 7.5%;
+    overflow-y: scroll;
+}

@@ -1,0 +1,181 @@
+body {
+    padding: 0px !important;
+}
+/* ESTILOS FORMULARIO REGISTRO */
+
+.registro a{
+	font-family: 'Inter', sans-serif!important;
+	color: #4b4f4d;
+}
+.registro label{
+	font-family: 'Inter', sans-serif!important;
+	color: #4b4f4d;
+	font-weight: bold!important;
+	
+}
+.registro .checks label {
+	font-weight:normal!important;
+}
+
+.registro input{
+	font-family: 'Inter', sans-serif!important;
+	color: #056be0e3!important;	
+	font-weight: 400!important;
+	background-color: #efefef;
+	/* border: none; */
+	border-color:  #efefef;
+	border-radius: 0;
+}
+.registro select {
+	font-family: 'Inter', sans-serif!important;
+	color: #056be0e3;
+	border-radius: 0;
+	border-color:  #efefef;
+	background-color: #efefef;
+	padding: 0.2rem;
+
+}
+
+.registro select:focus {
+	font-family: 'Inter', sans-serif!important;
+	color: #056ae0;
+	border-radius: 0;
+	border-color:  #efefef;
+	background-color: #efefef;
+	border:0;
+	outline: 0 none; 
+	box-shadow: none;
+
+}
+.registro input:focus{
+	font-family: 'Inter', sans-serif!important;
+	color: #056ae0!important;	
+	font-weight: 400!important;
+	background-color: #efefef;
+	box-shadow: none;
+	border-color: #056ae0;
+}
+.registro .form-check-label {
+	font-weight:normal!important;
+}
+.was-validated .form-control:valid{
+	border-color:   #056ae0!important;
+}
+.registro button {
+	font-family: 'Inter', sans-serif!important;
+	
+	/*background-color: #0569e0;*/
+}
+.registro button:focus {
+	border:0;
+	outline:0 none;
+	box-shadow:none;
+}
+.registro button:hover {
+	background-color: var( --azulPantoneBimbo);
+	border:0;
+	outline:0 none;
+	box-shadow:none;
+}
+.registro .modal-header {
+    border-bottom: 0 none;
+}
+.registro .modal-body {
+    padding-top: 0;
+}
+.registro img {
+	
+	padding: 50px 0 50px 0;
+}
+ .registro .modal {
+	width:30rem;
+} 
+.registro{
+    overflow:hidden!important;
+}
+.registro  .form-group {
+	position: relative;
+}
+
+.registro  .form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+	color:  #056ae0;
+	opacity: 1; /* Firefox */
+}
+
+.registro .form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
+	color:  #056ae0;
+}
+
+.registro  .form-control::-ms-input-placeholder { /* Microsoft Edge */
+	color:  #056ae0;
+}
+
+.registro .input-group-text {
+	font-family: 'Inter', sans-serif!important;
+	color: #000;	
+	font-weight: 400!important;
+	background-color: #efefef;
+	/* border: none; */
+	border-color:  #efefef;
+	border-radius: 0;
+	padding-left:0.3rem;
+}
+.form-bottom {
+	background-color:#cde1f9;
+}
+
+.pass-recovery{
+	font-size: 0.8em;
+}
+.text-nav a{
+	font-family: 'Inter', sans-serif!important;
+}
+.text-nav:visited{
+	text-decoration: none;
+	color: white;
+}
+.text-nav:active{
+	text-decoration: none;
+	color: white;
+
+}
+.text-nav:focus{
+	text-decoration: none;
+	color: white;
+
+}
+
+a.text-link {
+	color:#056ae0;
+}
+
+a.text-link:hover{
+	color:var( --azulPantoneBimbo) !important;
+}
+/*formulario registro */
+
+.form-check-input {
+	margin-left:0!important;
+}
+.registro .form-row .checks {
+	padding-top: 0.3rem;
+}
+.checks  {
+	margin-right: -0.75rem !important;
+}
+
+.error-message {
+	color: rgba(196, 39, 39, 0.966);
+}
+
+
+/*MODAl SUCCESS */
+
+#successModal .modal-content{
+	font-family: 'Inter', sans-serif!important;
+}
+@media (min-width: 992px) {
+	.modal-dialog {
+	  max-width: auto !important;
+	}
+  }

@@ -1,0 +1,340 @@
+/*////////////////////////////
+//////INFO USUARIO////////////
+////////////////////////////*/
+.container-user{
+    display: flex;
+    flex-direction: column;
+}
+.user-profile{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+.user-profile img{
+    margin: auto;
+    border: 3px solid white;
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+}
+.user-profile p{
+    font-size: 22px;
+    color: var(--azulPantoneBimbo)!important;
+}
+
+
+/*////////////////////////////
+////CONTAINER PAGE SWITCH/////
+////////////////////////////*/
+
+.container-nav-page{
+    margin:auto;
+    background: var(--mainBeige);
+    width: 70%;
+    height: 400px;
+    border-radius: 10px;
+}
+
+/*////////////////////////////
+///PAGE USUARIO////////////
+////////////////////////////*/
+.container-user{
+    margin:auto;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 50px;
+}
+
+.user-full-name{
+    color: var(--azulPantoneBimbo)!important;
+    font-weight: bold;
+    text-transform: uppercase!important;
+}
+
+.container-user hr{
+    border-top: 3px solid white;
+    width: 80%;
+    margin: 0 auto;
+}
+.container-user p{
+    color: var(--azulPantoneBimbo);
+    font-size: 25px;
+    padding: 1.2em;
+    text-align: center;
+}
+.icons-media{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+}
+.icons-media i{
+    color: var(--mainBeige);
+    font-size: 4.5em;
+    background: var(--azulPantoneBimbo);
+    border: 2px solid white;
+    padding: 2.5% 1.25%;
+    width: 40%;
+    border-radius: 10px;
+    margin: auto;
+    transition: 0.5s all ease-in-out;
+}
+.icons-media i:hover{
+    background: #ff1837;
+    transform: scale(1.1);
+    box-shadow: 0 3px 30px 3px rgba(0,0,0,0.36);
+}
+.container-info{
+    width: 70%;
+    margin: 15vh auto auto auto!important;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+}
+
+.container-info-inner{
+    width: 100%;
+    height: fit-content;
+    padding: 5vh 3.5vw;
+    position: relative;
+}
+
+.container-mis-datos {
+    display: flex;
+    flex-direction: column;
+}
+.container-mis-datos p{
+ padding: 0;
+ font-size: 1.2rem;
+}
+.icon-marker{
+    display: flex;
+    flex-basis: 10%;
+}
+.icon-marker i{
+    font-size: 2.25rem;
+    margin: auto;
+}
+.info-content{
+    flex-basis: 90%;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.342) ;
+}
+.datos-user-consumidor, .datos-user-comercio{
+    display: flex;
+   flex-direction: column;
+   
+}
+.datos-user-consumidor label, .datos-user-comercio label{
+	font-family: 'Inter', sans-serif!important;
+	color: #4b4f4d;
+	font-weight: bold!important;
+	
+}
+
+.datos-user-consumidor p, .datos-user-comercio p{
+  text-align: start;
+  padding: 0;
+}
+
+
+.edit-user{
+    position: absolute;
+    top: 5%;
+    right: 2.5%;
+    padding: 0;
+}
+.edit-user p{
+    padding: 0;
+    font-size: 1rem;
+}
+
+.container-compras, .container-notificaciones{
+    width: 80%;
+    height: 400px;
+    margin: auto;
+    overflow: auto;
+    scrollbar-color: var(--azulPantoneBimbo);
+}
+.container-compra{
+    width: 80%;
+    height: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;    
+}
+.det-compra-info{
+ flex: 1;
+ display: flex;
+ flex-direction: column;
+}
+.det-compra-info p, .det-compra-list p{
+ padding: 0;
+ text-align: start;
+ font-size: 1.2rem;
+}
+
+.det-box-info, .det-box-monto{
+    flex: 1
+}
+.det-box-monto{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.det-box-monto p{
+ font-size: 1.35rem;
+}
+.det-compra-list{
+ flex: 1;
+}
+.tarjeta-compras{
+    height: 20%;
+    width: 100%;
+    border: 0.00001px solid #4b4f4d21;
+    display: flex;
+    flex-direction: row;
+}
+.tarjeta-compras p, .tarjeta-notificacion p{
+    padding: 0;
+    font-size: 1rem;
+}
+.fecha-estado, .det-total{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.fecha-estado p {
+    text-align: start;
+}
+.det-total p{
+    text-align: end;
+}
+
+.tarjeta-compras:hover{
+    height: 20%;
+    width: 100%;
+    border: 0.00001px solid #4b4f4d21;
+    background: rgba(191, 191, 231, 0.13);
+}
+
+.list-scroll{
+    overflow: auto;
+    scrollbar-color: var(--azulPantoneBimbo);
+    height: 90%;
+}
+
+.tarjeta-notificacion{
+    height: 33.33%;
+    width: 100%;
+    border: 0.00001px solid #4b4f4d21;
+    display: flex;
+    flex-direction: row;
+}
+.tarjeta-notificacion:hover{
+    background: rgba(191, 191, 231, 0.13);
+}
+
+.location-active {
+    background: var(--rojoPantoneBimbo);
+}
+
+
+
+/*////////////////////////////
+/////////PAGE PROJECTS////////
+////////////////////////////*/
+
+.container-projects{
+    margin:auto;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.container-projects h3{
+    color: #e41f39;
+    font-weight: bold;
+}
+
+.icon-user-page{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    flex: 1;
+}
+.icon-user-page p{
+    font-size: 0.8rem;
+}
+
+.datos-sm-column-lg-row{
+    display: flex;
+    flex-direction: row;
+}
+.location-active {
+    background: var(--rojoPantoneBimbo)!important;
+    color: none; 
+}
+
+@media only screen and (max-width: 600px) {
+    .user-profile img {
+        width: 135px;
+        height: 135px;
+        margin-bottom: 0!important;
+    }
+    .icons-media i{
+        color: var(--azulPantoneBimbo);
+        font-size: 2.25em;
+        background: none;
+        border: none;
+        padding: 2.5% 1.25%;
+        width: 65%;
+        border-radius: 10px;
+        margin: auto;
+        transition: 0.5s all ease-in-out;
+    }
+    .icons-media i:hover{
+    background:none;
+    color:  #ff1837;
+    transform: scale(1.1);
+    box-shadow:none;
+}
+    .location-active {
+        color: var(--rojoPantoneBimbo)!important;
+        background: none!important; 
+    }
+    
+    .container-nav-page{
+        margin-top: 20%;
+        height: 250px;
+    }
+    .datos-sm-column-lg-row{
+        padding-top: 15%;
+        display: flex;
+        flex-direction: column;
+    }
+    .fecha-estado p, .det-total p {
+
+        font-size: 0.55rem;
+    }
+    .user-full-name{
+        font-size: 0.9rem;
+    }
+    .container-compra{
+        flex-direction: column;
+        height: fit-content;
+    }
+        
+}
+
+@media only screen and (max-width: 480px) {
+    .icons-media i{
+        font-size: 1.5rem;
+    }
+    .unidades{
+        display: none;
+    }
+
+}

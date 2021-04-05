@@ -1,0 +1,266 @@
+.header-promos {
+    background-image: url("../../assets/img/Header-Promociones.png"); 
+    background-color: #97ccf6; 
+    height: 200px; 
+    background-position:left; 
+    background-repeat: no-repeat; 
+   
+  }
+
+  .fecha-promos{
+	font-family: 'Inter', sans-serif;
+	font-size: 14px;
+	color: var( --azulCeleste);
+	padding-top: 0.5rem;
+	margin-bottom: 0rem;
+}
+
+.titulo-promos{
+	font-family: 'Inter', sans-serif!important;
+	font-weight: normal!important;
+    color: #4b4f4d!important;
+    
+}
+.titulo-header-promos{
+	font-family: 'Inter', sans-serif!important;
+	font-weight: bold!important;
+    color: #fff!important;
+    font-size: 2rem;
+    text-align: center;
+    
+}
+
+#ingredientes  {
+    -webkit-column-count: 3;
+       -moz-column-count: 3;
+            column-count: 3;
+            list-style-type:circle;
+    padding-left: 0;
+  }
+  
+.texto-validez {
+  font-family: 'Inter', sans-serif!important;
+  font-size:0.8rem;
+  color: #056ae0;
+}
+.legales {
+  font-family: 'Inter', sans-serif!important;
+  font-size:0.6rem;
+  color:grey;
+}
+.precio-promo {
+  font-family: 'Inter', sans-serif!important;
+  font-size:2rem;
+  color: #056ae0;
+  text-align: right;
+}
+.precio-promo-single {
+  font-family: 'Inter', sans-serif!important;
+  font-size:2rem;
+  color: #fff;
+  text-align: left;
+}
+
+.beneficio {
+  background-color: #056ae0;
+  width:8rem;
+  
+}
+.beneficio p{
+  color:#fff;
+  text-align:center;
+  
+}
+.beneficio-single {
+  background-color:#fff;
+  width:8rem;
+  
+}
+.beneficio-single p{
+  color: #056ae0;
+  text-align:center;
+  font-weight:bold!important;
+}
+
+.agregar-carrito{
+  position: absolute;
+right: 0.4em;
+top: 1.5rem;
+color: var( --azulPantoneBimbo);
+background-color: white;
+border-radius: 50px;
+  padding: 0.5rem 0.5rem 0.4rem 0.4rem;
+  font-size:1.3rem;
+}
+
+.agregar-carrito:hover{
+position: absolute;
+right: 0.3em;
+top: 1.5rem;
+color: var( --azulPantoneBimbo);
+background-color: white;
+border-radius: 50px;
+padding: 0.5rem;
+font-size: 1.5rem;
+}
+.agregar-carrito-single{
+  position: absolute;
+right: 0.4em;
+top: 0.2rem;
+color: var( --azulPantoneBimbo);
+background-color: white;
+border-radius: 50px;
+  padding: 0.5rem 0.5rem 0.4rem 0.4rem;
+  font-size:1.3rem;
+}
+
+.agregar-carrito-single:hover{
+position: absolute;
+right: 0.2em;
+top: 0.1rem;
+color: var( --azulPantoneBimbo);
+background-color: white;
+border-radius: 50px;
+padding: 0.5rem;
+font-size: 1.5rem;
+}
+
+.columna-3{
+  width:30px;
+}
+
+.botones-promos {
+  position:absolute!important;
+  bottom: 0;
+  left:0;
+  background-color:var( --azulPantoneBimbo);
+}
+
+.cantidad-producto {
+  font-family: 'Inter', sans-serif!important;
+  font-size: 1.8rem;
+  color: var( --azulPantoneBimbo);
+  margin: auto;
+  font-weight:700!important;
+}
+
+.texto-azul {
+  color: #056ae0;
+  font-size: 1rem;
+}
+/* .titulo-producto-incluido {
+  color:
+}
+ */
+/*RESPONSIVE*/
+@media only screen and (max-width: 600px)  {
+  .botones-promos {
+    position:relative!important;
+    bottom: 0;
+    left:0;
+    background-color: var( --azulPantoneBimbo);
+  }
+  .precio-promo-single {
+    font-family: 'Inter', sans-serif!important;
+    font-size:1.4rem;
+    color: #fff;
+    text-align: center;
+  }
+  .precio-promo {
+    font-family: 'Inter', sans-serif!important;
+    font-size:1rem;
+    color: #056ae0;
+    text-align: right;
+  }
+
+  .beneficio-single {
+    background-color:#fff;
+    width:5rem;
+    
+  }
+  .beneficio-single p{
+    color: #056ae0;
+    text-align:center;
+    font-weight:bold!important;
+    font-size:0.7rem;
+  }
+  .beneficio {
+    background-color: #056ae0;
+    width:5rem;
+    
+  }
+  .beneficio p{
+    color:#fff;
+    text-align:center;
+    font-weight:bold!important;
+    font-size:0.7rem;
+  }
+  
+  .agregar-carrito-single{
+    position: absolute;
+  right: 0.6em;
+  top: -0.2rem;
+  color: var( --azulPantoneBimbo);
+  background-color: white;
+  border-radius: 50px;
+    padding: 0.5rem 0.5rem 0.4rem 0.4rem;
+    font-size:1.3rem;
+  }
+  
+  .agregar-carrito-single:hover{
+  position: absolute;
+  right: 0.2em;
+  top: 0.1rem;
+  color: var( --azulPantoneBimbo);
+  background-color: white;
+  border-radius: 50px;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  }
+
+  .titulo-promos{
+    font-family: 'Inter', sans-serif!important;
+    font-weight: normal!important;
+      color: #4b4f4d!important;
+      font-size:0.8rem;
+      margin-right:1rem;
+      margin-left: 1rem;;
+      
+  }
+
+  .agregar-carrito{
+  position: relative;
+  right: 0;
+  top: 0;
+  color: var( --azulPantoneBimbo);
+  background-color: white;
+  border-radius: 50px;
+  padding: 0.5rem 0.5rem 0.4rem 0.4rem;
+  font-size:1.3rem;
+  }
+  
+  .agregar-carrito:hover{
+  position: relative;
+  right: 0;
+  top: 0;
+  color: var( --azulPantoneBimbo);
+  background-color: white;
+  border-radius: 50px;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  }
+  
+
+}
+
+.productos-incluidos-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+}
+.card-promo{
+  flex-basis: 45%;
+}
+
+@media only screen and (max-width: 600px) {
+
+}
