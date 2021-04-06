@@ -56,7 +56,6 @@ export const useNotificaciones = (user) => {
              .then(axios.spread((...response) => {
                  const notificacion = response[0].data
                  const unreadCount = response[1].data.count
-                 console.log(unreadCount)
                  setState({
                           notificaciones: notificacion,
                           cantidad: unreadCount, 

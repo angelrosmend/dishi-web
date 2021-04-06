@@ -7,8 +7,7 @@ import SearchToggle from './SearchToggle';
 
 function Toggle() {
     const {user, logout, logged} = useContext(ContextUser)
-    console.log('toggle', user, logged)
-   
+
     const Nombre = user && user.Nombre
     const [collapsed, setCollapsed] = useState(true);
     const toggleNavbar = () => setCollapsed(!collapsed);

@@ -6,11 +6,7 @@ import Subtitulo from '../Subtitulo/Subtitulo';
 import Oportunidad from './Oportunidad';
 
 
-function Oportunidades() {
-
-    const {data} =  useContext(ContextProducts)
-    const {destacados} = data;
-
+function Oportunidades({oportunidades}) {
     return (
         <Fragment>
             <Subtitulo text="Oportunidades"
@@ -21,7 +17,7 @@ function Oportunidades() {
       <Slider {...twoItemsSettings}>
 
 
-       {destacados && destacados.map(item => {
+       {oportunidades && oportunidades.map(item => {
            const {Id, Imagen, NombreProducto, NombreSucursal, Precio} = item
            return <Oportunidad id={Id}
                                key={Id} 

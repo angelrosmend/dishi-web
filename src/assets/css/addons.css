@@ -150,14 +150,6 @@ h3{
 	background-color: #07934a;
 }
 
-
-
-
-
-.cards-2{
-	max-width: 1380px!important;
-}
-
 .card-fondo{
 	 background-image: url('../img/Header-Recetas.png')!important; 
 	background-size: cover;
@@ -175,7 +167,7 @@ h3{
 	height:50px;
 	font-size: 25px;
 	padding: 1rem;
-	background-color: var( --azulPantoneBimbo);
+	background-color: var( --azulCeleste);
    position: relative; 
 }
 
@@ -192,7 +184,7 @@ h3{
 	font-size: 15px;
 	font-weight: bold;
 	padding: 1rem;
-	background-color: var( --azulPantoneBimbo);
+	background-color: var( --azulCeleste);
 }
 
 .text-img-2:hover{

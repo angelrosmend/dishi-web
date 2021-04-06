@@ -14,14 +14,15 @@ import { useFetchHome } from '../../hooks/useFetchHome'
 import { urlHome } from '../../settings/requestSettings'
 import { ContextUser } from '../../context/UserContext'
 import ModalPWDSuccess from '../../components/modals/password/ModalPWDSuccess'
+import Categorias from './Categorias/Categorias'
 
 
 
 function Home() {
-  const {user} = useContext(ContextUser)
-  const {data, loading} = useFetchHome(urlHome, user)
+  const {user, MobileUser} = useContext(ContextUser)
+  const {data, loading} = useFetchHome(urlHome, MobileUser, user)
   console.log(data)
-  const {banners, destacados, promociones, categorias} = data
+  const {banners, destacados, promociones, categorias, tiendas, oportunidades} = data
   const {monomarca} = useContext(ContextProducts)
     if(loading) return <CustomSpinner/>
     return (
@@ -38,10 +39,14 @@ function Home() {
              <Promociones promociones={promociones} />
             </div>
             <div className="espaciado-wrapper" id='categoriasPage'>
-            <CategoriasGrilla categorias={categorias}/>
+            <Categorias categorias={categorias}/>
            </div>
-           {/* {monomarca ? null : <div className="espaciado-wrapper"><Tiendas/></div>}
-           {monomarca ? null : <div className="espaciado-wrapper"><Oportunidades/></div>} */}
+            <div className="espaciado-wrapper">
+            <Tiendas tiendas={tiendas}/>
+            </div>
+             <div className="espaciado-wrapper">
+               <Oportunidades oportunidades={oportunidades}/>
+               </div>
            <div className="espaciado-wrapper d-flex">
              <GrillaProductos/>
             </div>

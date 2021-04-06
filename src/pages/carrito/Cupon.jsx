@@ -67,7 +67,7 @@ function Cupon() {
       Platform: "Browser"
 })
        .then(response => {
-         console.log(response)
+
          if(response.data.Valor === 0 || response.data.TipoValidacionMontoMinimo === 0){
           setErrorCupon({error:true, message: 'Su código de cupon es invalido'})
           setPorcentaje(null)

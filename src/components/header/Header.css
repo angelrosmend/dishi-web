@@ -1,6 +1,6 @@
 .header-container{
     height: 15vh;
-    background: var(--headerGrdDishi);
+    background: var(--grdAzulDishi);
     position: sticky!important;
     top: 0;
     z-index: 100;
@@ -90,7 +90,7 @@ display: block;
     width: 40%;
 }
 .search-button i {
-    color: #949494!important;
+    color: var(--azulMediumDishi);
     font-size: 1.2rem;
 }
 .show{

@@ -8,7 +8,20 @@ export const ContextUser = React.createContext(null);
 
 export const ContextUserProvider = (props) => {
    /////////////////////ESTADO USUARIO/////////////////////////
+
+
+
    const [{user, logged, casa, comercio, idSucursalCompra}, setStateLog, logout] = useLog()
+
+   const userId = user && user.Id
+   const userEmail = user && user.Email
+   const userRolId = user && user.RolId
+   const MobileUser = {
+       Id: userId,
+       Email: userEmail,
+       RoldId: userRolId
+   }
+  
    const [modalLogin, setModalLogin] = useState(false)
    
   /////////////////////MODAL REGISTRO////////////////////////
@@ -23,12 +36,6 @@ export const ContextUserProvider = (props) => {
     const [modalUpdateSuccess, setModalUpdateSuccess] = useState(false)
     const [modalUpdateFail, setModalUpdateFail] = useState(false)
     const [updateErrorMessage, setUpdateErrorMessage] = useState(defaultErrorMessage)
-
-    
-   console.log(user)
-
-  
-
    useMontoMinimo()
 
    const [{notificaciones, cantidad}, countNotificaciones]  = useNotificaciones(user, -1)
@@ -37,6 +44,7 @@ export const ContextUserProvider = (props) => {
 
    const [modalPWDSuccess, setModalPWDSuccess]  = useState({show: false, message: ''})
    const showModalPWDSuccess = message => setModalPWDSuccess({show: true, message: message})
+
   return (
     <ContextUser.Provider value={{
       setStateLog, 
@@ -61,7 +69,7 @@ export const ContextUserProvider = (props) => {
        notificaciones, cantidad, countNotificaciones,
        idCompra, setIdCompra,
        modalPWDSuccess, setModalPWDSuccess,
-       showModalPWDSuccess}}>
+       showModalPWDSuccess, MobileUser}}>
       {props.children}
     </ContextUser.Provider>
   );

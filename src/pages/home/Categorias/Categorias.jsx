@@ -1,16 +1,12 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import { Fragment } from 'react'
 import Subtitulo from '../Subtitulo/Subtitulo'
 import Slider from "react-slick";
 import Categoria from './Categoria';
-import { ContextProducts } from '../../../context/ProductContext';
-import { Element } from 'react-scroll'
 import { sixItemsSettings, sixItemsSettingsC } from '../../../settings/CarouselSettings';
 
 
-function Categorias() {
-   const {data}= useContext(ContextProducts)
-   const {categorias} = data
+function Categorias({categorias}) {
     return (
  <Fragment>
     

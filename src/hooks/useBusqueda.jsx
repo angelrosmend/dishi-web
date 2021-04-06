@@ -29,7 +29,6 @@ export const useBusqueda = (keyWord, user) => {
         if(keyWord.length > 1){
         axios.all([requestHomeFilter, requestProductsfilter])
              .then(axios.spread((...response) => {
-                 console.log('busqueda',response)
                 const results = { ...response[0].data, Productos: response[1].data}
                  setState({
                           data:results,
@@ -39,7 +38,6 @@ export const useBusqueda = (keyWord, user) => {
                         
                          
              })).catch(error => {
-                 console.log('catch',error)
                  setState({
                      data: [],
                      loading: false,

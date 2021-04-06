@@ -1,20 +1,12 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
+import { requestGlobalObject } from "../helpers/requestObject";
 
 export const useFetchCategorias = (urlCategorias, id) => {
     const [state, setState] = useState({categorias: [], loading: true, error: ''})
 
     useEffect(() => {
-        axios.post(urlCategorias, {
-            "Id": id,
-            "PaginationSettings": [],
-            "IdSucursal": 1,
-            "IdCategoria":1,
-            "IdSucursalCompra": 0,
-            "SucursalCompra": null,
-            "ModeEmpresas": false,
-            "MobileMonoMarca": false 
-    })
+        axios.post(urlCategorias, {Id: id, ...requestGlobalObject})
              .then(response => {
                  let result = response.data;
                 let res = result.find(item => item.Id == id)

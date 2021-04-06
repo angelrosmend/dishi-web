@@ -1,26 +1,22 @@
 import React, { useContext } from 'react'
 import Slider from "react-slick";
 import { ContextProducts } from '../../../context/ProductContext';
-import { fourItemsSettings } from '../../../settings/CarouselSettings';
+import { fiveItemsSettings, fourItemsSettings } from '../../../settings/CarouselSettings';
 import Subtitulo from '../Subtitulo/Subtitulo';
 import Tienda from './Tienda';
 
 
-function Tiendas() {
-
-     const {data} = useContext(ContextProducts)
-     const {tiendas} = data;
-
+function Tiendas({tiendas}) {
   return (
     <div className="espaciado">
         <Subtitulo text="Tiendas"/>
 
-    <div className="cards-2" 
+    <div className="px-5" 
          data-aos="fade-up" 
          data-aos-delay="150">
         <div className="container-fluid pt-3">
     
-        <Slider {...fourItemsSettings}>
+        <Slider {...fiveItemsSettings}>
             {tiendas && tiendas.map(tienda => {
 
                 const {Id, NombreFantasia, Direccion, Logo, Rubro} = tienda;

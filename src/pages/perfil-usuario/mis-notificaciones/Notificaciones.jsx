@@ -9,7 +9,6 @@ function Notificaciones() {
     const { notificaciones, loading, countNotificaciones} =  useContext(ContextUser)
     const [notificacionesVisibles, setNotificacionesVisibles] = countNotificaciones
     const loadMore = () => setNotificacionesVisibles((prevState) => prevState + 4)
-    console.log(notificaciones)
     return (
         <Fragment>
             <Subtitulo text='Notificaciones'/>

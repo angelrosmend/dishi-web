@@ -24,7 +24,7 @@ function NavNotificaciones() {
     const handleVerMas = () => {
         history.push(`/perfil/${name}/notificaciones`)
     }
-  console.log(cantidad)
+  
     return (
     <div ref={ref}>
        { logged ? 

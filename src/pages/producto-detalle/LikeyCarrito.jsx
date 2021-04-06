@@ -3,9 +3,9 @@ import { Fragment } from 'react'
 import { CartContext } from '../../context/CarritoContext'
 
 function LikeyCarrito(props) {
-    const { precio, enCarrito, Stock, itemQuantity } = props
+    const { precio, enCarrito, Stock, quantity } = props
     const {addToCart, removeFromCart, increase, decrease, changeQuantity} = useContext(CartContext)
-    const qty = itemQuantity && itemQuantity.quantity
+    
     return (
         <Fragment>
         <div className="col footer-card-producto ">
@@ -19,12 +19,12 @@ function LikeyCarrito(props) {
             {enCarrito && 
             <div className={ `btn-quantity-home-show-detalle `}>
             <i className="fas fa-minus btn-quantity-home-btn"
-               onClick={()=>decrease({...props}, qty)}></i>
+               onClick={()=>decrease({...props}, quantity)}></i>
 
                <input className="quantity-home my-auto"
                     min="0" 
                     name="quantity" 
-                    value={qty}
+                    value={quantity}
                     onChange={(e) =>changeQuantity({...props}, parseInt(e.target.value))}
                     type="number"></input>
     

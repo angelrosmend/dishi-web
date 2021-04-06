@@ -82,7 +82,7 @@ function FramePago() {
                 configRequest.PagoPymeData = PagoPymeData
                 axios.post(urlPayClickautPedido, configRequest)
                                                            .then(response =>{
-                                                             console.log('success',response.data)
+    
                                                              showModalSuccess()
                                                            })
                                                            .catch(error => {

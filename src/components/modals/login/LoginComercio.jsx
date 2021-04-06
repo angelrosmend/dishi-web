@@ -4,7 +4,7 @@ import { Fragment } from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import {  Modal, ModalBody} from 'reactstrap';
 import * as Yup from 'yup'
-import { logobimbo } from '../../../assets/img';
+import {  logoLogin } from '../../../assets/img';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './login.css'
 import axios from 'axios';
@@ -26,7 +26,7 @@ function LoginComercio(props) {
  
   const {setIdSucursalCompra} = useContext(ContextProducts)
   const {setUserCarrito, cartItems} = useContext(CartContext)
-  console.log('comercio',setStateLog, setUserCarrito)
+
   const history = useHistory()
 
   const [errorMessage, setErrorMessage] = useState({err: false, message: ''})
@@ -73,7 +73,6 @@ function LoginComercio(props) {
                                         }
                                          })
                                        .catch(error => {
-                                         debugger;
                                         setUserCarrito({user: '',
                                           logged: false,
                                           casa: null,
@@ -116,7 +115,7 @@ function LoginComercio(props) {
     <div className=" modal-dialog  modal-login modal-dialog-centered" style={{}}>
 		<div className="modal-content no-border">
 			<div className="modal-header align-content-center">				
-				<img src={logobimbo} className="img-fluid mx-auto d-block " alt="..."/>
+				<img src={logoLogin} className="img-fluid mx-auto d-block " alt="..."/>
 				{/* <!-- <button type="button" className="close" data-dismiss="modal" aria-hidden="true">&times;</button> --> */}
 			</div>
 			<div className="modal-body mx-4 no-border">

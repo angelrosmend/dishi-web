@@ -20,7 +20,6 @@ function DatosUsuario() {
     const Cuit = User.Usuario.Cuit
     const RazonSocial = User.Usuario.RazonSocial
 
-    console.log('user',user)
     return (
 
         <Fragment>

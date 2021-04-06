@@ -126,7 +126,6 @@ function Formulario({areaCobertura}) {
            
              .then(response => {
 
-              console.log('post-pedido', response, configPedido)
                setDataPostPedido(response.data)
                history.push('/checkout-3-medio-pago')
 
@@ -140,7 +139,6 @@ function Formulario({areaCobertura}) {
                  }
                }
                showModalFailStock(errorMessage)
-               console.log(' POST ERROR 19 message = ', errorMessage, configPedido)
                setDataPostPedido(null)
              });
             }

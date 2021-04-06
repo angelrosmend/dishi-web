@@ -13,15 +13,13 @@ function Busqueda() {
     const {user} = useContext(ContextUser)
     const {data, loading, error} = useBusqueda(keyWordBusqueda, user)
 
-    console.log(data)
     const {Categorias, Destacados, Productos} = data
     const destacados = Destacados && Destacados.Items
     const categorias = Categorias && Categorias.Items
     const productos =  Productos && Productos.Items
     const resArr = Object.keys(data).map(i => data[i])
     const numeroDeResultados =  resArr.reduce((acc, item) => acc + item.Items.length, 0) 
-    console.log('RESULTADOS BUQ',numeroDeResultados)
-    console.log('busqueda page',data)
+
     if(loading) return <Spinner style={{ position: 'absolute', width: '3rem', height: '3rem', top: '50%', left: '50%' }} color='primary'/>
     return (
         <div className='' >

@@ -1,23 +1,17 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
+import { requestGlobalObject } from "../helpers/requestObject";
 
-export const useFetchProductos = (url, id, user) => {
-    const IdSucursalConfig = user ? user.IdSucursalCompra : 835
+export const useFetchProductos = (url, id, user, MobileUser) => {
+    const IdSucursalCompra = user ? user.IdSucursalCompra : 835
     const [state, setState] = useState({lista: [], productos: [], loading: true, error: ''})
     const [orderBy, setOrderBy] = useState({direction: '', field: ''})
-    const {direction, field} = orderBy
+
 
     useEffect(() => {
         axios.post(url, {
-            "IdSucursal": 1,
-            "Id": 1204,
-            "MobileMonoMarca": false,
-            "IdSucursalCompra": IdSucursalConfig,
-            "orderby": {
-                "Direction": direction ,
-                "Field": field
-            },
-            "IdCategoria": 1
+            Id: 1201,
+            orderBy, IdSucursalCompra, MobileUser,  ...requestGlobalObject
     })
              .then(response => {
                  let result = response.data.Items

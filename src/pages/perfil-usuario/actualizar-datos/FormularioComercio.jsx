@@ -86,7 +86,7 @@ const FormularioComercio = () => {
             
               axios.post(url, registroConfig)
                                                       .then(response => {
-                                                        console.log('registro',response, response.config, registroConfig)
+                                          
                                                           if(response.data.isSuccess === true){
                                                             setModalUpdateSuccess(true)
                                                             user.Nombre = values.usuario.nombre

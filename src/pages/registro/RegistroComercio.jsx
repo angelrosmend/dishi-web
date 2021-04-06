@@ -77,7 +77,7 @@ const registroConfig = {
 
   axios.post(urlRegistro, registroConfig)
                                           .then(response => {
-                                            console.log('registro',response, response.config, registroConfig)
+                                            
                                               if(response.data.isSuccess === true){
                                                 setModalRegistroSuccess(true)
                                                 resetForm()

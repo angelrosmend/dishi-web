@@ -1,25 +1,23 @@
 import {useEffect, useState} from 'react'
 import axios from 'axios'
+import { requestGlobalObject } from '../helpers/requestObject'
 
 
-export const useFetchDetail = (id, urlDetalle, user) => {
+export const useFetchDetail = (id, urlDetalle, user, MobileUser) => {
     const [state, setState] = useState({details: [], loading: true, error: ''})
 
-    const IdSucursalConfig = user ? user.IdSucursalCompra : 835
+    const IdSucursalCompra = user ? user.IdSucursalCompra : 835
 
     useEffect(() => {
         axios.post(urlDetalle, {
-            "Id": id,
-            "PaginationSettings": [],
-            "IdSucursal": 1,
-            "IdCategoria":1,
-            "IdSucursalCompra": IdSucursalConfig,
-            "ModeEmpresas": false,
-            "MobileMonoMarca": false 
+            Id: id,
+            IdSucursalCompra,
+            MobileUser,
+            ...requestGlobalObject
         })
              .then(response => {
                  setState({
-                          details: response.data.Items,
+                          details: response.data.Items[0],
                           loading: false, 
                           error: ''
                          })

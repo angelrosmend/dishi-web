@@ -82,7 +82,6 @@ export const usePromociones = (url, user) => {
                           error: ''
                          })
              }).catch(error => {
-                 console.log(url)
                  console.log(error.message)
                  setPromos({
                      data: [],

@@ -14,9 +14,6 @@ function UserBanner({user}) {
 
      const {idCompra} = useContext(ContextUser)
 
-     
-
-     console.log('route hooks', idCompra, pathLocation)
     return (
         <div className="container-nav-page mb-5 ">
         <div className="container-user">

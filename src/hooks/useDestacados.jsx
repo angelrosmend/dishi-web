@@ -75,9 +75,7 @@ export const useDestacados = (url, user) => {
 
 
     })
-             .then(response => {
-                 console.log(response)
-               
+             .then(response => {      
                  const result = response.data.Destacados.Items
                  const dataPromo = ordenamiento(result, orderBy)
 

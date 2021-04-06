@@ -10,11 +10,11 @@ import CardGrilla from './CardGrilla';
 function GrillaProductos() {
 
     const {cartItems} = useContext(CartContext)
-    const {user} = useContext(ContextUser)
+    const {user, MobileUser} = useContext(ContextUser)
 
 
   
-    const [state, setOrderBy] = useGrillaHome(urlProductos, user)
+    const [state, setOrderBy] = useGrillaHome(urlProductos, user, MobileUser)
     const [visible, setVisible] = useState(5)
     const {productos} = state
     const loadMore = () => {

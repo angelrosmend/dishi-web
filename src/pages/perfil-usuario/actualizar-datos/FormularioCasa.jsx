@@ -87,7 +87,7 @@ function FormularioCasa (){
             
               axios.post(url, registroConfig)
                                                       .then(response => {
-                                                        console.log('registro',response, response.config, registroConfig)
+                                                    
                                                           if(response.data.isSuccess === true){
                                                             setModalUpdateSuccess(true)
                                                             user.Nombre = values.usuario.nombre
@@ -95,14 +95,14 @@ function FormularioCasa (){
                                                             user.Usuario.NombreCompleto = `${values.usuario.nombre} ${values.usuario.apellido}`
                                                             user.Celular = values.phone
                                                             user.FechaNacimiento = new Date(values.nacimiento.año, values.nacimiento.mes, values.nacimiento.dia).toISOString()
-                                                            console.log(response)
+                                                            
 
 
                                                           }
                                                           else {
                                                             setUpdateErrorMessage(response.data.message)
                                                             setModalUpdateFail(true)
-                                                            console.log(response)
+                                            
                                                           }
                                                       })
                                                        .catch(error => {

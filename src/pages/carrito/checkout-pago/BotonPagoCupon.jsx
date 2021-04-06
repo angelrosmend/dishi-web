@@ -58,7 +58,6 @@ function BotonPagoCupon() {
 
         axios.post(urlPostPedido, configPedido)
               .then(response => {
-                  console.log('success',response)
                   showModalSuccess()
  
               }).catch(error => {

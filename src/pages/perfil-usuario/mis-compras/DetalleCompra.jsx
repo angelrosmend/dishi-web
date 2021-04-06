@@ -11,7 +11,6 @@ function DetalleCompra({match}) {
     const id = match.params.id
     const {user} = useContext(ContextUser)
     const {pedido, productos} = useDetalleCompra(user, id)
-    console.log(pedido)
     const {Id, FechaAlta, Descuento, SubTotal, Total, SucursalNombreFantasia, TelefonoContacto, TrackingNumber} = pedido
    
     return (
@@ -41,7 +40,6 @@ function DetalleCompra({match}) {
                             <ul className='list-scroll' id='mis-compras-det'>
                             {productos && productos.map(item => {
                                 const {Id, NombreProducto, CantidadPedida, Tipo} = item
-                                console.log(productos)
                                 return <li key={Id} className='py-3'> 
                                          <Link to={Tipo === 1  ? `/promociones/${Id}` : `/detalle/${Id}`}>
                                                <p> <span className="text-dark">{CantidadPedida}</span> - {Tipo === 1 ? '(Promo)': null} {NombreProducto}</p> 
