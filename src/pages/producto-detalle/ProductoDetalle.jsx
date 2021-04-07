@@ -23,7 +23,7 @@ function ProductoDetalle({match}) {
     const {details, loading} = useFetchDetail(id, urlDetalle, user, MobileUser)
     const { Id, Imagen, NombreProducto, NombreSucursal, Precio, Sucursal, DescripcionProducto, ProductoCategorias, ValorParaCajaDelivery, Stock} = details
     const [inCart, quantity] = useQuantity(cartItems, Id)
-
+    console.log(details)
    
     if(loading) return <Spinner style={{ position: 'absolute', width: '3rem', height: '3rem', top: '50%', left: '50%' }} color='primary'/>
     return (

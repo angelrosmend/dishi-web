@@ -1,5 +1,6 @@
 import React, { useContext, useState } from 'react'
 import FiltrosAlt from '../../../components/filtros/FiltroPromo';
+import CustomSpinner from '../../../components/spinner/Spinner';
 import { CartContext } from '../../../context/CarritoContext';
 import { ContextUser } from '../../../context/UserContext';
 import { useGrillaHome } from '../../../hooks/listados/useGrillaHome';
@@ -16,7 +17,7 @@ function GrillaProductos() {
   
     const [state, setOrderBy] = useGrillaHome(urlProductos, user, MobileUser)
     const [visible, setVisible] = useState(5)
-    const {productos} = state
+    const {productos, loading} = state
     const loadMore = () => {
         setVisible((prevState) => prevState + 5)
     }
@@ -30,8 +31,7 @@ function GrillaProductos() {
 
                 {productos && productos.slice(0, visible).map(item => {
                     const { Id, Imagen, NombreProducto,NombreSucursal, Precio, ValorParaCajaDelivery, Stock} = item;
-                    
-                    const itemQuantity = cartItems.map(itemCart => itemCart).find(item => item.id === Id)
+                    if(loading) return <CustomSpinner/>
                     return <CardGrilla key={Id}
                                                id={Id}
                                                imagen={Imagen}
@@ -42,7 +42,7 @@ function GrillaProductos() {
                                                ValorParaCajaDelivery={ValorParaCajaDelivery}
                                                Tipo={0}
                                                Stock={Stock}
-                                               quantity={itemQuantity}
+                                               
                                                />
                 })}
 

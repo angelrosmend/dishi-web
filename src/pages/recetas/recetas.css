@@ -83,7 +83,7 @@
     width: auto;
     height: 300px!important;
 }
-.card-fondo-recetas{
+/* .card-fondo-recetas{
 	background-image: url('../../assets/img/Header-Recetas.png')!important; 
    background-size: cover;
    background-position: 50% 50%;
@@ -97,7 +97,7 @@
 	background-image: url('../../assets/img/pill-desde-casa.png')!important; 
    background-size: cover;
    background-position: 50% 50%;
-}
+} */
 
 /*RESPONSIVE*/
 @media only screen and (max-width: 600px)  {

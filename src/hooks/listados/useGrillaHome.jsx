@@ -26,6 +26,6 @@ export const useGrillaHome = (url, user, MobileUser) => {
                      error: error
                  })
              });               
-    }, [user, orderBy]);
+    }, [user, orderBy, state]);
     return [state, setOrderBy]
 }
