@@ -8,7 +8,7 @@ function Tiendas({tiendas}) {
   return (
     <div className="espaciado">
       <Subtitulo text="Tiendas"/>
-          <SliderDishi items={tiendas.slice(0, 3)}>   
+          <SliderDishi items={tiendas}>   
             {tiendas && tiendas.map(tienda => {
 
                 const {Id, NombreFantasia, Direccion, Logo, Rubro} = tienda;
