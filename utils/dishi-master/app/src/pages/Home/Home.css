@@ -1,0 +1,11 @@
+.loading{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+}
+
+.home-wrapper {
+    position: relative;
+    min-height: 100vh;
+
+}

@@ -40,8 +40,7 @@ function App() {
           <Route path="/recetas" exact component={RecetasLista}/>
           <Route path="/recetas/:id" component={RecetasDetalle}/>
           <Route path="/busqueda" component={Busqueda}/>
-          <Route path="/registroComercio" component={RegistroComercio}/>
-          <Route path="/registroCasa" component={RegistroCasa}/>
+          <Route path="/registro" component={RegistroComercio}/>
           <Route path="/checkout-1-carrito" component={Carrito}/>
           <ProtectedRoute path='/checkout-2-direccion' component={CheckoutDireccion} logged={logged} items={cartItems}/> 
           <ProtectedRoute path="/checkout-3-medio-pago" component={CheckoutPago} logged={logged} items={cartItems}/>

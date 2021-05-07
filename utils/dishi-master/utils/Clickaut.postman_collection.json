@@ -1,0 +1,52 @@
+{
+	"info": {
+		"_postman_id": "d5aee8ba-7607-4322-b5c3-b8d467651e29",
+		"name": "Clickaut",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://pehuajo.clickaut.com/clickautwebapi/api/V2Home/getData",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"PaginationSettings\": [],\r\n    \"MobileUser\": {\r\n        \"Id\": 0,\r\n        \"Email\": \"\",\r\n        \"RolId\": 0\r\n    },\r\n    \"orderby\": null,\r\n    \"Filter\": {\r\n        \"Text\": \"\"\r\n    },\r\n    \"APP_ConfigurationID\": \"21020\",\r\n    \"Platform\": \"Browser\",\r\n    \"AppVersion\": \"\",\r\n    \"AppDebug\": false,\r\n    \"Fecha\": \"2020-05-27T18:45:13.958Z\",\r\n    \"IdSucursal\": 0,\r\n    \"IdSucursalCompra\": 0,\r\n    \"ModeEmpresas\": false,\r\n    \"MobileMonoMarca\": false,\r\n    \"IdEmpresa\": 0,\r\n    \"ReadCountMode\": false,\r\n    \"PageFrom\": 0,\r\n    \"PageCount\": 10,\r\n    \"CalculateTotalRows\": false\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://pehuajo.clickaut.com/clickautwebapi/api/V2Home/getData",
+					"protocol": "http",
+					"host": [
+						"pehuajo",
+						"clickaut",
+						"com"
+					],
+					"path": [
+						"clickautwebapi",
+						"api",
+						"V2Home",
+						"getData"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

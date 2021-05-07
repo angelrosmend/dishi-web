@@ -1,0 +1,59 @@
+:root{
+  --navSize: 15vh;
+  --gradientBlue: linear-gradient(45deg, #0c54a7 ,#056ae0 60%, #137ef8 );
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.one-line-text{
+  white-space: nowrap;
+}
+
+
+.espaciado{
+  margin: 5vh 2.5vw;
+}
+
+.fit-screen{
+  overflow: hidden;
+}
+
+.slick-next, .slick-prev{
+  background: #056ae0;
+  font-size: 20px;
+  border-radius: 50%;
+}
+
+.slick-next:hover, .slick-prev:hover{
+  background: #137ef8 ;
+}
+
+.slick-next:focus, .slick-prev:focus{
+  background: #137ef8 ;
+}
+
+

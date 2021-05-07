@@ -108,7 +108,7 @@ function LoginModal(props) {
     <div className=" modal-dialog  modal-login modal-dialog-centered" style={{}}>
 		<div className="modal-content no-border">
 			<div className="modal-header align-content-center">				
-				<img src={logoLogin} className="img-fluid mx-auto d-block " alt="..."/>
+				<img src={logoLogin} className="img-fluid mx-auto d-block logo " alt="..."/>
 				{/* <!-- <button type="button" className="close" data-dismiss="modal" aria-hidden="true">&times;</button> --> */}
 			</div>
 			<div className="modal-body mx-4 no-border">

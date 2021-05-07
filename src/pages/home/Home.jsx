@@ -36,7 +36,7 @@ function Home() {
               <Destacados destacados={destacados} />
             </div>
             <div className="espaciado-wrapper">
-             <Promociones promociones={promociones} />
+             <Promociones promociones={promociones}/>
             </div>
             <div className="espaciado-wrapper" id='categoriasPage'>
             <Categorias categorias={categorias}/>
@@ -46,10 +46,11 @@ function Home() {
             </div>
              <div className="espaciado-wrapper">
                <Oportunidades oportunidades={oportunidades}/>
-               </div>
+              </div>
            <div className="espaciado-wrapper d-flex">
              <GrillaProductos/>
             </div>
+
           </Suspense>
           <ModalPWDSuccess/>
         </div>

@@ -1,0 +1,23 @@
+.banners-wrapper{
+    margin-top: 2px;
+    height: 65vh;
+}
+
+.banners-wrapper img {
+    height: 65vh;
+}
+
+
+@media screen and (max-width: 600px) {
+   .banners-wrapper{
+       height: 35vh;
+   }
+   .banners-wrapper img {
+    height: 35vh;
+   }
+
+    .btn-link{
+        display: none;
+    }
+
+}

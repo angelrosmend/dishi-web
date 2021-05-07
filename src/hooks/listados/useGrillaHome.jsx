@@ -9,8 +9,16 @@ export const useGrillaHome = (url, user, MobileUser) => {
     const [state, setState] = useState({productos: [], loading: true, error: ''})
     const IdSucursalCompra = user ? user.IdSucursalCompra : 835
     const [orderBy, setOrderBy] = useState('PREDETERMINADO')
+    const pagination = {PageFrom:0,
+                        PageCount:15,
+                        CalculateTotalRows:false,
+                        ReadCountMode:false}
     useEffect(() => {
-        axios.post(url, {IdSucursalCompra, MobileUser, ...requestGlobalObject})
+        axios.post(url, 
+           {IdSucursalCompra, 
+            ...MobileUser,
+            ...requestGlobalObject,
+            ...pagination})
              .then(response => {
                  const result = response.data.Items
                  const listadoProductos = ordenamiento(result, orderBy)
@@ -26,6 +34,6 @@ export const useGrillaHome = (url, user, MobileUser) => {
                      error: error
                  })
              });               
-    }, [user, orderBy, state]);
+    }, [user, orderBy]);
     return [state, setOrderBy]
 }

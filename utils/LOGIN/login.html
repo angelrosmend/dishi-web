@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;700;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/addons.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link href="css/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" />
+
+    <script src="https://kit.fontawesome.com/ae5a4cfd70.js" crossorigin="anonymous"></script>
+    <script src="js/jquery.js"></script>
+
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+      /* Make the image fully responsive */
+      .carousel-inner img {
+        width: 100%;
+        height: 100%;
+    }
+    .dropdown-hover:hover .dropdown-menu {
+  display: block;
+}
+</style>
+</head>
+<body>
+
+
+    <!--  Comienzo header -->    
+
+    <div class="container-fluid navbar-inverse bg-primary bordebajo ">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-12 py-2">
+                 <a class="navbar-brand" href="#">
+                    <img class="logo" src="img/logodishi.png" alt="">
+                </a>
+                <button class="navbar-toggler navbar-toggler-right burger" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>    
+            </div>
+        </div>
+
+    </div>
+
+    <nav class="navbar navbar-toggleable-sm">
+        <div class="container">
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+
+
+               <div class="container mobile text-center">
+                <form class="form-inline my-2 my-lg-0 d-flex">
+                    <div class="container">
+                     <div class="row">
+                        <div class="col-8"> 
+                            <input class="form-control mr-sm-2" type="text" placeholder="Buscar...">
+                        </div>
+                        <div class="col-4">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="position: relative;top: -8px;">Buscar</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <ul class="navbar-nav mr-auto mt-2 mt-md-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Mi cuenta</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Carrito</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Notificaciones</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Billetera</a>
+                </li>
+            </ul>
+            
+        </div>
+        
+        <div class="row nav-dishi escritorio">
+            <div class="col-6">
+            <!--     <input class="form-control search form-search" id="myInput" type="text" placeholder="Qué estás buscando?">
+             <span class="fa fa-search"></span> -->
+             <div id="custom-search-input">
+                <div class="input-group col-md-12">
+                    <input class="form-control search form-search" id="myInput" type="text" placeholder="Qué estás buscando?">
+                    <span class="input-group-btn">
+                        <button class="btn btn-info btn-lg" type="button">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Dropdown -->
+        <div class="col-2 float-left p-0 dropdown">
+            <a class="nav-link dropdown-toggle py-1 p-0" href="" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+               <i class="fas fa-sliders-h" style="font-size:28px;color:white"></i>
+           </a>
+
+           <div class="dropdown-menu dropdown-menu2" aria-labelledby="navbarDropdownMenuLink">
+
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-5 checkbox1">
+                        <p class="titulo3 pb-3"><b>Entrega:</b></p>
+                        <div class="d-flex ">
+                            <label class="custom-control custom-radio">
+                                <input id="radio1" name="radio" type="radio" class="custom-control-input">
+                                <span class="custom-control-indicator checkbox-styles"></span>
+                                <span class="custom-control-description">Entrega a domicilio</span>
+                            </label>
+                            <label class="custom-control custom-radio">
+                                <input id="radio2" name="radio" type="radio" class="custom-control-input">
+                                <span class="custom-control-indicator checkbox-styles"></span>
+                                <span class="custom-control-description">Retiro en tienda</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-4 checkbox1" >
+                        <p class="titulo3 pb-3"><b>Medio de pago:</b></p>
+                        <div class="d-flex">
+                            <label class="custom-control custom-radio">
+                                <input id="radio1" name="radio" type="radio" class="custom-control-input">
+                                <span class="custom-control-indicator checkbox-styles"></span>
+                                <span class="custom-control-description">Billetera</span>
+                            </label>
+                            <label class="custom-control custom-radio">
+                                <input id="radio2" name="radio" type="radio" class="custom-control-input">
+                                <span class="custom-control-indicator checkbox-styles"></span>
+                                <span class="custom-control-description">Tarjetas</span>
+                            </label>
+
+                            <label class="custom-control custom-radio">
+                                <input id="radio2" name="radio" type="radio" class="custom-control-input">
+                                <span class="custom-control-indicator checkbox-styles"></span>
+                                <span class="custom-control-description">Efectivo</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="col-3">
+                        <p class="titulo3 pb-3"><b>Horario:</b></p>
+
+                        <div class="row" style="">
+                            <div class="col-10">
+
+                                <label class="custom-control custom-radio">
+                                    <input id="radio1" name="radio" type="radio" class="custom-control-input">
+                                    <span class="custom-control-indicator checkbox-styles"></span>
+                                    <span class="custom-control-description">Abierto ahora</span>
+                                </label>
+                            </div>
+                            <div class="col-2">
+
+                                <button type="button" class="btn btn-primary boton-3" style="">
+                                APLICAR</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+    </div>
+    <!-- FIN Dropdown-->
+
+    <!-- LOGIN - REGISTRO -->
+    <div class="col-4" > 
+        <div class="container d-flex justify-content-end">
+            <div class="row ">
+                <div class="col ">
+                    <span class="text-nav align-middle"><a href="#loginModal" class=" text-nav trigger-btn" data-toggle="modal">Ingresar</a> / <a class="text-nav" href="#" role="button">Registrarse</a></span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+<!-- LOGIN - REGISTRO  -->
+
+</div>
+</div>
+</div>
+</div>
+
+</nav>
+</div>
+<!--  Fin header --> 
+
+<!-- MODAL LOGIN -->
+<div id="loginModal" class="modal fade col-sm px-0">
+	<div class="modal-dialog modal modal-login modal-dialog-centered ">
+		<div class="modal-content">
+			<div class="modal-header align-content-center">				
+				<img src="/img/logodish-grisi.png" class="img-fluid mx-auto d-block " alt="...">
+				<!-- <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button> -->
+			</div>
+			<div class="modal-body mx-4">
+				<form class="needs-validation" novalidate>
+                    <div class="form-group">
+                      <label for="password">Email</label>
+                      <input type="email" class="form-control" id="password" aria-describedby="emailHelp" placeholder="Ingresá tu Email" required>
+                      
+                    </div>
+                    <div class="form-group">
+                      <label for="password">Contraseña</label>
+                      <input type="password" class="form-control" id="password" placeholder="Ingresà tu contaseña" required>
+                      <div class="col text-right px-0 mt-1 pass-recovery">  
+                        <a href=#>Olvidé mi contraseña</a>
+                    </div>
+                    </div>
+                    <div class="col text-center">
+                    <button type="submit" class="btn btn-primary rounded-pill px-5 py-2 mt-3">INGRESAR</button>
+                </div>
+                  </form>
+                  <div class="col mt-4 mb-2"></div><p class="text-center">No tengo una cuenta <a href="#" class="text-primary font-weight-bold">Registrarme </a></p></div>
+			</div>
+			
+		</div>
+	</div>
+</div>   
+<!-- MODAL LOGIN -->
+
+<!-- SCRIPTS -->
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous"></script>
+<script src="js/aos.js"></script>
+<script src="/js/scripts.js"></script>
+<script>
+  AOS.init();
+</script>
+</body>
+</html>

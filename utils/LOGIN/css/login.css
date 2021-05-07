@@ -1,0 +1,93 @@
+body {
+    padding: 0px !important;
+}
+/* ESTILOS MODAL */
+
+.modal-login a{
+	font-family: 'Inter', sans-serif!important;
+	color: #4b4f4d;
+}
+.modal-login label{
+	font-family: 'Inter', sans-serif!important;
+	color: #4b4f4d;
+	font-weight: 400!important;
+	
+}
+.modal-login input{
+	font-family: 'Inter', sans-serif!important;
+	color: #056ae0;	
+	font-weight: 400!important;
+	background-color: #efefef;
+	/* border: none; */
+	border-color:  #efefef;
+}
+.modal-login input:focus{
+	font-family: 'Inter', sans-serif!important;
+	color: #056ae0;	
+	font-weight: 400!important;
+	background-color: #efefef;
+	 border:0;
+	outline: 0 none; 
+	box-shadow: none;
+}
+.modal-login .was-validated .form-control:valid{
+	border-color:   #056ae0;
+}
+.modal-login button {
+	font-family: 'Inter', sans-serif!important;
+	/*background-color: #0569e0;*/
+}
+.modal-login .modal-header {
+    border-bottom: 0 none;
+}
+.modal-login .modal-body {
+    padding-top: 0;
+}
+.modal-login img {
+	
+	padding: 50px 0 50px 0;
+}
+.modal-login .modal {
+	width:30rem;
+}
+.modal-login{
+    overflow:hidden!important;
+}
+.modal-login  .form-group {
+	position: relative;
+}
+
+.modal-login  .form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+	color:  #056ae0;
+	opacity: 1; /* Firefox */
+}
+
+.modal-login .form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
+	color:  #056ae0;
+}
+
+.modal-login  .form-control::-ms-input-placeholder { /* Microsoft Edge */
+	color:  #056ae0;
+}
+
+
+.pass-recovery{
+	font-size: 0.8em;
+}
+.text-nav a{
+	font-family: 'Inter', sans-serif!important;
+}
+.text-nav:visited{
+	text-decoration: none;
+	color: white;
+}
+.text-nav:active{
+	text-decoration: none;
+	color: white;
+
+}
+.text-nav:focus{
+	text-decoration: none;
+	color: white;
+
+}

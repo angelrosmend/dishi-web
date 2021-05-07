@@ -1,5 +1,7 @@
 import React, { Fragment, useContext } from 'react'
+import { Link } from 'react-router-dom';
 import { ContextUser } from '../../context/UserContext';
+import LoginModal from '../modals/login/LoginModal';
 import ModalLogout from '../modals/logout/ModalLogout';
 import NavCart from './NavCart';
 import NavMisCompras from './NavMisCompras';
@@ -25,8 +27,11 @@ function Log() {
                    <p className="text-log trigger-btn my-auto"> Cerrar sesión</p>
                    </ModalLogout>
                  :
-                 <Fragment>
-                </Fragment>}
+                 <div className="row my-auto">
+                     <LoginModal><p className="text-log trigger-btn mx-1 my-auto">Ingresar</p></LoginModal>
+                     <br/>
+                       <Link to='/registro'><p className="text-log trigger-btn mx-1 my-auto"> Registrase</p></Link>
+                 </div>}
                 </div>
 
             </div>
