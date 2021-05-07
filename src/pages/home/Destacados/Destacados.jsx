@@ -12,7 +12,7 @@ function Destacados({destacados}) {
     const configSliderSettings = destacados && destacados.length >= 5 ? fiveItemsSettings : fourItemsSettings
    
 
-   if(destacados.length < 1) return null
+   if(!destacados || destacados.length < 1) return null
    return (
   <div className="espaciado espaciado-wrapper">
     <Subtitulo text='Destacados'
