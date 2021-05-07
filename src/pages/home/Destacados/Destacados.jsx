@@ -18,7 +18,7 @@ function Destacados({destacados}) {
   <div className="espaciado espaciado-wrapper">
     <Subtitulo text='Destacados'
                vermas='/destacados'/>
-        <SliderDishi items={destacados}>
+        <SliderDishi items={destacados} background="bg-white">
                {destacados && destacados.map(item => {
                   const { Id, Imagen, NombreProducto, Precio, Sucursal, ValorParaCajaDelivery, Stock} = item;
                   const {NombreFantasia} = Sucursal

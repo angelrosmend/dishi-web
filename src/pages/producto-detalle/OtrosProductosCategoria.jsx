@@ -87,7 +87,7 @@ function OtrosProductosCategoria( {categoria} ) {
                         </div>
         )
     } 
-     if(productos.length < 3 )return null 
+     if(productos.length < 1 )return null 
     return (
     <div className='margen-sm'>
        <Subtitulo text='Otros productos de esta categoria'
