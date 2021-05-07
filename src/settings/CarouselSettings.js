@@ -129,7 +129,7 @@ export const twoItemsSettings = {
 
   /*CAOUSER 3 ITEMS*/
 
-  export const threeItemsSettingsOtros = {
+  export const threeItemsSettings = {
     dots: true,
     infinite: true,
     speed: 500,

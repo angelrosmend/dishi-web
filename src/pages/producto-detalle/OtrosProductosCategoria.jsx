@@ -4,7 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { CartContext } from '../../context/CarritoContext'
 import { useFetchProductos } from '../../hooks/useFetchProductos'
-import { fiveItemsSettings, threeItemsSettingsOtros} from '../../settings/CarouselSettings'
+import { fiveItemsSettings, threeItemsSettings} from '../../settings/CarouselSettings'
 import { urlProductos } from '../../settings/requestSettings'
 import Subtitulo from '../home/Subtitulo/Subtitulo'
 import { Link } from 'react-router-dom';
@@ -22,7 +22,7 @@ function OtrosProductosCategoria( {categoria} ) {
     const {cartItems} = useContext(CartContext)
     const [state] = useFetchProductos(urlProductos, id, user)
     const {productos} = state
-    const  sliderconfig = productos.length >= 5 ? fiveItemsSettings : threeItemsSettingsOtros 
+    const  sliderconfig = productos.length >= 5 ? fiveItemsSettings : threeItemsSettings 
 
     const CardOtrosProductos = (props) => {
         const {addToCart, removeFromCart, decrease, changeQuantity, increase} = useContext(CartContext)
