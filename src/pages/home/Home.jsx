@@ -21,8 +21,8 @@ import Categorias from './Categorias/Categorias'
 function Home() {
   const {user, MobileUser} = useContext(ContextUser)
   const {data, loading} = useFetchHome(urlHome, MobileUser, user)
-  console.log(data)
-  const {banners, destacados, promociones, categorias, tiendas, oportunidades} = data
+  console.log('DATA HOME',data)
+  const {banners, destacados,descuentos , promociones, categorias, tiendas, oportunidades} = data
   const {monomarca} = useContext(ContextProducts)
     if(loading) return <CustomSpinner/>
     return (
@@ -33,7 +33,7 @@ function Home() {
               </div>
               <Tarjetas/>
             <div className="espaciado-wrapper">
-              <Destacados destacados={destacados} />
+              <Destacados destacados={descuentos} />
             </div>
             <div className="espaciado-wrapper">
              <Promociones promociones={promociones}/>
@@ -45,7 +45,7 @@ function Home() {
             <Tiendas tiendas={tiendas}/>
             </div>
              <div className="espaciado-wrapper">
-               <Oportunidades oportunidades={oportunidades}/>
+               <Oportunidades oportunidades={descuentos}/>
               </div>
            <div className="espaciado-wrapper d-flex">
              <GrillaProductos/>

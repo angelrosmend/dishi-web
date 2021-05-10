@@ -316,6 +316,7 @@ const showModalFailStock = message => setModalFailStock({show: true, message: me
 
 const [tipoDescuento, setTipoDescuento] = useState(null)
 
+const MODALS_VALUES = {}
 
     return <CartContext.Provider value={{cartItems,
                                          addToCart, 
