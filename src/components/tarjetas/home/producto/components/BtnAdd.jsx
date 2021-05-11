@@ -39,7 +39,7 @@ function BtnAdd(props) {
               <Fragment>
                 <i onClick={()=> {addToCart({...prodInfo}); showBtnQty()}}
                    onMouseEnter={()=> {showBtnQty(); toggleTooltipAdd(); }}
-                   onMouseLeave={toggleTooltip}
+                   onMouseLeave={toggleTooltipAdd}
                    className="fas fa-cart-plus btn-cart-prod"
                    ref={targetAdd}
                    />
