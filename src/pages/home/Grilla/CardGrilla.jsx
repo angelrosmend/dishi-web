@@ -7,7 +7,7 @@ function CardGrilla(props) {
   const {cartItems} = useContext(CartContext)
     const {id, imagen, nombre, precio, sucursal, Stock,  } = props
     
-    const [inCart, quantity] = useQuantity(cartItems, id)
+    const [inCart, quantity] = useQuantity(id)
     const {addToCart, removeFromCart, decrease, changeQuantity, increase} = useContext(CartContext)
 
     const [showBtn, setShowBtn] = useState(false)
@@ -23,10 +23,11 @@ function CardGrilla(props) {
         <Link to={`/detalle/${id}`}> 
          <img className="imagenes" src={imagen} alt="logo"/> 
        </Link>
-         {inCart && <div className={showBtn ? `btn-quantity-home-show`:`btn-quantity-home `}>
+         {inCart && 
+        <div className={showBtn ? `btn-quantity-home-show`:`btn-quantity-home `}>
 
                 <i className="fas fa-minus btn-quantity-home-btn"
-                  onClick={()=>decrease({...props}, quantity)}></i>
+                  onClick={()=> decrease({...props}, quantity)}></i>
 
                 <input className="quantity-home my-auto"
                         min="0" 
@@ -45,7 +46,8 @@ function CardGrilla(props) {
             <ul className="navbar-nav ml-auto">
                 <li>
                     {Stock ?
-                     inCart ? <i onClick={()=> removeFromCart({...props})}
+                     inCart ? 
+                  <i onClick={()=> removeFromCart({...props})}
                      className="fas fa-cart-plus fix-btn-cart-dest cart-active"
                      onMouseEnter={showBtnQty}
                      onMouseLeave={hideBtnQty}></i>

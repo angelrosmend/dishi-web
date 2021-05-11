@@ -1,6 +1,11 @@
-import { useCallback, useMemo } from "react"
+import { useCallback, useContext, useMemo } from "react"
+import { CartContext } from "../../context/CarritoContext"
 
-export function useQuantity(cartItems, id){
+export function useQuantity(id){
+
+    const {CART_VALUES} = useContext(CartContext)
+    const {cartItems} = CART_VALUES
+    
     const mapCart = useCallback((cartItems)=> cartItems.map(item => item.id).includes(id), [])
     const inCart =  useMemo(()=>  mapCart(cartItems), [cartItems])
 

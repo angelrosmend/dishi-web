@@ -19,7 +19,7 @@ export const twoItemsSettings = {
     dots: true,
     infinite: true,
     speed: 700,
-    slidesToShow: 3,
+    slidesToShow: 2,
     slidesToScroll: 2,
     prevArrow:<PrevArrow/>,
     nextArrow:<NextArrow/>,

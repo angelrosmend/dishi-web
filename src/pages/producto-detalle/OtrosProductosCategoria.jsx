@@ -10,6 +10,7 @@ import Subtitulo from '../home/Subtitulo/Subtitulo'
 import { Link } from 'react-router-dom';
 import { ContextUser } from '../../context/UserContext';
 import '../home/Home.css'
+import SliderDishi from '../../components/slider/SliderDishi';
 
 
 
@@ -86,16 +87,13 @@ function OtrosProductosCategoria( {categoria} ) {
                         </div>
         )
     } 
-     if(productos.length < 3 )return null 
+     if(productos.length < 1 )return null 
     return (
     <div className='margen-sm'>
-    <Subtitulo text='Otros productos de esta categoria'
+       <Subtitulo text='Otros productos de esta categoria'
                        vermas={`/categorias/${id}`}/>  
-   <div  className={`container mb-lg-0 mb-5 sliders ${ productos.length >= 5 ? 'width-5-items' : 'width-3-items'}`}>
-       <div className="container pt-3"
-            data-aos="fade-up" 
-            data-aos-delay="150">
-{            <Slider { ...sliderconfig}>
+
+{           <SliderDishi items={productos}>
             {productos && productos.map(item => {
 
                 const { Id, Imagen, NombreProducto,NombreSucursal, Precio, ValorParaCajaDelivery, Stock} = item;
@@ -115,9 +113,8 @@ function OtrosProductosCategoria( {categoria} ) {
                                            quantity={itemQuantity}
                                            />
             })}
-            </Slider>}
-          </div>
-        </div> 
+          </SliderDishi>}
+      
        </div>
     )
 }

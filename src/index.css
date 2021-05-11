@@ -16,13 +16,15 @@ body{
   --rojoPantoneBimbo:  #e4002b;
   --azulPantoneBimbo:  #0032a0;
   --azulCeleste: #82b4ef;
+  --whiteOpacity: #ffffffb8;
   --mainBeige: #DBDCDB;
-  --azulMedio: #056ae0;
+  --azulDishi: #056ae0;
   --azulLightDishi: #0083C4;
   --azulMediumDishi:#0060a0;
   --azulDarkDishi: #00416fe3;
-  --grdAzulDishi: linear-gradient(0deg,  #00416fe3 5% , #0060a0ef 20%,#0083c4 50% , #0b9ce4 95%);
+  --grdAzulDishi: linear-gradient(0deg,  hsla(212, 100%, 22%, 0.836) 5% , hsla(212, 88%, 34%, 0.937) 20%,hsl(212, 96%, 45%) 50% , hsl(222, 100%, 63%)   95%);
   --colorNavLink: #FFF;
+  --white: #FFF;
 }
 .app{
   width: 100%;
@@ -112,37 +114,37 @@ height: 135px;
 }
 
 .tr{
-  border: 1px solid red!important;
+  border: 2px solid red!important;
 }
 .tb{
-  border: 1px solid blue!important;
+  border: 2px solid blue!important;
 }
 .tv{
-  border: 1px solid rgb(110, 2, 110)!important;
+  border: 2px solid rgb(110, 2, 110)!important;
 }
 .tg{
-  border: 1px solid green!important;
+  border: 2px solid green!important;
 }
 .ty{
-  border: 1px solid yellow!important;
+  border: 2px solid yellow!important;
 }
 .tw{
-  border: 1px solid white!important;
+  border: 2px solid white!important;
 }.td{
-  border: 1px solid black!important;
+  border: 2px solid black!important;
 }
 .to{
-  border: 1px solid orangered!important;
+  border: 2px solid orangered!important;
 }.tk{
-  border: 1px solid rgb(80, 13, 22)!important;
+  border: 2px solid rgb(80, 13, 22)!important;
 }
 .tp{
-  border: 1px solid rgb(187, 112, 124)!important;
+  border: 2px solid rgb(187, 112, 124)!important;
 }
 .a-prev{
   position: absolute;
   top: 50%;
-  left: -5%;
+  left: -2.5%;
   color: rgba(73, 70, 70, 0.877);
   font-size: 30px;
   cursor: pointer;
@@ -150,7 +152,7 @@ height: 135px;
 .a-next{
   position: absolute;
   top: 50%;
-  right: -5%;
+  right: -2.5%;
   color: rgba(73, 70, 70, 0.877);
   font-size: 30px;
   cursor: pointer;
@@ -193,7 +195,7 @@ height: 135px;
 }
 
 .cart-active{
-  color:var(--rojoPantoneBimbo)!important;
+  color:var(--azulDishi)!important;
 }
 .wpt{
   display: flex;

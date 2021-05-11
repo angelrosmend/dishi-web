@@ -167,14 +167,14 @@ const {costo} = envio
 const [subtotalMasCostoEnvio, setSubtotalMasCostoEnvio] =  useSubtotalMasEnvio(subtotal, costo)
 
 
-
-
 const [descuentoPesos, setDescuentoPesos] = useState(0)
 
 
 const [porcentaje, setPorcentaje] = useDescuentoPorcentaje(subtotalMasCostoEnvio, descuentoPesos,setDescuentoPesos)
 
+/*ITEMS CONFIG REQUEST*/
 
+const itemsConfig = useItemsConfig(cartItems)
 
 /*TOTAL FINAL*/
 
@@ -200,9 +200,40 @@ const [[validMontoEstado, setValidMontoEstado],[validMontoTipo, setValidMontoTip
 
 const [compraGratis, setCompraGratis] = useCompraGratis(cartItems, totalFinal, validMontoEstado)
 
-/*ITEMS CONFIG REQUEST*/
 
-const itemsConfig = useItemsConfig(cartItems)
+
+
+
+               //////////////////CARRITO VALUES//////////////////////////
+
+const CART_VALUES ={
+  cartItems, setCartItems,
+  subtotal, numeroDeItems,
+  envio, costo,
+  subtotalMasCostoEnvio,
+  setSubtotalMasCostoEnvio,
+  descuentoPesos, setDescuentoPesos,
+  porcentaje, setPorcentaje,
+  totalFinal, itemsConfig,
+  itemToRemove, setItemRemove
+}
+
+const CART_METHODS = {
+  addToCart, increase,
+  decrease , removeFromCart,
+  decreaseEnCarrito, changeQuantity,
+  total
+}
+const CUPON_VALUES = {
+  cupon, setCupon,
+  checked, setChecked,
+  cuponValido, setCuponValido,
+  tipoCupon, setTipoCupon,
+  validMontoEstado, setValidMontoEstado,
+  validMontoTipo, setValidMontoTipo,
+  compraGratis, setCompraGratis,
+  cuponRequest
+}
 
 
  /************************************************EDIT CART ITEMS ENDS *************************************************/
@@ -285,6 +316,7 @@ const showModalFailStock = message => setModalFailStock({show: true, message: me
 
 const [tipoDescuento, setTipoDescuento] = useState(null)
 
+const MODALS_VALUES = {}
 
     return <CartContext.Provider value={{cartItems,
                                          addToCart, 
@@ -353,7 +385,9 @@ const [tipoDescuento, setTipoDescuento] = useState(null)
                                            logoutCarrito,
                                            modalRemover, setModalRemover,
                                            notifyRemove,  removeFromCartEnCarrito,
-                                           itemToRemove, setItemRemove
+                                           itemToRemove, setItemRemove,
+                                           CART_VALUES, CART_METHODS,
+                                           CUPON_VALUES
                                           }}>
              {props.children}
           </CartContext.Provider>
