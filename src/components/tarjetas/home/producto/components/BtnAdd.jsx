@@ -8,7 +8,7 @@ function BtnAdd(props) {
     const {stock, inCart, showBtnQty, hideBtnQty, prodInfo} = props
     const {CART_METHODS} = useContext(CartContext)
     const {removeFromCart, addToCart} = CART_METHODS
-
+    console.log(inCart)
 
     const [showTooltip, setShowShowTooltip] = useState(false);
     const [showTooltipAdd, setShowShowTooltipAdd] = useState(false);
@@ -19,7 +19,7 @@ function BtnAdd(props) {
     const targetRemove  = useRef(null)
     return (
         <Fragment>
-             {stock &&
+             {//stock &&
               inCart ? 
               <Fragment>
                 <i onClick={()=> removeFromCart({...prodInfo})}

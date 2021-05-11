@@ -15,7 +15,8 @@ import SubtotalItems from './SubtotalItems'
 import Total from './Total'
 
 function Carrito() {
-    const {cartItems, numeroDeItems, descuentoPesos, validMontoEstado, validMontoTipo, checked, cuponValido} = useContext(CartContext)
+    const {cartItems, numeroDeItems, descuentoPesos, validMontoEstado, validMontoTipo, checked, cuponValido, CART_VALUES} = useContext(CartContext)
+    const {setCartItems} = CART_VALUES
     const {user, logged} = useContext(ContextUser)
     const [montoMinimo, setMontoMinimo] = useMontoMinimo(user,logged, validMontoEstado,descuentoPesos)
 
@@ -58,6 +59,7 @@ function Carrito() {
                   <CarritoLista/>
                   {logged && <Cupon setMontoMinimo={setMontoMinimo}/>}
                   <Total descuento={descuentoPesos}/>
+                  <button onClick={()=> setCartItems([])}>Reset</button>
                  {validMonto ? null : <p className='text-primary'>*Monto minimo de compra ${montoMinimo}</p>}
                 </Fragment>
                 : 

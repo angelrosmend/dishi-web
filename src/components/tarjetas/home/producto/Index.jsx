@@ -4,7 +4,7 @@ import { CartContext } from '../../../../context/CarritoContext'
 import { useQuantity } from '../../../../hooks/productos/useQuantity'
 import "./cardproducto.css"
 import BtnAdd from './components/BtnAdd'
-import BtnLike from './components/BtnLike'
+import BtnFav from './components/BtnFav'
 import BtnQuantity from './components/BtnQuantity'
 import CardProductDescription from './components/CardProductDescription'
 import ProductImg from './components/ProductImg'
@@ -35,7 +35,8 @@ function CardProduct(props) {
                         showBtnQty={showBtnQty}
                         hideBtnQty={hideBtnQty}
                         prodInfo={props}/>}
-                <BtnLike/>
+                <BtnFav id={id}
+                        prodInfo={props}/>
             </span>}
             <ProductImg imagen={imagen} 
                         linkId={id}
