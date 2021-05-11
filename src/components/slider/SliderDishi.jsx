@@ -46,7 +46,7 @@ console.log(configSliderSettings(items), widthClass(items))
     
     if(items.length < 2 || !items)return null
     return (
-     <div className={`container-fluid p-sm-2 pt-3 p-md-5 ${background}  ${widthClass(items)}`}>
+     <div className={`container-fluid ${background}  ${widthClass(items)}`}>
         <div className='mx-auto' data-aos="fade-up" data-aos-delay="170">
           <Slider { ...configSliderSettings(items)}>
               {props.children}

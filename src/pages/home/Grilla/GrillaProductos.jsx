@@ -1,6 +1,7 @@
 import React, { useContext, useState } from 'react'
 import FiltrosAlt from '../../../components/filtros/FiltroPromo';
 import CustomSpinner from '../../../components/spinner/Spinner';
+import CardProduct from '../../../components/tarjetas/home/producto/Index';
 import { CartContext } from '../../../context/CarritoContext';
 import { ContextUser } from '../../../context/UserContext';
 import { useGrillaHome } from '../../../hooks/listados/useGrillaHome';
@@ -32,18 +33,28 @@ function GrillaProductos() {
                 {productos && productos.slice(0, visible).map(item => {
                     const { Id, Imagen, NombreProducto,NombreSucursal, Precio, ValorParaCajaDelivery, Stock} = item;
                     if(loading) return <CustomSpinner/>
-                    return <CardGrilla key={Id}
+                    return <CardProduct key={Id}
+                                        id={Id}
+                                        imagen={Imagen}
+                                        nombre={NombreProducto}
+                                        sucursal={NombreSucursal}
+                                        precio={Precio}
+                                        ValorParaCajaDelivery={ValorParaCajaDelivery}
+                                        Tipo={0}
+                                        Stock={Stock}/>
+                    
+                    
+                                    /*<CardGrilla key={Id}
                                                id={Id}
                                                imagen={Imagen}
                                                nombre={NombreProducto}
                                                sucursal={NombreSucursal}
                                                precio={Precio}
-                                
                                                ValorParaCajaDelivery={ValorParaCajaDelivery}
                                                Tipo={0}
                                                Stock={Stock}
-                                               
-                                               />
+                                               /> */
+                                
                 })}
 
             </div>
