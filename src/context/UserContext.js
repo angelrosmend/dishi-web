@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { useFavItems } from '../hooks/favoritos/useFavItems';
 import { useMontoMinimo } from '../hooks/pago/useMontoMinimo';
 import { useLog } from '../hooks/usuario/useLog';
 import { useNotificaciones } from '../hooks/usuario/useNotificaciones';
@@ -36,7 +37,7 @@ export const ContextUserProvider = (props) => {
     const [modalUpdateSuccess, setModalUpdateSuccess] = useState(false)
     const [modalUpdateFail, setModalUpdateFail] = useState(false)
     const [updateErrorMessage, setUpdateErrorMessage] = useState(defaultErrorMessage)
-   useMontoMinimo()
+    useMontoMinimo()
 
    const [{notificaciones, cantidad}, countNotificaciones]  = useNotificaciones(user, -1)
    const [idCompra, setIdCompra] = useState('')
@@ -44,6 +45,20 @@ export const ContextUserProvider = (props) => {
 
    const [modalPWDSuccess, setModalPWDSuccess]  = useState({show: false, message: ''})
    const showModalPWDSuccess = message => setModalPWDSuccess({show: true, message: message})
+
+
+   /////////////////////ESTADO FAVORITOS/////////////////////////
+
+
+   const [favItems, setFavItems,  addToFav, removeFromFav] = useFavItems()
+
+   const FAVORITOS_VALUES = {
+    favItems, setFavItems,  
+    addToFav, removeFromFav
+   }
+
+
+
 
   return (
     <ContextUser.Provider value={{
@@ -69,7 +84,9 @@ export const ContextUserProvider = (props) => {
        notificaciones, cantidad, countNotificaciones,
        idCompra, setIdCompra,
        modalPWDSuccess, setModalPWDSuccess,
-       showModalPWDSuccess, MobileUser}}>
+       showModalPWDSuccess, MobileUser,
+       FAVORITOS_VALUES
+       }}>
       {props.children}
     </ContextUser.Provider>
   );
