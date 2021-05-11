@@ -19,7 +19,7 @@ function BtnAdd(props) {
     const targetRemove  = useRef(null)
     return (
         <Fragment>
-             {//stock &&
+             {stock &&
               inCart ? 
               <Fragment>
                 <i onClick={()=> removeFromCart({...prodInfo})}
