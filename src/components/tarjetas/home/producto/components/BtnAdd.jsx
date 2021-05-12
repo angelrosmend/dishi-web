@@ -20,7 +20,7 @@ function BtnAdd(props) {
     if(destacado) return null
     return (
         <Fragment>
-             {//stock &&
+             {
               inCart ? 
               <Fragment>
                 <i onClick={()=> removeFromCart({...prodInfo})}

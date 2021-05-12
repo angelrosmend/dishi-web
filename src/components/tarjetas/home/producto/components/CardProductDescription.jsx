@@ -6,10 +6,6 @@ import RegularTooltip from '../../../../tooltip/RegularTooltip';
 
 function CardProductDescription(props) {
     const {nombre, precio, sucursal} = props
-    const [tooltipOpen, setTooltipOpen] = useState(false);
-    const toggle = () => setTooltipOpen(!tooltipOpen);
-    const walletRef = useRef(null)
-    const creditRef = useRef(null)
     return (
        <Fragment>
            <div className="description-precio">
