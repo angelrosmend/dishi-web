@@ -1,11 +1,10 @@
 import React, { useContext, useRef, useState } from 'react'
 import { Fragment } from 'react'
 import { CartContext } from '../../../../../context/CarritoContext'
-import { Overlay} from "react-bootstrap"
 import CustomTooltip from '../../../../tooltip/CustomTooltip'
 
 function BtnAdd(props) {
-    const {stock, inCart, showBtnQty, hideBtnQty, prodInfo, tienda, destacado} = props
+    const {stock, inCart, showBtnQty, hideBtnQty, prodInfo,destacado} = props
     const {CART_METHODS} = useContext(CartContext)
     const {removeFromCart, addToCart} = CART_METHODS
     console.log(inCart)
@@ -18,7 +17,7 @@ function BtnAdd(props) {
     const targetAdd = useRef(null);
     const targetRemove  = useRef(null)
     
-    if(tienda || destacado) return null
+    if(destacado) return null
     return (
         <Fragment>
              {//stock &&

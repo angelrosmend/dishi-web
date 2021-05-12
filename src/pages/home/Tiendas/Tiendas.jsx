@@ -14,7 +14,7 @@ function Tiendas({tiendas}) {
 
                 const {Id, NombreFantasia, Direccion, Logo, Rubro} = tienda;
 
-                return <CardProduct key={Id} 
+                return <Tienda key={Id} 
                                nombre={NombreFantasia} 
                                direccion={Direccion}
                                imagen={Logo}

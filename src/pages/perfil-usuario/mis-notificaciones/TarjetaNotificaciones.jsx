@@ -17,7 +17,7 @@ function TarjetaNotificaciones({notificacion}) {
                     }
                 </div>
                 <p className="text-primary m-0"><b>{Titulo}</b></p>
-                <p className="text-secundary">
+                <p className="text-secondary pb-2">
                     {Text}
                 </p>
             </div>
