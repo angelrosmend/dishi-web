@@ -57,10 +57,11 @@
 
 .description-info{
     width: 100%;
-    height: 70px;
+    height: fit-content;
     padding: 0.5rem;
     display: flex;
     flex-direction: column;
+    background: var(--white);
 }
 .description-info h5{
     font-family: 'Inter', sans-serif!important;
@@ -218,3 +219,6 @@
     bottom: 20%;
     left: 25%;
   }
+  .text-tiendas{
+	margin-bottom: 0px;
+}

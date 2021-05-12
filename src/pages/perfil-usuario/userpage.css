@@ -19,7 +19,7 @@
 }
 .user-profile p{
     font-size: 22px;
-    color: var(--azulPantoneBimbo)!important;
+    color: var(--azulDishi)!important;
 }
 
 
@@ -46,7 +46,7 @@
 }
 
 .user-full-name{
-    color: var(--azulPantoneBimbo)!important;
+    color: var(--azulDishi)!important;
     font-weight: bold;
     text-transform: uppercase!important;
 }
@@ -57,7 +57,7 @@
     margin: 0 auto;
 }
 .container-user p{
-    color: var(--azulPantoneBimbo);
+    color: var(--azulDishi);
     font-size: 25px;
     padding: 1.2em;
     text-align: center;
@@ -71,7 +71,7 @@
 .icons-media i{
     color: var(--mainBeige);
     font-size: 4.5em;
-    background: var(--azulPantoneBimbo);
+    background: var(--azulCeleste);
     border: 2px solid white;
     padding: 2.5% 1.25%;
     width: 40%;
@@ -80,7 +80,7 @@
     transition: 0.5s all ease-in-out;
 }
 .icons-media i:hover{
-    background: #ff1837;
+    background: var(--azulDishi);
     transform: scale(1.1);
     box-shadow: 0 3px 30px 3px rgba(0,0,0,0.36);
 }
@@ -254,10 +254,7 @@
     justify-content: center;
 
 }
-.container-projects h3{
-    color: #e41f39;
-    font-weight: bold;
-}
+
 
 .icon-user-page{
     display: flex;
@@ -274,7 +271,7 @@
     flex-direction: row;
 }
 .location-active {
-    background: var(--rojoPantoneBimbo)!important;
+    background: var(--azulDishi)!important;
     color: none; 
 }
 

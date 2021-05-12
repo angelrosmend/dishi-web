@@ -5,14 +5,14 @@ export function useCartItems(){
     const [cartItems, setCartItems] = useState([]) 
  
         useEffect(() => {
-        const data = localStorage.getItem('items-carrito-bimbo')
+        const data = localStorage.getItem('items-carrito-dishi')
         if(data){
             setCartItems(JSON.parse(data))
         }
         },[])
 
         useEffect(() => {
-        localStorage.setItem('items-carrito-bimbo', JSON.stringify(cartItems))
+        localStorage.setItem('items-carrito-dishi', JSON.stringify(cartItems))
         })
        return [cartItems, setCartItems]
 }

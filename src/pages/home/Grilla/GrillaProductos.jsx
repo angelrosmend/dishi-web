@@ -41,7 +41,8 @@ function GrillaProductos() {
                                         precio={Precio}
                                         ValorParaCajaDelivery={ValorParaCajaDelivery}
                                         Tipo={0}
-                                        Stock={Stock}/>
+                                        Stock={Stock}
+                                        />
                     
                     
                                     /*<CardGrilla key={Id}

@@ -14,6 +14,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css'; 
 import GobalContext from './context/GobalContext';
 import 'react-toastify/dist/ReactToastify.css'
+import 'tippy.js/dist/tippy.css';
 AOS.init();
 
 ReactDOM.render(

@@ -2,12 +2,12 @@ import React, { useContext } from 'react'
 import { CartContext } from '../../../../../context/CarritoContext'
 
 function BtnQuantity(props) {
-    const {showBtn, quantity, prodInfo} = props
+    const {showBtn, quantity, prodInfo, tienda} = props
 
     const {CART_METHODS} = useContext(CartContext)
 
     const {decrease, changeQuantity, increase} = CART_METHODS
-
+    if(tienda) return null
     return (
         <div className={showBtn ? `btn-quantity-card-prod-show`:`btn-quantity-card-prod`}>
          

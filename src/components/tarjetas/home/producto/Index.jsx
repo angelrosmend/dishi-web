@@ -4,13 +4,13 @@ import { CartContext } from '../../../../context/CarritoContext'
 import { useQuantity } from '../../../../hooks/productos/useQuantity'
 import "./cardproducto.css"
 import BtnAdd from './components/BtnAdd'
-import BtnLike from './components/BtnLike'
+import BtnFav from './components/BtnFav'
 import BtnQuantity from './components/BtnQuantity'
 import CardProductDescription from './components/CardProductDescription'
 import ProductImg from './components/ProductImg'
 
 function CardProduct(props) {
-   const {id, imagen, nombre, precio, sucursal, Stock, destacado } = props
+   const {id, imagen, nombre, precio, sucursal, Stock, destacado} = props
 
    const [inCart, quantity] = useQuantity(id)
 
@@ -29,25 +29,30 @@ function CardProduct(props) {
             <span className="btns-card-wrapper"
                   onMouseEnter={showBtnQty}
                   >
-                {!destacado &&
                 <BtnAdd stock={Stock}
                         inCart={inCart}
                         showBtnQty={showBtnQty}
                         hideBtnQty={hideBtnQty}
-                        prodInfo={props}/>}
-                <BtnLike/>
+                        prodInfo={props}
+                        destacado={destacado}
+                       />
+                <BtnFav id={id}
+                        prodInfo={props}
+                        />
             </span>}
             <ProductImg imagen={imagen} 
                         linkId={id}
                         showBTNS={showBtnQty}
                         hideBTNS={hideBtnQty}>
                {inCart && <BtnQuantity quantity={quantity}
-                                       prodInfo={props}/>}
+                                       prodInfo={props}
+                                       />}
             </ProductImg>
             <CardProductDescription nombre={nombre}
                                     precio={precio}
                                     sucursal={sucursal}
-                                    stock={Stock}/>
+                                    stock={Stock}
+                                    />
             </div>
        </div>
     )

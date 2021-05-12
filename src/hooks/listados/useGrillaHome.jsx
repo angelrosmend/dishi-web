@@ -6,8 +6,11 @@ import { requestGlobalObject } from '../../helpers/requestObject'
 
 
 export const useGrillaHome = (url, user, MobileUser) => {
+
     const [state, setState] = useState({productos: [], loading: true, error: ''})
+
     const IdSucursalCompra = user ? user.IdSucursalCompra : 835
+    
     const [orderBy, setOrderBy] = useState('PREDETERMINADO')
     const pagination = {PageFrom:0,
                         PageCount:15,
