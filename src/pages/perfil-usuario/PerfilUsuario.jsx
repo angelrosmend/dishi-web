@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import { ContextUser } from '../../context/UserContext'
 import './userpage.css'
-import {avatar} from '../../assets/img/index'
+import {avatar, perro} from '../../assets/img/index'
 import { Route, Switch } from 'react-router'
 import DatosUsuario from './mis-datos/DatosUsuario'
 import MisCompras from './mis-compras/MisCompras'
@@ -15,7 +15,7 @@ function PerfilUsuario(props) {
     return (
         <div className="container-user container-fluid">
          <div className="user-profile my-2">
-            <img src={avatar} alt=''/>
+            <img src={perro} alt=''/>
          </div>
          <UserBanner user={user}/>
 

@@ -60,7 +60,7 @@ function Carrito() {
                   {logged && <Cupon setMontoMinimo={setMontoMinimo}/>}
                   <Total descuento={descuentoPesos}/>
                   <button onClick={()=> setCartItems([])}>Reset</button>
-                 {validMonto ? null : <p className='text-primary'>*Monto minimo de compra ${montoMinimo}</p>}
+                 {validMonto ? null : <p className='text-primary'>*Mogit branchnto minimo de compra ${montoMinimo}</p>}
                 </Fragment>
                 : 
              <h1 className='text-center'>Tu carrito está vacío. Agregale productos!</h1>}

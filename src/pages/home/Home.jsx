@@ -33,7 +33,7 @@ function Home() {
               </div>
               <Tarjetas/>
             <div className="espaciado-wrapper">
-              <Destacados destacados={descuentos} />
+              <Destacados destacados={destacados} />
             </div>
             <div className="espaciado-wrapper">
              <Promociones promociones={promociones}/>
@@ -45,7 +45,7 @@ function Home() {
             <Tiendas tiendas={tiendas}/>
             </div>
              <div className="espaciado-wrapper">
-               <Oportunidades oportunidades={descuentos}/>
+               <Oportunidades oportunidades={oportunidades}/>
               </div>
            <div className="espaciado-wrapper d-flex">
              <GrillaProductos/>

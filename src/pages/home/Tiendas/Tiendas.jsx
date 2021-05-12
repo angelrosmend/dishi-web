@@ -1,5 +1,6 @@
 import React, { useContext } from 'react'
 import SliderDishi from '../../../components/slider/SliderDishi';
+import CardProduct from '../../../components/tarjetas/home/producto/Index';
 import Subtitulo from '../Subtitulo/Subtitulo';
 import Tienda from './Tienda';
 
@@ -13,11 +14,12 @@ function Tiendas({tiendas}) {
 
                 const {Id, NombreFantasia, Direccion, Logo, Rubro} = tienda;
 
-                return <Tienda key={Id} 
+                return <CardProduct key={Id} 
                                nombre={NombreFantasia} 
                                direccion={Direccion}
-                               logo={Logo}
-                               rubro={Rubro}/>
+                               imagen={Logo}
+                               rubro={Rubro}
+                               tienda={true}/>
             })}     
          </SliderDishi> 
     </div> 
