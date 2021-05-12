@@ -22,6 +22,8 @@ export const ContextUserProvider = (props) => {
        Email: userEmail,
        RoldId: userRolId
    }
+
+   const USER_VALUES = { user, logged, MobileUser, logout}
   
    const [modalLogin, setModalLogin] = useState(false)
    
@@ -85,7 +87,8 @@ export const ContextUserProvider = (props) => {
        idCompra, setIdCompra,
        modalPWDSuccess, setModalPWDSuccess,
        showModalPWDSuccess, MobileUser,
-       FAVORITOS_VALUES
+       FAVORITOS_VALUES,
+       USER_VALUES
        }}>
       {props.children}
     </ContextUser.Provider>

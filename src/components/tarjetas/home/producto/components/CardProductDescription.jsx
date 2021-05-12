@@ -1,42 +1,32 @@
-import React from 'react'
+import React, { useRef, useState } from 'react'
 import { Fragment } from 'react'
+import {Tooltip} from "reactstrap"
+import Tippy from '@tippyjs/react';
+import RegularTooltip from '../../../../tooltip/RegularTooltip';
 
 function CardProductDescription(props) {
-    const {nombre, precio, sucursal, tienda, direccion, rubro} = props
+    const {nombre, precio, sucursal} = props
     return (
        <Fragment>
            <div className="description-precio">
-            {tienda ?
-            <p className="titulo2 text-white">{nombre}</p>
-            :
-            <Fragment>
                <div className="precio-container">
                     <p>${precio}</p>
                 </div>
                 <div className="payment-icons">
-                        <i className="fas fa-wallet"></i>
-                        <i className="fas fa-credit-card"></i>
+
+                        <Tippy content="Acepta billetera" placement="bottom">
+                          <i id="icon-wallet" className="fas fa-wallet"/>
+                        </Tippy>
+                        
+                        <Tippy content="Acepta credito" placement="bottom">
+                        <i id="icon-credit" className="fas fa-credit-card"></i>
+                        </Tippy>
                 </div>
-            </Fragment>}
+         
             </div>
-            <div className="description-info bg-white ">
-                {tienda ?
-                <Fragment>
-                <p className="p-0 m-0">{rubro && rubro}</p>
-                <div className="row pt-2">
-                <div className="col-1">
-                   {direccion && <i className="fas fa-map-marker marcador"></i>}
-                </div>
-                <div className="col-10 text-marcador">
-                     <p>{direccion && direccion}</p>
-                </div>
-            </div>
-            </Fragment>
-                :
-                <Fragment>
+            <div className="description-info">
                  <h5><b>{sucursal}</b></h5>
-                  <p className="titulo2">{nombre}</p>
-                </Fragment>}
+                  <p>{nombre}</p>
             </div>
        </Fragment>
     )
