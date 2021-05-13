@@ -38,6 +38,7 @@ function CardProduct(props) {
                        />
                 <BtnFav id={id}
                         prodInfo={props}
+                        
                         />
             </span>}
             <ProductImg imagen={imagen} 
@@ -46,6 +47,7 @@ function CardProduct(props) {
                         hideBTNS={hideBtnQty}>
                {inCart && <BtnQuantity quantity={quantity}
                                        prodInfo={props}
+                                       showBtn={showBtn}
                                        />}
             </ProductImg>
             <CardProductDescription nombre={nombre}

@@ -8,7 +8,7 @@ import "./SliderDishi.css"
 
 function SliderDishi(props) {
 
-    const {items, background} = props
+    const {items, background, isPromo} = props
 
     const configSliderSettings = (items) => {
          switch (items.length) {
@@ -42,13 +42,12 @@ function SliderDishi(props) {
     }
 }
 
-console.log(configSliderSettings(items), widthClass(items))
-    
+    const itemsSetting = isPromo ? twoItemsSettings : configSliderSettings(items)
     if(items.length < 2 || !items)return null
     return (
-     <div className={`container-fluid ${background}  ${widthClass(items)}`}>
+     <div className={`container-fluid pt-5 ${background}  ${isPromo ? "width-5-items" : widthClass(items)}`}>
         <div className='mx-auto' data-aos="fade-up" data-aos-delay="170">
-          <Slider { ...configSliderSettings(items)}>
+          <Slider {...itemsSetting}>
               {props.children}
           </Slider>
         </div>

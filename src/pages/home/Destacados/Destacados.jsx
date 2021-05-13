@@ -13,7 +13,7 @@ function Destacados({destacados}) {
    if(!destacados || destacados.length < 2) return null
    return (
   <div className="espaciado espaciado-wrapper">
-    <Subtitulo text='Destacados'
+    <Subtitulo text='Super Ofertas'
                vermas='/destacados'/>
         <SliderDishi items={destacados} background="bg-white">
                {destacados && destacados.map(item => {
