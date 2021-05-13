@@ -4,7 +4,7 @@ import { CartContext } from '../../../../../context/CarritoContext'
 import CustomTooltip from '../../../../tooltip/CustomTooltip'
 
 function BtnAdd(props) {
-    const {stock, inCart, showBtnQty, hideBtnQty, prodInfo,destacado} = props
+    const {stock, inCart, showBtnQty, prodInfo,destacado} = props
     const {CART_METHODS} = useContext(CartContext)
     const {removeFromCart, addToCart} = CART_METHODS
     console.log(inCart)
@@ -15,8 +15,9 @@ function BtnAdd(props) {
     const toggleTooltipAdd = () => setShowShowTooltipAdd(!showTooltipAdd)
 
     const targetAdd = useRef(null);
-    const targetRemove  = useRef(null)
-    
+    const targetRemove  = useRef(null);
+    const showQTY = showBtnQty && showBtnQty
+
     if(destacado) return null
     return (
         <Fragment>
@@ -25,7 +26,7 @@ function BtnAdd(props) {
               <Fragment>
                 <i onClick={()=> removeFromCart({...prodInfo})}
                    className="fas fa-cart-plus btn-cart-prod cart-active"
-                   onMouseEnter={()=> {showBtnQty(); toggleTooltip(); }}
+                   onMouseEnter={()=> {showBtnQty && showBtnQty() ; toggleTooltip(); }}
                    onMouseLeave={toggleTooltip}
                    ref={targetRemove}
                    />
@@ -38,8 +39,8 @@ function BtnAdd(props) {
               </Fragment>
                      :
               <Fragment>
-                <i onClick={()=> {addToCart({...prodInfo}); showBtnQty()}}
-                   onMouseEnter={()=> {showBtnQty(); toggleTooltipAdd(); }}
+                <i onClick={()=> {addToCart({...prodInfo}); showBtnQty && showBtnQty()}}
+                   onMouseEnter={()=> {showBtnQty && showBtnQty(); toggleTooltipAdd(); }}
                    onMouseLeave={toggleTooltipAdd}
                    className="fas fa-cart-plus btn-cart-prod"
                    ref={targetAdd}
