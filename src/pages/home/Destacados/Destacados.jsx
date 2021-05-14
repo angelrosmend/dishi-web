@@ -1,11 +1,8 @@
 import React, { useContext } from "react";
 import Slider from "react-slick";
-import CardDestacado from "./CardDestacado";
-import { fiveItemsSettings, fourItemsSettings } from "../../../settings/CarouselSettings";
 import Subtitulo from "../Subtitulo/Subtitulo";
-import { CartContext } from "../../../context/CarritoContext";
 import SliderDishi from "../../../components/slider/SliderDishi";
-import CardProduct from "../../../components/tarjetas/home/producto/Index";
+import CardProduct from "../../../components/tarjetas/home/producto/CardProduct";
 
 
 function Destacados({destacados}) {
@@ -13,7 +10,7 @@ function Destacados({destacados}) {
    if(!destacados || destacados.length < 2) return null
    return (
   <div className="espaciado espaciado-wrapper">
-    <Subtitulo text='Destacados'
+    <Subtitulo text='Super Ofertas'
                vermas='/destacados'/>
         <SliderDishi items={destacados} background="bg-white">
                {destacados && destacados.map(item => {

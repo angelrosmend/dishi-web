@@ -16,6 +16,7 @@ import { ContextUser } from '../../context/UserContext'
 import ModalPWDSuccess from '../../components/modals/password/ModalPWDSuccess'
 import Categorias from './Categorias/Categorias'
 import { useGrillaHome } from '../../hooks/listados/useGrillaHome'
+import PromosHot from './promos-hot/PromosHot'
 
 
 
@@ -39,18 +40,15 @@ function Home() {
             <div className="espaciado-wrapper">
               <Destacados destacados={productos} />
             </div>
-            <div className="espaciado-wrapper">
-             <Promociones promociones={promociones}/>
-            </div>
             <div className="espaciado-wrapper" id='categoriasPage'>
             <Categorias categorias={categorias}/>
            </div>
             <div className="espaciado-wrapper">
             <Tiendas tiendas={tiendas}/>
             </div>
-             <div className="espaciado-wrapper">
-               <Oportunidades oportunidades={productos}/>
-              </div>
+            <div className="espaciado-wrapper">
+               <PromosHot promos={productos}/>
+            </div>
            <div className="espaciado-wrapper d-flex">
              <GrillaProductos/>
             </div>

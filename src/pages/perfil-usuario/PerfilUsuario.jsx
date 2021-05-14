@@ -9,6 +9,7 @@ import Notificaciones from './mis-notificaciones/Notificaciones'
 import FormularioActualizar from './actualizar-datos/FormularioActualizar'
 import UserBanner from './bannner-nav/UserBanner'
 import DetalleCompra from './mis-compras/DetalleCompra'
+import MisFavoritos from './mis-favoritos/MisFavoritos'
 
 function PerfilUsuario(props) {
     const {user} = useContext(ContextUser)
@@ -25,6 +26,7 @@ function PerfilUsuario(props) {
             <Route path='/perfil/:name/compras' exact component={MisCompras} />
             <Route path='/perfil/:name/compras/:id' component={DetalleCompra}/>
             <Route path='/perfil/:name/notificaciones' component={Notificaciones} />
+            <Route path='/perfil/:name/favoritos' component={MisFavoritos} />
             <Route path='/perfil/:name/actualizar-datos' component={FormularioActualizar} />
           </Switch>
       </div>

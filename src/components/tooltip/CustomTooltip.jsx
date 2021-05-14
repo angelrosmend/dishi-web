@@ -1,17 +1,17 @@
 import React from 'react'
 import {Overlay} from "react-bootstrap"
 
-function CustomTooltip({text, target, show, placement, children}) {
+function CustomTooltip({text, target, show, placement, children, reversed}) {
     return (
         <Overlay target={target.current} show={show} placement={placement}>
         {({ placement, arrowProps, show: _show, popper, ...props }) => (
           <div
             {...props}
             style={{
-              backgroundColor: '#82b4ef',
+              backgroundColor: reversed ? "white":'#82b4ef',
               padding: '2px 10px',
               marginRight: "10px",
-              color: 'white',
+              color: reversed ? '#82b4ef':'white',
               fontSize: "0.8rem",
               fontWeight:"bold",
               borderRadius: "20px",

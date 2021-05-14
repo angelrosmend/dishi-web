@@ -9,17 +9,19 @@
 .img-card-g-container{
     display: flex;
     flex-direction: column;
-    width: fit-content;
+    width: fit-content;  
     margin: auto;
     background: var(--white);
     position: relative;
+    
 }
 
 .img-card-g-container img{
     object-fit: fill;
-    width:213px;
+    width: 213px;
     height:172px;
     cursor: pointer;
+    transition: all 0.25 ease-in-out;
 }
 
 /***********DESCRIPCION*************/
@@ -79,33 +81,7 @@
 
 
 /***********BTN CART/LIKE*************/
-.btns-card-wrapper{
- position: absolute;
- top: 2.5%;
- right: 5%;
- z-index: 2;
- display: flex;
- flex-direction: column;
- justify-content: space-around;
- align-items: center;
- cursor: pointer;
-}
 
-.btn-cart-prod, .btn-like-prod{
-  color: var(--azulCeleste);
-  background-color: white;
-  border-radius: 50%;
-  padding: 0.5rem;
-  margin-left: 1vw;
-  font-size: 1rem;
-  z-index: 3;
-  margin-top: 0.5rem;
-}
-
-.btn-cart-prod:hover, .btn-like-prod:hover{
-  font-size: 1.2rem;
-  box-shadow: 0 3px 3px 3px rgba(0,0,0,0.36)
-}
 
 
 /*********** BTN QUANTITY *************/

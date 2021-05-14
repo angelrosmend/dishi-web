@@ -23,7 +23,7 @@ function UserBanner({user}) {
         <div className="icons-media">
              <a href='#mis-datos'
                 onClick={() => handleLink(pathUserPage('datos'))}
-                className='icon-user-page'>
+                className='icon-user-page pl-0'>
                     <i className={`fas fa-user-edit ${pathLocation === pathUserPage('datos') || pathLocation === pathUserPage('actualizar-datos')  ? 'location-active' : ''}`}></i>
                     <p className="unidades"> Mis datos</p>
             </a>
@@ -38,6 +38,12 @@ function UserBanner({user}) {
            className={`icon-user-page`}>
               <i className={`fas fa-bell ${pathLocation === pathUserPage('notificaciones') ? 'location-active' : ''}`} aria-hidden="true"></i>
               <p className="unidades"> Notificaciones</p>
+       </a>
+       <a href='#mis-favoritos'
+           onClick={() => handleLink(pathUserPage('favoritos'))}
+           className={`icon-user-page`}>
+              <i className={`fas fa-heart ${pathLocation === pathUserPage('favoritos') ? 'location-active' : ''}`} aria-hidden="true"></i>
+              <p className="unidades"> Mis favoritos</p>
       </a>
   </div>
   

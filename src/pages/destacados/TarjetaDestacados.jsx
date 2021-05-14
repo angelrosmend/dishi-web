@@ -1,5 +1,6 @@
 import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
+import BtnFav from '../../components/botones/btn-fav/BtnFav'
 import { CartContext } from '../../context/CarritoContext'
 
 function TarjetaDestacados(props) {
@@ -41,10 +42,13 @@ function TarjetaDestacados(props) {
            </div>
        </div>
        <div className="row  no-gutters">
-     <div className="col botones-promos px-3 px-lg-4 py-2 tb">
+     <div className="col botones-promos px-3 px-lg-4 py-2 ">
            <div className="row">
            <div className="col m-auto"><p className="precio-promo-single mb-0">$ {precio}</p></div>
-           <div className="col text-lg-right text-right botones-producto ">
+           <div className="col text-lg-right text-right ">
+               <BtnFav id={id}
+                       prodInfo={props}
+                       reversed={true}/>
            </div>
        </div>                           
     </div>        
