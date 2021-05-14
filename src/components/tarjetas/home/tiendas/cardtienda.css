@@ -1,0 +1,45 @@
+.card-container-tienda{
+   
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1rem;
+}
+.nombre-tienda-card{
+    width: 100%;
+	height:50px;
+	font-size: 25px;
+	padding: 0.5rem;
+	background-color: var( --azulCeleste);
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+}
+.card-container-tienda-wrapper{
+   transition: all 1s linear;
+}
+.card-container-tienda-wrapper:hover{
+  /*   //transform: scale(1.025);*/
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2), 0 15px 12px rgba(0, 0, 0, 0.1); 
+    
+}
+.nombre-tienda-card:hover{
+    background-color: var(--azulDishi);
+}
+.nombre-tienda-card p{
+ padding: 0;
+ text-align: center;
+ font-size: 0.9rem;
+ color: white;
+}
+.direccion-tienda-card{
+    background: var(--white);
+    max-height: 40px;
+    transition: max-height 0.25s ease-out;
+}
+
+.card-container-tienda:hover .direccion-tienda-card{
+    max-height: 118px;
+    transition: max-height 0.35s ease-in-out;
+}
+
