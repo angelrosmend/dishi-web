@@ -5,7 +5,7 @@ import { NextArrow, NextArrowC, NextArrowOtros, PrevArrow, PrevArrowC, PrevArrow
 
 
 export const oneItemSettings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 300,
     slidesToShow: 1,
@@ -16,7 +16,7 @@ export const oneItemSettings = {
 /*CAOUSER 2 ITEMS*/
 
 export const twoItemsSettings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 700,
     slidesToShow: 2,
@@ -53,7 +53,7 @@ export const twoItemsSettings = {
   };
 
   export const fourItemsSettings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 4,
@@ -91,7 +91,7 @@ export const twoItemsSettings = {
 
 
   export const fourItemsSettingsOtros = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 4,
@@ -130,7 +130,7 @@ export const twoItemsSettings = {
   /*CAOUSER 3 ITEMS*/
 
   export const threeItemsSettings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 3,
@@ -169,7 +169,7 @@ export const twoItemsSettings = {
 /*CAOUSER 5 ITEMS*/
 
 export const fiveItemsSettings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 5,

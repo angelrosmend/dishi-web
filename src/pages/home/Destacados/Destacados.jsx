@@ -1,11 +1,8 @@
 import React, { useContext } from "react";
 import Slider from "react-slick";
-import CardDestacado from "./CardDestacado";
-import { fiveItemsSettings, fourItemsSettings } from "../../../settings/CarouselSettings";
 import Subtitulo from "../Subtitulo/Subtitulo";
-import { CartContext } from "../../../context/CarritoContext";
 import SliderDishi from "../../../components/slider/SliderDishi";
-import CardProduct from "../../../components/tarjetas/home/producto/Index";
+import CardProduct from "../../../components/tarjetas/home/producto/CardProduct";
 
 
 function Destacados({destacados}) {

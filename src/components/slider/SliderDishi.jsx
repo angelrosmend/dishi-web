@@ -46,8 +46,8 @@ function SliderDishi(props) {
     if(items.length < 2 || !items)return null
     return (
      <div className={`container-fluid pt-5 ${background}  ${isPromo ? "width-5-items" : widthClass(items)}`}>
-        <div className='mx-auto' data-aos="fade-up" data-aos-delay="170">
-          <Slider {...itemsSetting}>
+        <div className='mx-auto ' data-aos="fade-up" data-aos-delay="170">
+          <Slider className="mx-wd" {...itemsSetting}>
               {props.children}
           </Slider>
         </div>
