@@ -5,8 +5,7 @@ import { urlCategorias } from '../../settings/requestSettings'
 
 function NombreCategoriaProducto({categoria}) {
    
-    const {Id} = categoria
-    const {categorias} = useFetchCategorias(urlCategorias, Id)
+    const {categorias} = useFetchCategorias(urlCategorias, categoria)
     const {Nombre, Imagen} = categorias
     const history = useHistory()
     return (

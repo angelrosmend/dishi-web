@@ -277,6 +277,10 @@ height: 135px;
 .margen-sm{
   padding: 12vh 1vw;
 }
+.slider-otros-height{
+  min-height: 350px;
+  position: relative;
+}
 .prod-detalle-img{
   width: 100%!important;
   height: 400px!important;
