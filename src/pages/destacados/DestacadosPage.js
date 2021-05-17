@@ -9,7 +9,6 @@ import { useGrillaHome } from '../../hooks/listados/useGrillaHome'
 import { useDestacados } from '../../hooks/useDestacados'
 import { urlHome, urlProductos } from '../../settings/requestSettings'
 
-import TarjetaDestacados from './TarjetaDestacados'
 
 function DestacadosPage() {
     const {cartItems} = useContext(CartContext)
@@ -27,16 +26,16 @@ function DestacadosPage() {
 
             { productos && productos.map(item => {
                 const { Id, Imagen, NombreProducto,Sucursal, Precio, ValorParaCajaDelivery, Stock} = item;
-             return(  <CardProductList key={Id}
-                                        id={Id}
-                                        imagen={Imagen}
-                                        nombre={NombreProducto}
-                                        sucursal={Sucursal.NombreFantasia}
-                                        precio={Precio}
-                                        Tipo={0}
-                                        ValorParaCajaDelivery={ValorParaCajaDelivery}
-                                        Stock={Stock}/>
-                    )})}
+                return(  <CardProductList key={Id}
+                                          id={Id}
+                                          imagen={Imagen}
+                                          nombre={NombreProducto}
+                                          sucursal={Sucursal.NombreFantasia}
+                                          precio={Precio}
+                                          Tipo={0}
+                                          ValorParaCajaDelivery={ValorParaCajaDelivery}
+                                          Stock={Stock}/>
+                                           )})}
               </ListLayout>
     )
 }

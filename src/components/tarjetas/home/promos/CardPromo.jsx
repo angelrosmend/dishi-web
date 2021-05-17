@@ -32,7 +32,7 @@ function CardPromo(props) {
             <div className="img-prod-container"
                 onMouseEnter={showBtnQty}
                 onMouseLeave={hideBtnQty}>
-                        <Link to={`/promociones/${id}`}>
+                        <Link to={`/detalle/${id}`}>
                             <img className="imagenes-2" src={imagen} alt=""/>
                         </Link>
             <BtnQtyPromo inCart={inCart}
