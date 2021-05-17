@@ -19,9 +19,7 @@
    transition: all 1s linear;
 }
 .card-container-tienda-wrapper:hover{
-  /*   //transform: scale(1.025);*/
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2), 0 15px 12px rgba(0, 0, 0, 0.1); 
-    
 }
 .nombre-tienda-card:hover{
     background-color: var(--azulDishi);

@@ -45,7 +45,7 @@ function BtnFav({id, prodInfo, tienda, reversed}) {
              <CustomTooltip target={refAdd}
                             show={showTooltip}
                             placement="left"
-                            reversed={reversed}>
+                            /* reversed={reversed} */>
                 Agregar a <br /> mis favoritos
             </CustomTooltip>
            

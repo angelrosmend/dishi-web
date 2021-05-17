@@ -38,7 +38,6 @@ function CardProduct(props) {
                        />
                 <BtnFav id={id}
                         prodInfo={props}
-                        
                         />
             </span>}
             <ProductImg imagen={imagen} 

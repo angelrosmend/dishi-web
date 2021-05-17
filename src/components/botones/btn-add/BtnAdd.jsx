@@ -5,15 +5,14 @@ import CustomTooltip from '../../tooltip/CustomTooltip'
 import "./btncards.css"
 
 function BtnAdd(props) {
-    const {stock, inCart, showBtnQty, prodInfo,destacado} = props
+    const {stock, inCart, showBtnQty, prodInfo,destacado, reversed} = props
     const {CART_METHODS} = useContext(CartContext)
     const {removeFromCart, addToCart} = CART_METHODS
     console.log(inCart)
 
     const [showTooltip, setShowShowTooltip] = useState(false);
-    const [showTooltipAdd, setShowShowTooltipAdd] = useState(false);
     const toggleTooltip = () => setShowShowTooltip(!showTooltip)
-    const toggleTooltipAdd = () => setShowShowTooltipAdd(!showTooltipAdd)
+
 
     const targetAdd = useRef(null);
     const targetRemove  = useRef(null);
@@ -26,7 +25,7 @@ function BtnAdd(props) {
               inCart ? 
               <Fragment>
                 <i onClick={()=> removeFromCart({...prodInfo})}
-                   className="fas fa-cart-plus btn-cart-prod btn-active"
+                   className={`fas fa-cart-plus ${reversed ? "btn-cart-prod-reversed btn-active-reversed" : "btn-cart-prod btn-active"}`}
                    onMouseEnter={()=> {showBtnQty && showBtnQty() ; toggleTooltip(); }}
                    onMouseLeave={toggleTooltip}
                    ref={targetRemove}
@@ -41,13 +40,13 @@ function BtnAdd(props) {
                      :
               <Fragment>
                 <i onClick={()=> {addToCart({...prodInfo}); showBtnQty && showBtnQty()}}
-                   onMouseEnter={()=> {showBtnQty && showBtnQty(); toggleTooltipAdd(); }}
-                   onMouseLeave={toggleTooltipAdd}
-                   className="fas fa-cart-plus btn-cart-prod"
+                   onMouseEnter={()=> {showBtnQty && showBtnQty(); toggleTooltip(); }}
+                   onMouseLeave={toggleTooltip}
+                   className={`fas fa-cart-plus  ${reversed ? "btn-cart-prod-reversed":"btn-cart-prod"}`}
                    ref={targetAdd}
                    />
                 <CustomTooltip target={targetAdd}
-                               show={showTooltipAdd}
+                               show={showTooltip}
                                placement="left">
                       Agregar al<br /> carrito
                 </CustomTooltip>
