@@ -10,4 +10,9 @@
 }
 .width-5-items{
     width: 95vw!important;
+   
+}
+
+.mx-wd{
+    max-height: 300px!important;
 }

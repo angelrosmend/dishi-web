@@ -1,6 +1,7 @@
 import React, { useContext } from 'react'
 import { Spinner } from 'reactstrap'
 import Filtros from '../../components/filtros/Filtros'
+import CardProductList from '../../components/tarjetas/listados/Producto/CardProductList'
 import { CartContext } from '../../context/CarritoContext'
 import { ContextUser } from '../../context/UserContext'
 import { useFetchCategorias } from '../../hooks/useFetchCategorias'
@@ -47,7 +48,7 @@ function CategoriasPage({match}) {
                 const itemQuantity = cartItems.find(item => item.id === Id)
                 const sucursal = Sucursal && Sucursal.NombreFantasia
                 return (
-                <TarjetaProductoCategoria key={Id}
+                <CardProductList key={Id}
                                           id={Id}
                                         imagen={Imagen}
                                         nombre={NombreProducto}

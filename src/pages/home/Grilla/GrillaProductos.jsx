@@ -1,13 +1,12 @@
 import React, { useContext, useState } from 'react'
 import FiltrosAlt from '../../../components/filtros/FiltroPromo';
 import CustomSpinner from '../../../components/spinner/Spinner';
-import CardProduct from '../../../components/tarjetas/home/producto/Index';
+import CardProduct from '../../../components/tarjetas/home/producto/CardProduct';
 import { CartContext } from '../../../context/CarritoContext';
 import { ContextUser } from '../../../context/UserContext';
 import { useGrillaHome } from '../../../hooks/listados/useGrillaHome';
 import { urlProductos } from '../../../settings/requestSettings';
 import Subtitulo from '../Subtitulo/Subtitulo';
-import CardGrilla from './CardGrilla';
 
 function GrillaProductos() {
 
@@ -41,19 +40,11 @@ function GrillaProductos() {
                                         precio={Precio}
                                         ValorParaCajaDelivery={ValorParaCajaDelivery}
                                         Tipo={0}
-                                        Stock={Stock}/>
+                                        Stock={Stock}
+                                        />
                     
                     
-                                    /*<CardGrilla key={Id}
-                                               id={Id}
-                                               imagen={Imagen}
-                                               nombre={NombreProducto}
-                                               sucursal={NombreSucursal}
-                                               precio={Precio}
-                                               ValorParaCajaDelivery={ValorParaCajaDelivery}
-                                               Tipo={0}
-                                               Stock={Stock}
-                                               /> */
+                                    
                                 
                 })}
 

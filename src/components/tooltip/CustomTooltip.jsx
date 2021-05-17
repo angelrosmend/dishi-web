@@ -1,7 +1,7 @@
 import React from 'react'
 import {Overlay} from "react-bootstrap"
 
-function CustomTooltip({text, target, show, placement, children}) {
+function CustomTooltip({text, target, show, placement, children, reversed}) {
     return (
         <Overlay target={target.current} show={show} placement={placement}>
         {({ placement, arrowProps, show: _show, popper, ...props }) => (

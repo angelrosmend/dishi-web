@@ -1,30 +1,32 @@
 import React, { useContext, useRef, useState } from 'react'
 import { Fragment } from 'react'
-import { CartContext } from '../../../../../context/CarritoContext'
-import { Overlay} from "react-bootstrap"
-import CustomTooltip from '../../../../tooltip/CustomTooltip'
+import { CartContext } from '../../../context/CarritoContext'
+import CustomTooltip from '../../tooltip/CustomTooltip'
+import "./btncards.css"
 
 function BtnAdd(props) {
-    const {stock, inCart, showBtnQty, hideBtnQty, prodInfo} = props
+    const {stock, inCart, showBtnQty, prodInfo,destacado, reversed} = props
     const {CART_METHODS} = useContext(CartContext)
     const {removeFromCart, addToCart} = CART_METHODS
-
+    console.log(inCart)
 
     const [showTooltip, setShowShowTooltip] = useState(false);
-    const [showTooltipAdd, setShowShowTooltipAdd] = useState(false);
     const toggleTooltip = () => setShowShowTooltip(!showTooltip)
-    const toggleTooltipAdd = () => setShowShowTooltipAdd(!showTooltipAdd)
+
 
     const targetAdd = useRef(null);
-    const targetRemove  = useRef(null)
+    const targetRemove  = useRef(null);
+    const showQTY = showBtnQty && showBtnQty
+
+    if(destacado) return null
     return (
         <Fragment>
-             {//stock &&
+             {
               inCart ? 
               <Fragment>
                 <i onClick={()=> removeFromCart({...prodInfo})}
-                   className="fas fa-cart-plus btn-cart-prod cart-active"
-                   onMouseEnter={()=> {showBtnQty(); toggleTooltip(); }}
+                   className={`fas fa-cart-plus ${reversed ? "btn-cart-prod-reversed btn-active-reversed" : "btn-cart-prod btn-active"}`}
+                   onMouseEnter={()=> {showBtnQty && showBtnQty() ; toggleTooltip(); }}
                    onMouseLeave={toggleTooltip}
                    ref={targetRemove}
                    />
@@ -37,14 +39,14 @@ function BtnAdd(props) {
               </Fragment>
                      :
               <Fragment>
-                <i onClick={()=> {addToCart({...prodInfo}); showBtnQty()}}
-                   onMouseEnter={()=> {showBtnQty(); toggleTooltipAdd(); }}
-                   onMouseLeave={toggleTooltipAdd}
-                   className="fas fa-cart-plus btn-cart-prod"
+                <i onClick={()=> {addToCart({...prodInfo}); showBtnQty && showBtnQty()}}
+                   onMouseEnter={()=> {showBtnQty && showBtnQty(); toggleTooltip(); }}
+                   onMouseLeave={toggleTooltip}
+                   className={`fas fa-cart-plus  ${reversed ? "btn-cart-prod-reversed":"btn-cart-prod"}`}
                    ref={targetAdd}
                    />
                 <CustomTooltip target={targetAdd}
-                               show={showTooltipAdd}
+                               show={showTooltip}
                                placement="left">
                       Agregar al<br /> carrito
                 </CustomTooltip>

@@ -12,17 +12,17 @@ function ProductoDescripcion(props) {
                     <p className="texto-descripcion">{descripcion}</p>
                 </div>
             </div>
-{/*             <div className="col col-lg-4 p-0  ">
+            <div className="col col-lg-4 p-0  ">
                 <div className=" bg-white ml-lg-3 p-4 h-100">
                     <p className="text-left mb-3 titulo-descripcion">Tienda</p>
                     <div className="card-tienda">
                         <img className="imagenes" src={logoTienda} alt=""/>
                         <div className="card-tienda-titulo p-2">{sucursal}</div>
-                        <div className="p-2"><p className="text-tiendas">Descripcion Tienda</p></div>
+                         <div className="p-2"><p className="text-tiendas">Descripcion Tienda</p></div> 
                     
                     </div>
                 </div>
-            </div> */}
+            </div> 
         </div>
     </div>
     )

@@ -38,8 +38,6 @@ export const useUpdateCarrito = (url, user, cartItems, logged, setCartItems) => 
         
         if(cartItems.length > 0 && user !== undefined){
 
-            debugger;
-
             console.log('hook update',cartItems.length, logged)
         axios.post(url, {
             Items: itemsConfig,

@@ -9,7 +9,7 @@ function ProductImg(props) {
         <div className="img-card-g-container img-fuild"
              onMouseEnter={showBTNS}
              onMouseLeave={hideBTNS}>
-            <Link to={`/detalle${linkId}`}>
+            <Link to={`/detalle/${linkId}`}>
                  <img src={imagen} alt=""/>
             </Link>
             {props.children}
