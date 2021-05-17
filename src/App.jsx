@@ -11,10 +11,11 @@ import CheckoutPago from './pages/carrito/checkout-pago/CheckoutPago';
 import CategoriasPage from './pages/categorias/CategoriasPage';
 import DestacadosPage from './pages/destacados/DestacadosPage';
 import Home from './pages/home/Home';
+import PromosHot from './pages/home/promos-hot/PromosHot';
 import PerfilUsuario from './pages/perfil-usuario/PerfilUsuario';
 import ProductoDetalle from './pages/producto-detalle/ProductoDetalle';
 import PromocionesDetalle from './pages/promociones/PromocionesDetalle';
-import PromocionesPage from './pages/promociones/PromocionesPage';
+import PromosHotPage from './pages/promos-hot/PromosHotPage';
 import RecetasDetalle from './pages/recetas/RecetasDetalle';
 import RecetasLista from './pages/recetas/RecetasLista';
 import RegistroCasa from './pages/registro/RegistroCasa';
@@ -33,7 +34,7 @@ function App() {
           <Switch>
           <Route path='/' exact component={Home}/>
           <Route path="/detalle/:id" component={ProductoDetalle}/>
-          <Route path='/promociones' exact component={PromocionesPage}/>
+          <Route path='/promociones' exact component={PromosHotPage}/>
           <Route path='/promociones/:id' component={PromocionesDetalle}/>
           <Route path="/destacados" component={DestacadosPage}/>
           <Route path="/categorias/:id"  component={CategoriasPage}/>

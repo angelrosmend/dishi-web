@@ -8,10 +8,10 @@ function CustomTooltip({text, target, show, placement, children, reversed}) {
           <div
             {...props}
             style={{
-              backgroundColor: reversed ? "white":'#82b4ef',
+              backgroundColor: '#82b4ef',
               padding: '2px 10px',
               marginRight: "10px",
-              color: reversed ? '#82b4ef':'white',
+              color: 'white',
               fontSize: "0.8rem",
               fontWeight:"bold",
               borderRadius: "20px",
