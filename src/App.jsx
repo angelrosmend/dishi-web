@@ -38,6 +38,8 @@ function App() {
           <Route path='/promociones/:id' component={PromocionesDetalle}/>
           <Route path="/destacados" component={DestacadosPage}/>
           <Route path="/categorias/:id"  component={CategoriasPage}/>
+          <Route path="/tiendas" />
+          <Route path="/tiendas/:id"/>
           <Route path="/recetas" exact component={RecetasLista}/>
           <Route path="/recetas/:id" component={RecetasDetalle}/>
           <Route path="/busqueda" component={Busqueda}/>
