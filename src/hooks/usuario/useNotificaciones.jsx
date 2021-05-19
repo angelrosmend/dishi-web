@@ -3,7 +3,7 @@ import axios from 'axios'
 import { urlNotificaciones, urlNotificacionesSinLeer } from '../../settings/requestSettings'
 
 
-export const useNotificaciones = (user) => {
+export const useNotificaciones = (user, logged) => {
     const [state, setState] = useState({notificaciones: [], cantidad: 0, loading: true, error: ''})
     const [notificacionesVisibles, setNotificacionesVisibles] = useState(3)
     const countNotificaciones = [notificacionesVisibles, setNotificacionesVisibles]
@@ -47,11 +47,11 @@ export const useNotificaciones = (user) => {
                 LastId:0}
    
 
-      const requestNotificaciones = axios.post(urlNotificaciones, requestConfig)
-      const requestUnreadNotificaciones = axios.post(urlNotificacionesSinLeer, requestConfig)
+      let requestNotificaciones = axios.post(urlNotificaciones, requestConfig)
+      let requestUnreadNotificaciones =  axios.post(urlNotificacionesSinLeer, requestConfig)
 
     useEffect(() => {
-        if(user){
+        if(logged){
         axios.all([requestNotificaciones, requestUnreadNotificaciones])
              .then(axios.spread((...response) => {
                  const notificacion = response[0].data

@@ -8,7 +8,7 @@ h3.titulo-productos{
     font-size:2rem;
 }
 .tienda-header {
-    background-image: url("../img/header-tienda.jpg"); 
+    background-color: blue/* url("../img/header-tienda.jpg") */; 
     height: 250px; 
     background-position:top;
     background-repeat: no-repeat; 
@@ -274,14 +274,14 @@ font-size: 3.6rem;
 
 .promo-20off{
     min-width:70px;
-    background-image: url("/img/20-off.png");
+   /*  background-image: url("/img/20-off.png"); */
     background-repeat: no-repeat;
     background-color: #056ae0;
     background-position: top center;
 }
 .promo-3x2{
     min-width:70px;
-    background-image: url("/img/3x2.png");
+   /*  background-image: url("/img/3x2.png"); */
     background-repeat: no-repeat;
     background-color: #056ae0;
     background-position: top center;
@@ -503,14 +503,14 @@ font-size: 1.1rem;
 
     .promo-20off{
         min-width:70px;
-        background-image: url("/img/20-off.png");
+       /*  background-image: url("/img/20-off.png"); */
         background-repeat: no-repeat;
         background-color: #056ae0;
         background-position: center center;
     }
     .promo-3x2{
         min-width:70px;
-        background-image: url("/img/3x2.png");
+       /*  background-image: url("/img/3x2.png"); */
         background-repeat: no-repeat;
         background-color: #056ae0;
         background-position: center center;

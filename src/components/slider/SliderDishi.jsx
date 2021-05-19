@@ -4,8 +4,6 @@ import { fiveItemsSettings, fourItemsSettings, threeItemsSettings, twoItemsSetti
 import "./SliderDishi.css"
 
 
-
-
 function SliderDishi(props) {
 
     const {items, background, isPromo} = props
@@ -43,6 +41,7 @@ function SliderDishi(props) {
 }
 
     const itemsSetting = isPromo ? twoItemsSettings : configSliderSettings(items)
+
     if(items.length < 2 || !items)return null
     return (
      <div className={`container-fluid pt-5 ${background}  ${isPromo ? "width-5-items" : widthClass(items)}`}>
