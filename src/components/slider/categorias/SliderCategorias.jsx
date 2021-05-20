@@ -14,8 +14,8 @@ function SliderCategorias({categorias}) {
                         return(
                         <div key={id} className="mx-3">
                             <img src={Imagen} 
-                             className={ 'thumb-slider'} alt=""/>
-                            <p className="texto-descripcion text-center">{Nombre}</p>
+                                 className={ 'thumb-slider'} alt=""/>
+                              <p className="texto-descripcion text-center">{Nombre}</p>
                         </div>
                         )
                     })}
