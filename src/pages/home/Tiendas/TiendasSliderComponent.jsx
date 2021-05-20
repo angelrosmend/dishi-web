@@ -8,11 +8,11 @@ import Subtitulo from '../Subtitulo/Subtitulo';
 function TiendasSliderComponent({tiendas}) {
   return (
     <div className="espaciado">
-      <Subtitulo text="Tiendas"/>
+      <Subtitulo text="Tiendas"
+                 vermas="/tiendas"/>
           <SliderDishi items={tiendas}>   
             {tiendas && tiendas.map(tienda => {
                 const {Id, NombreFantasia, Direccion, Logo, Rubro} = tienda;
-
                 return <CardTienda id={Id} 
                                    key={Id} 
                                    nombre={NombreFantasia} 

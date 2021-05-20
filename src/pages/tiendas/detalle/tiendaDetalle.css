@@ -361,44 +361,6 @@ font-size: 1.1rem;
     width:90%;
 }
 
-
-/* Popover Header */
-.popover-title {
-    display:none;
-  }
-  
-  .popover {
-    background-color:#82b4ef!important;
-    border-radius: 50px!important;
-    outline: none!important;
-    border:#82b4ef!important;
-    z-index: -1;
-    left: 0.5rem !important; 
-    
-    
-
-  }
-  /*Popover Body*/
-  .popover-content {
-    background-color:#82b4ef;
-    color: #FFFFFF;
-    padding: 0.2rem 0.7rem 0.3rem 0.7rem!important;
-    
-    border-radius: 50px;
-    border-bottom: none;
-  } 
- 
-
- .popover .arrow {
-    display:none!important;
-}
-
-.popover.bs-tether-element-attached-right::after{
-    display:none!important;
-}
-.popover.bs-tether-element-attached-right::before {
-    display:none!important;
-}
 .text-vermas {
     position: relative;
     top: 3rem;

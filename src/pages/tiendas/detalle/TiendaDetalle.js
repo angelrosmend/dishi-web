@@ -11,7 +11,7 @@ import "./tiendaDetalle.css"
 function TiendaDetalle() {
     return (
        <Fragment>
-           <BannerTienda/>
+          <BannerTienda/>
           <Container>
             <DescripcionTienda/>
             <MapaTienda/>
