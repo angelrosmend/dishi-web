@@ -1,32 +1,45 @@
 import {useEffect, useState} from 'react'
 import axios from 'axios'
-import { requestGlobalObject } from '../helpers/requestObject'
+import { urlTienda } from '../../settings/requestSettings'
+import { requestGlobalObject } from '../../helpers/requestObject'
 
 
 export const useGetTienda = (id) => {
-    const [state, setState] = useState({details: [], loading: true, error: ''})
-
-    const IdSucursalCompra = user ? user.IdSucursalCompra : 835
+    const [state, setState] = useState({tienda: [], loading: true, error: ''})
 
     useEffect(() => {
-        axios.post(urlDetalle, {
+        axios.post(urlTienda, {
             Id: id,
+            AppDebug: false,
             ...requestGlobalObject
         })
              .then(response => {
+                let resData = response.data.Sucursal
                  setState({
-                          details: response.data.Items[0],
+                          
+                          tienda: {
+                              data: response.data,
+                              logo: resData.Logo,
+                              nombre: resData.NombreFantasia,
+                              email: resData.EmailCliente,
+                              telefono: resData.TelefonoCliente,
+                              whatsapp: resData.TelefonoCelular,
+                              latitud: resData.Latitud,
+                              longitud: resData.Longitud,
+                              direccion: resData.Direccion,
+                              descripcion: resData.SucursalDescripcion
+                            },
                           loading: false, 
                           error: ''
                          })
              }).catch(error => {
                  setState({
-                     details: {},
+                     tienda: {},
                      loading: false,
                      error: error
                  })
              });               
-    }, [id, user]);
+    }, [id]);
     return state
 }
 

@@ -1,6 +1,6 @@
 import React from 'react'
 
-function BannerTienda() {
+function BannerTienda({logoTienda}) {
     return (
         <div className="container-fluid">
         <div className="row tienda-header justify-content-md-center">
@@ -12,7 +12,7 @@ function BannerTienda() {
                <div className="tienda-brand-like">
                    <i className="far fa-heart like"   data-toggle="popover" data-trigger="hover" data-placement="left" data-content="Agregar a Favoritos"></i>
                </div>
-                   <img className="imagenes img-fluid" src="img/logo-fresco.png" alt=""/></div>
+                   <img className="imagenes img-fluid" src={logoTienda} alt=""/></div>
                </div>
            </div>
            <div className="row tienda-header-bottom"></div>

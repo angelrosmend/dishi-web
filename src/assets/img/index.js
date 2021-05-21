@@ -29,6 +29,8 @@ export { default as bimbo2 } from './bimbo2.png'
 export { default as bimbo3 } from './bimbo3.png'
 export { default as categoria } from './categoria.png'
 export { default as avatar } from './oso-Bimbo.png'
+export { default as headerTienda } from './header-tienda.jpg'
+
 
 
 

@@ -30,7 +30,9 @@ export const urlTiendas = `${process.env.REACT_APP_BASE_URL}api/V2Sucursales/get
 
 export const urlTienda = `${process.env.REACT_APP_BASE_URL}api/V2Sucursales/GetSucursalInfo`
 
+
 /*********************NOTICIAS *************************/
+
 export const urlRecetas =  `${process.env.REACT_APP_BASE_URL}api/V2NoticiasController/GetNoticias`
 
 export const urlRecetaDetalle = `${process.env.REACT_APP_BASE_URL}api/V2NoticiasController/GetNoticias`
@@ -38,7 +40,6 @@ export const urlRecetaDetalle = `${process.env.REACT_APP_BASE_URL}api/V2Noticias
 
 
 /*********************PAGO *************************/
-
 
 export const urlPostPedido = `${process.env.REACT_APP_BASE_URL}api/Pedidos/PostPedido`
  
