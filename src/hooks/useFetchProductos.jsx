@@ -10,7 +10,7 @@ export const useFetchProductos = (url, id, user, MobileUser) => {
 
     useEffect(() => {
         axios.post(url, {
-            Id: 1201,
+            /* Id: 1201, */
             orderBy, IdSucursalCompra, MobileUser,  ...requestGlobalObject
     })
              .then(response => {

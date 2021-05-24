@@ -2,9 +2,10 @@ import React,{ useContext,  useState} from 'react'
 import {GoogleMap, useLoadScript, Marker} from '@react-google-maps/api'
 import { CartContext } from '../../../context/CarritoContext';
 import SearchAdresse from './SearchAdresse';
+import { GOOGLE_API_KEY } from '../../../settings/requestSettings';
 
 function Mapa() {
-    const [ libraries] = useState(['places'])
+   const [ libraries] = useState(['places'])
    const {marker, onMapLoad, center}= useContext(CartContext)
    const mapContainerStyle = {
        width: "100%",
@@ -13,7 +14,7 @@ function Mapa() {
 
 
    const {isLoaded, loadError} = useLoadScript({
-       googleMapsApiKey: 'AIzaSyAU8MGbVc6Hy9JeSGA6AA3GyWtfHTb8Xko',
+       googleMapsApiKey: GOOGLE_API_KEY,
        libraries
     })
     if(loadError) return "Error loading maps"

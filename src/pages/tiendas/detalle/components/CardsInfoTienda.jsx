@@ -8,7 +8,7 @@ function CardsInfoTienda() {
 
             <div className="card mb-3 h-100 mr-3 ml-3 bg-transparent border-0" style={{maxWidth: "250px"}}>
                 <div className="row no-gutters align-items-center tienda-radius tienda-card">
-                  <div className="col-md-4 col-3 text-center">
+                  <div className="col-md-4 col-3 text-center bg-celeste">
                     <h2><i className="fas fa-wallet text-white"></i></h2>
                   </div>
                   <div className="col-md-8 col-9 bg-white tienda-radius-r">

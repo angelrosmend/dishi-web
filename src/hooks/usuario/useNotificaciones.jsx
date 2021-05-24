@@ -27,7 +27,7 @@ export const useNotificaciones = (user, logged) => {
                 NoLeidas:null,
                 SESSIONID:null,
                 APP_ConfigurationID:"20033",
-                Platform:"Browser",
+                Platform:"android",
                 AppVersion:"1.0.0,1.0.0",
                 AppDebug:false,
                 Fecha: new Date().toISOString(),

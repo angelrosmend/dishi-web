@@ -16,7 +16,7 @@ function DescripcionTienda({datos}) {
                  <ItemDescripcion icon="fas fa-envelope">{email}</ItemDescripcion>
              </div>
              <div className="row justify-content-center mt-3 mb-3">
-                <ItemDescripcion icon="map-marker">{direccion}</ItemDescripcion>
+                <ItemDescripcion icon="fas fa-map-marker">{direccion}</ItemDescripcion>
              </div>
          </div>
  </div>

@@ -3,6 +3,8 @@ import Slider from 'react-slick'
 import { nineItemsSettingsC } from '../../../settings/CarouselSettings'
 
 function SliderCategorias({categorias}) {
+
+    
     if(!categorias || categorias.length < 1) return null
     return (
         <div className="container">

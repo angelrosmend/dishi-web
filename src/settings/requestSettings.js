@@ -71,11 +71,10 @@ export const urlNotificaciones = `${process.env.REACT_APP_BASE_URL}api/V2Usuario
 
 export const urlNotificacionesSinLeer = `${process.env.REACT_APP_BASE_URL}api/V2UsuarioNotificacionesController/getNotificacionesSinLeerCount`
 
+/*******************MAPA API_KEY********************** */
 
 
-
-
-
+export const GOOGLE_API_KEY = process.env.REACT_APP_GOOGLE_MAPS_API_KEY
 
 
 

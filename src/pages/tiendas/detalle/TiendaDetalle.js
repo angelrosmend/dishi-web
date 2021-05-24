@@ -12,13 +12,13 @@ import "./tiendaDetalle.css"
 function TiendaDetalle() {
    const {id} = useParams()
    const {tienda} = useGetTienda(id)
-   const {data, logo} = tienda
+   const {data, latitud, longitud,logo} = tienda
     return (
        <Fragment>
           <BannerTienda logoTienda={logo}/>
           <Container>
             <DescripcionTienda datos={tienda}/>
-            <MapaTienda/>
+            <MapaTienda id={id} latitud={latitud} longitud={longitud}/>
             <CardsInfoTienda/>
           </Container>
        </Fragment>
