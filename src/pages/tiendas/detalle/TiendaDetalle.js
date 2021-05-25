@@ -16,6 +16,7 @@ function TiendaDetalle() {
    const {tienda} = useGetTienda(id)
    const {data, latitud, longitud,logo, nombre} = tienda 
    const {productos} = useProductosTienda(id)
+   console.log(data)
    
     return (
        <Fragment>
