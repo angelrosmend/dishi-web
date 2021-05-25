@@ -13,16 +13,16 @@ import { ContextUser } from '../../context/UserContext'
 import { useQuantity } from '../../hooks/productos/useQuantity'
 import CustomSpinner from '../../components/spinner/Spinner'
 import ProductoDescripcion from './ProductoDescripcion'
+import { useParams } from 'react-router'
 
 
 
-function ProductoDetalle({match}) {
-    const baseUrl = process.env.REACT_APP_BASE_URL
-    const urlDetalle = `${baseUrl}api/V2SucursalProductos/GetSucursalProducto`
-    const id = match.params.id
+function ProductoDetalle() {
+   
+    const {id }= useParams()
     const {cartItems} = useContext(CartContext)
     const {user, MobileUser} = useContext(ContextUser)
-    const {details, loading} = useFetchDetail(id, urlDetalle, user, MobileUser)
+    const {details, loading} = useFetchDetail(id, user, MobileUser)
     const { Id, Imagen, NombreProducto,IdCategoria, NombreSucursal, Precio, Sucursal, DescripcionProducto, ProductoCategorias, ValorParaCajaDelivery, Stock} = details
     const [inCart, quantity] = useQuantity(cartItems, Id)
     console.log(details)

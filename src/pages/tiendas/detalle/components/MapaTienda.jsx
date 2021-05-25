@@ -25,7 +25,7 @@ function MapaTienda({id, latitud, longitud}) {
     if (!isLoaded) return <CustomSpinner/>
     return (
     <div className="row">
-        <div className="col-12">
+        <div className="col-10 mx-auto">
             <div className="tienda-mapa">
             <GoogleMap mapContainerStyle={mapContainerStyle} 
                        zoom={11}

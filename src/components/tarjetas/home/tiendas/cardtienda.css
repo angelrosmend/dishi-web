@@ -3,6 +3,7 @@
     display: flex;
     flex-direction: column;
     padding-bottom: 1rem;
+   
 }
 .nombre-tienda-card{
     width: 100%;
@@ -17,9 +18,10 @@
 }
 .card-container-tienda-wrapper{
    transition: all 1s linear;
+   width: fit-content!important;
 }
 .card-container-tienda-wrapper:hover{
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2), 0 15px 12px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2), 0 15px 12px rgba(0, 0, 0, 0.1);  
 }
 .nombre-tienda-card:hover{
     background-color: var(--azulDishi);

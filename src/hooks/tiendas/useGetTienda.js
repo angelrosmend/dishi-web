@@ -27,7 +27,8 @@ export const useGetTienda = (id) => {
                               latitud: resData.Latitud,
                               longitud: resData.Longitud,
                               direccion: resData.Direccion,
-                              descripcion: resData.SucursalDescripcion
+                              descripcion: resData.SucursalDescripcion,
+                              sitioWeb: resData.SitioWeb
                             },
                           loading: false, 
                           error: ''

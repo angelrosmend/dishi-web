@@ -1,6 +1,5 @@
 import React, { useCallback, useRef, useState } from 'react'
 import {GoogleMap, useLoadScript, Marker} from '@react-google-maps/api'
-import { useLocateTiendaOnMap } from '../../../../hooks/tiendas/useLocateTiendaOnMap';
 import { GOOGLE_API_KEY } from '../../../../settings/requestSettings';
 import CustomSpinner from '../../../../components/spinner/Spinner';
 import { coordenadasCiudad } from '../../../../helpers/coordenadasCiudad';
@@ -20,7 +19,7 @@ function MapaTiendas({direcciones}) {
     
         const zoomDireccion = useCallback(({lat, lng}) => {
             mapRef.current.panTo({lat, lng});
-            mapRef.current.setZoom(14.5)
+            mapRef.current.setZoom(14)
           }, [])
     
           const [center, setCenter] = useState(coordenadasCiudad)

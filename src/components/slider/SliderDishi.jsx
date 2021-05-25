@@ -1,6 +1,6 @@
 import React from 'react'
 import Slider from 'react-slick'
-import { fiveItemsSettings, fourItemsSettings, threeItemsSettings, twoItemsSettings } from '../../settings/CarouselSettings'
+import { fiveItemsSettings, fourItemsSettings, oneItemSettings, threeItemsSettings, twoItemsSettings } from '../../settings/CarouselSettings'
 import "./SliderDishi.css"
 
 
@@ -11,7 +11,7 @@ function SliderDishi(props) {
     const configSliderSettings = (items) => {
          switch (items.length) {
         case 1:
-            return null
+            return oneItemSettings
         case 2:
             return twoItemsSettings
         case 3:
@@ -28,7 +28,7 @@ function SliderDishi(props) {
     const widthClass = (items) =>{
         switch (items.length) {
             case 1:
-                return null
+                return "width-1-item"
             case 2:
                 return "width-2-items"
             case 3:
@@ -42,7 +42,7 @@ function SliderDishi(props) {
 
     const itemsSetting = isPromo ? twoItemsSettings : configSliderSettings(items)
 
-    if(items.length < 2 || !items)return null
+    if(items.length < 1 || !items)return null
     return (
      <div className={`container-fluid pt-5 ${background}  ${isPromo ? "width-5-items" : widthClass(items)}`}>
         <div className='mx-auto ' data-aos="fade-up" data-aos-delay="170">

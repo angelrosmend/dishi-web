@@ -1,15 +1,16 @@
 import {useEffect, useState} from 'react'
 import axios from 'axios'
 import { requestGlobalObject } from '../helpers/requestObject'
+import { urlProductos } from '../settings/requestSettings'
 
 
-export const useFetchDetail = (id, urlDetalle, user, MobileUser) => {
+export const useFetchDetail = (id, user, MobileUser) => {
     const [state, setState] = useState({details: [], loading: true, error: ''})
 
     const IdSucursalCompra = user ? user.IdSucursalCompra : 835
 
     useEffect(() => {
-        axios.post(urlDetalle, {
+        axios.post(urlProductos, {
             Id: id,
             IdSucursalCompra,
             MobileUser,
