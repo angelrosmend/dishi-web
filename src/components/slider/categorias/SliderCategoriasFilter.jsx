@@ -4,7 +4,7 @@ import { nineItemsSettingsC } from '../../../settings/CarouselSettings'
 import  {useGetCategorias} from '../../../hooks/categorias/useGetCategorias'
 import './sliderCategorias.css'
 
-function SliderCategoriasFilter({filter, setFilter}) {
+function SliderCategoriasFilter({filter, setFilter, initialState}) {
 
     const {categorias} = useGetCategorias()
 
@@ -19,7 +19,7 @@ function SliderCategoriasFilter({filter, setFilter}) {
                         const {Id: id, Imagen, Nombre} = item
                         return(
                         <div key={id} className="m-3" >
-                            <img onClick={()=> setFilter((prevId) => prevId == id ? null : id)}
+                            <img onClick={()=> setFilter((prevFilter) => prevFilter.id == id ? initialState : {id: id, nombreCategoria: Nombre})}
                                 src={Imagen} 
                                 className={filter == id ? 'thumb-categoria-selected' : 'thumb-categoria'} 
                                 alt=""/>

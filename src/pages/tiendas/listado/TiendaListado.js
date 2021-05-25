@@ -10,15 +10,21 @@ import SliderCategoriasFilter from '../../../components/slider/categorias/Slider
 
 
 function TiendaListado() {
-    const [tiendasPorCategoria, setTiendasPorCategoria] = useState(null)
-    const {tiendas, direcciones, latLng} = useGetTiendas(tiendasPorCategoria)
+    const initialState = {id: null, nombreCategoria: null}
+    const [tiendasPorCategoria, setTiendasPorCategoria] = useState(initialState)
+    const {id, nombreCategoria} = tiendasPorCategoria
+    const {tiendas, direcciones} = useGetTiendas(id)
     console.log(tiendas)
     
     return (
         <Container fluid className="pb-5 mb-5">
             <Titulo>Tiendas</Titulo> 
-            <SliderCategoriasFilter filter={tiendasPorCategoria} setFilter={setTiendasPorCategoria}/>
-            <ContadorTiendas/>
+            <SliderCategoriasFilter filter={id} 
+                                    setFilter={setTiendasPorCategoria}
+                                    initialState={initialState}/>
+            <ContadorTiendas count={tiendas.length} 
+                             categoria={nombreCategoria}
+                             />
             <MapaTiendas direcciones={direcciones}/>
             <SliderTiendas tiendas={tiendas}/>
         </Container>
