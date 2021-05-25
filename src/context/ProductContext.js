@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import { useFetchRecetas } from '../hooks/useFetchRecetas';
-import { config,  configRecetas, urlRecetas } from '../settings/requestSettings';
 
 export const ContextProducts = React.createContext(null); 
 
@@ -25,11 +24,11 @@ export const ContextProductsProvider = (props) => {
 
 
   
-  const configHome = JSON.parse(JSON.stringify(config))
-  const {Monomarca: monomarca} = configHome
+  /* const configHome = JSON.parse(JSON.stringify(config))
+  const {Monomarca: monomarca} = configHome */
   
 
-  const {recetas} = useFetchRecetas(urlRecetas, configRecetas)
+/*   const {recetas} = useFetchRecetas(urlRecetas, configRecetas) */
 
   const [montoMinimoCompra, setMontoMinimoCompra] = useState(null)
 
@@ -38,9 +37,9 @@ export const ContextProductsProvider = (props) => {
 
   return (
     <ContextProducts.Provider value={{
-                                      configHome, 
+                                      /* configHome, 
                                       monomarca, 
-                                      recetas, 
+                                      recetas,  */
                                        idSucursalCompra,
                                        setIdSucursalCompra,
                                        montoMinimoCompra,

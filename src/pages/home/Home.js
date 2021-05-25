@@ -4,10 +4,6 @@ import { ContextProducts } from '../../context/ProductContext'
 import Banners from './Banners/Banners'
 import Tarjetas from './Tarjetas/Tarjetas'
 import Destacados from './Destacados/Destacados'
-import Tiendas from './Tiendas/Tiendas'
-import Oportunidades from './Oportunidades/Oportunidades'
-import Promociones from './Promociones/Promociones'
-import CategoriasGrilla from './Categorias/CategoriasGrilla'
 import GrillaProductos from './Grilla/GrillaProductos'
 import CustomSpinner from '../../components/spinner/Spinner'
 import { useFetchHome } from '../../hooks/useFetchHome'
@@ -17,6 +13,7 @@ import ModalPWDSuccess from '../../components/modals/password/ModalPWDSuccess'
 import Categorias from './Categorias/Categorias'
 import { useGrillaHome } from '../../hooks/listados/useGrillaHome'
 import PromosHot from './promos-hot/PromosHot'
+import TiendasSliderComponent from './Tiendas/TiendasSliderComponent'
 
 
 
@@ -44,7 +41,7 @@ function Home() {
             <Categorias categorias={categorias}/>
            </div>
             <div className="espaciado-wrapper">
-            <Tiendas tiendas={tiendas}/>
+            <TiendasSliderComponent tiendas={tiendas}/>
             </div>
             <div className="espaciado-wrapper">
                <PromosHot promos={productos}/>

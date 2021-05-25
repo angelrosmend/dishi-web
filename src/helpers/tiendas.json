@@ -1,0 +1,1042 @@
+{
+    "Items": [
+      {
+        "Id": 245,
+        "NombreFantasia": "La esquina del pino",
+        "SucursalDescription": null,
+        "Logo": "http://pehuajo.dishi.com.ar/Content/public/images/sucursales/000245.thumb.png?v=2021-02-04124701",
+        "Direccion": null,
+        "Rubro": "Hogar",
+        "TelefonoCliente": "+5492396408104",
+        "TelefonoCelular": "+5492396585763",
+        "EmailPedido": "pablocesartorres76@gmail.com",
+        "SitioWeb": null,
+        "Latitud": "-35.815698",
+        "Longitud": "-61.894011",
+        "TipoEntrega": 3,
+        "TieneVerMas": false,
+        "TieneDelivery": true,
+        "TieneRetiroEnTienda": true,
+        "SucursalMediosPago": [
+          {
+            "IdSucursal": 0,
+            "IdMedioPago": 17,
+            "IdUsuarioAlta": 0,
+            "FechaAlta": "0001-01-01T00:00:00",
+            "FechaModificacion": "0001-01-01T00:00:00",
+            "IdUsuarioModificacion": 0,
+            "RegistroEstado": 0,
+            "Id": 0,
+            "MedioPago": {
+              "Id": 17,
+              "IdMedioPagoTipo": null,
+              "Nombre": "Tarjeta de Credito PPT",
+              "MedioPagoTipo": null,
+              "SucursalMediosPago": [],
+              "Logo": "http://pehuajo.dishi.com.ar/Content/public/images/mediosdepago/credito.png"
+            },
+            "Sucursales": null
+          },
+          {
+            "IdSucursal": 0,
+            "IdMedioPago": 17,
+            "IdUsuarioAlta": 0,
+            "FechaAlta": "0001-01-01T00:00:00",
+            "FechaModificacion": "0001-01-01T00:00:00",
+            "IdUsuarioModificacion": 0,
+            "RegistroEstado": 0,
+            "Id": 0,
+            "MedioPago": {
+              "Id": 17,
+              "IdMedioPagoTipo": null,
+              "Nombre": "Tarjeta de Credito PPT",
+              "MedioPagoTipo": null,
+              "SucursalMediosPago": [],
+              "Logo": "http://pehuajo.dishi.com.ar/Content/public/images/mediosdepago/credito.png"
+            },
+            "Sucursales": null
+          },
+          {
+            "IdSucursal": 0,
+            "IdMedioPago": 17,
+            "IdUsuarioAlta": 0,
+            "FechaAlta": "0001-01-01T00:00:00",
+            "FechaModificacion": "0001-01-01T00:00:00",
+            "IdUsuarioModificacion": 0,
+            "RegistroEstado": 0,
+            "Id": 0,
+            "MedioPago": {
+              "Id": 17,
+              "IdMedioPagoTipo": null,
+              "Nombre": "Tarjeta de Credito PPT",
+              "MedioPagoTipo": null,
+              "SucursalMediosPago": [],
+              "Logo": "http://pehuajo.dishi.com.ar/Content/public/images/mediosdepago/credito.png"
+            },
+            "Sucursales": null
+          }
+        ],
+        "TieneMediosPago": true,
+        "SucursalHorarios": [
+          {
+            "Id": null,
+            "IdSucursal": null,
+            "Dia": 5,
+            "HoraApertura": "00:01",
+            "HoraCierre": "23:59",
+            "HoraInicioBreak": "",
+            "HoraFinBreak": "",
+            "IdEntregaTipo": 2,
+            "IdEntregaTipoNombre": null,
+            "Abierto": true
+          },
+          {
+            "Id": null,
+            "IdSucursal": null,
+            "Dia": 5,
+            "HoraApertura": "00:01",
+            "HoraCierre": "23:59",
+            "HoraInicioBreak": "",
+            "HoraFinBreak": "",
+            "IdEntregaTipo": 1,
+            "IdEntregaTipoNombre": null,
+            "Abierto": true
+          }
+        ]
+      },
+      {
+        "Id": 384,
+        "NombreFantasia": "La consulta vinos",
+        "SucursalDescription": null,
+        "Logo": "http://pehuajo.dishi.com.ar/Content/public/images/sucursales/000384.thumb.png?v=2021-03-18173819",
+        "Direccion": "Tte. Esteban Zanni 566, B6450AVL Pehuajó, Provincia de Buenos Aires, Argentina",
+        "Rubro": "Bebidas Alcoholicas",
+        "TelefonoCliente": "+5492396625469",
+        "TelefonoCelular": "+5492396625469",
+        "EmailPedido": "laconsultavinos@gmail.com",
+        "SitioWeb": null,
+        "Latitud": "-35.81443159962252",
+        "Longitud": "-61.89476779814758",
+        "TipoEntrega": 3,
+        "TieneVerMas": false,
+        "TieneDelivery": true,
+        "TieneRetiroEnTienda": true,
+        "SucursalMediosPago": [
+          {
+            "IdSucursal": 0,
+            "IdMedioPago": 18,
+            "IdUsuarioAlta": 0,
+            "FechaAlta": "0001-01-01T00:00:00",
+            "FechaModificacion": "0001-01-01T00:00:00",
+            "IdUsuarioModificacion": 0,
+            "RegistroEstado": 0,
+            "Id": 0,
+            "MedioPago": {
+              "Id": 18,
+              "IdMedioPagoTipo": null,
+              "Nombre": "Tarjeta de Debito PPT",
+              "MedioPagoTipo": null,
+              "SucursalMediosPago": [],
+              "Logo": "http://pehuajo.dishi.com.ar/Content/public/images/mediosdepago/debito.png"
+            },
+            "Sucursales": null
+          },
+          {
+            "IdSucursal": 0,
+            "IdMedioPago": 18,
+            "IdUsuarioAlta": 0,
+            "FechaAlta": "0001-01-01T00:00:00",
+            "FechaModificacion": "0001-01-01T00:00:00",
+            "IdUsuarioModificacion": 0,
+            "RegistroEstado": 0,
+            "Id": 0,
+            "MedioPago": {
+              "Id": 18,
+              "IdMedioPagoTipo": null,
+              "Nombre": "Tarjeta de Debito PPT",
+              "MedioPagoTipo": null,
+              "SucursalMediosPago": [],
+              "Logo": "http://pehuajo.dishi.com.ar/Content/public/images/mediosdepago/debito.png"
+            },
+            "Sucursales": null
+          },
+          {
+            "IdSucursal": 0,
+            "IdMedioPago": 18,
+            "IdUsuarioAlta": 0,
+            "FechaAlta": "0001-01-01T00:00:00",
+            "FechaModificacion": "0001-01-01T00:00:00",
+            "IdUsuarioModificacion": 0,
+            "RegistroEstado": 0,
+            "Id": 0,
+            "MedioPago": {
+              "Id": 18,
+              "IdMedioPagoTipo": null,
+              "Nombre": "Tarjeta de Debito PPT",
+              "MedioPagoTipo": null,
+              "SucursalMediosPago": [],
+              "Logo": "http://pehuajo.dishi.com.ar/Content/public/images/mediosdepago/debito.png"
+            },
+            "Sucursales": null
+          }
+        ],
+        "TieneMediosPago": true,
+        "SucursalHorarios": [
+          {
+            "Id": null,
+            "IdSucursal": null,
+            "Dia": 5,
+            "HoraApertura": "00:01",
+            "HoraCierre": "23:59",
+            "HoraInicioBreak": "",
+            "HoraFinBreak": "",
+            "IdEntregaTipo": 2,
+            "IdEntregaTipoNombre": null,
+            "Abierto": true
+          },
+          {
+            "Id": null,
+            "IdSucursal": null,
+            "Dia": 5,
+            "HoraApertura": "00:01",
+            "HoraCierre": "23:59",
+            "HoraInicioBreak": "",
+            "HoraFinBreak": "",
+            "IdEntregaTipo": 1,
+            "IdEntregaTipoNombre": null,
+            "Abierto": true
+          }
+        ]
+      },
+      {
+        "Id": 169,
+        "NombreFantasia": "Instrumedic",
+        "SucursalDescription": null,
+        "Logo": "http://pehuajo.dishi.com.ar/Content/public/images/sucursales/000169.thumb.png?v=2021-02-04152506",
+        "Direccion": null,
+        "Rubro": "Estetica y cuidado personal",
+        "TelefonoCliente": "+5492396472862",
+        "TelefonoCelular": "+5492396621268",
+        "EmailPedido": "instrumedic@manuelita.com.ar",
+        "SitioWeb": null,
+        "Latitud": "-35.8143299",
+        "Longitud": "-61.8954508",
+        "TipoEntrega": 3,
+        "TieneVerMas": false,
+        "TieneDelivery": true,
+        "TieneRetiroEnTienda": true,
+        "SucursalMediosPago": [
+          {
+            "IdSucursal": 0,
+            "IdMedioPago": 17,
+            "IdUsuarioAlta": 0,
+            "FechaAlta": "0001-01-01T00:00:00",
+            "FechaModificacion": "0001-01-01T00:00:00",
+            "IdUsuarioModificacion": 0,
+            "RegistroEstado": 0,
+            "Id": 0,
+            "MedioPago": {
+              "Id": 17,
+              "IdMedioPagoTipo": null,
+              "Nombre": "Tarjeta de Credito PPT",
+              "MedioPagoTipo": null,
+              "SucursalMediosPago": [],
+              "Logo": "http://pehuajo.dishi.com.ar/Content/public/images/mediosdepago/credito.png"
+            },
+            "Sucursales": null
+          },
+          {
+            "IdSucursal": 0,
+            "IdMedioPago": 17,
+            "IdUsuarioAlta": 0,
+            "FechaAlta": "0001-01-01T00:00:00",
+            "FechaModificacion": "0001-01-01T00:00:00",
+            "IdUsuarioModificacion": 0,
+            "RegistroEstado": 0,
+            "Id": 0,
+            "MedioPago": {
+              "Id": 17,
+              "IdMedioPagoTipo": null,
+              "Nombre": "Tarjeta de Credito PPT",
+              "MedioPagoTipo": null,
+              "SucursalMediosPago": [],
+              "Logo": "http://pehuajo.dishi.com.ar/Content/public/images/mediosdepago/credito.png"
+            },
+            "Sucursales": null
+          }
+        ],
+        "TieneMediosPago": true,
+        "SucursalHorarios": [
+          {
+            "Id": null,
+            "IdSucursal": null,
+            "Dia": 5,
+            "HoraApertura": "00:01",
+            "HoraCierre": "23:59",
+            "HoraInicioBreak": "",
+            "HoraFinBreak": "",
+            "IdEntregaTipo": 2,
+            "IdEntregaTipoNombre": null,
+            "Abierto": true
+          },
+          {
+            "Id": null,
+            "IdSucursal": null,
+            "Dia": 5,
+            "HoraApertura": "00:01",
+            "HoraCierre": "23:59",
+            "HoraInicioBreak": "",
+            "HoraFinBreak": "",
+            "IdEntregaTipo": 1,
+            "IdEntregaTipoNombre": null,
+            "Abierto": true
+          }
+        ]
+      },
+      {
+        "Id": 171,
+        "NombreFantasia": "London Deco",
+        "SucursalDescription": null,
+        "Logo": "http://pehuajo.dishi.com.ar/Content/public/images/sucursales/000171.thumb.png?v=2021-02-11150133",
+        "Direccion": "Bartolomé Mitre 205, Pehuajó, Provincia de Buenos Aires, Argentina",
+        "Rubro": "Hogar",
+        "TelefonoCliente": "+5492396411311",
+        "TelefonoCelular": "+5492396411311",
+        "EmailPedido": "londondeco.pehuajo@gmail.com",
+        "SitioWeb": null,
+        "Latitud": "-35.8138091",
+        "Longitud": "-61.8961201",
+        "TipoEntrega": 3,
+        "TieneVerMas": false,
+        "TieneDelivery": true,
+        "TieneRetiroEnTienda": true,
+        "SucursalMediosPago": [
+          {
+            "IdSucursal": 0,
+            "IdMedioPago": 17,
+            "IdUsuarioAlta": 0,
+            "FechaAlta": "0001-01-01T00:00:00",
+            "FechaModificacion": "0001-01-01T00:00:00",
+            "IdUsuarioModificacion": 0,
+            "RegistroEstado": 0,
+            "Id": 0,
+            "MedioPago": {
+              "Id": 17,
+              "IdMedioPagoTipo": null,
+              "Nombre": "Tarjeta de Credito PPT",
+              "MedioPagoTipo": null,
+              "SucursalMediosPago": [],
+              "Logo": "http://pehuajo.dishi.com.ar/Content/public/images/mediosdepago/credito.png"
+            },
+            "Sucursales": null
+          },
+          {
+            "IdSucursal": 0,
+            "IdMedioPago": 17,
+            "IdUsuarioAlta": 0,
+            "FechaAlta": "0001-01-01T00:00:00",
+            "FechaModificacion": "0001-01-01T00:00:00",
+            "IdUsuarioModificacion": 0,
+            "RegistroEstado": 0,
+            "Id": 0,
+            "MedioPago": {
+              "Id": 17,
+              "IdMedioPagoTipo": null,
+              "Nombre": "Tarjeta de Credito PPT",
+              "MedioPagoTipo": null,
+              "SucursalMediosPago": [],
+              "Logo": "http://pehuajo.dishi.com.ar/Content/public/images/mediosdepago/credito.png"
+            },
+            "Sucursales": null
+          },
+          {
+            "IdSucursal": 0,
+            "IdMedioPago": 17,
+            "IdUsuarioAlta": 0,
+            "FechaAlta": "0001-01-01T00:00:00",
+            "FechaModificacion": "0001-01-01T00:00:00",
+            "IdUsuarioModificacion": 0,
+            "RegistroEstado": 0,
+            "Id": 0,
+            "MedioPago": {
+              "Id": 17,
+              "IdMedioPagoTipo": null,
+              "Nombre": "Tarjeta de Credito PPT",
+              "MedioPagoTipo": null,
+              "SucursalMediosPago": [],
+              "Logo": "http://pehuajo.dishi.com.ar/Content/public/images/mediosdepago/credito.png"
+            },
+            "Sucursales": null
+          }
+        ],
+        "TieneMediosPago": true,
+        "SucursalHorarios": [
+          {
+            "Id": null,
+            "IdSucursal": null,
+            "Dia": 5,
+            "HoraApertura": "00:01",
+            "HoraCierre": "23:59",
+            "HoraInicioBreak": "",
+            "HoraFinBreak": "",
+            "IdEntregaTipo": 2,
+            "IdEntregaTipoNombre": null,
+            "Abierto": true
+          },
+          {
+            "Id": null,
+            "IdSucursal": null,
+            "Dia": 5,
+            "HoraApertura": "00:01",
+            "HoraCierre": "23:59",
+            "HoraInicioBreak": "",
+            "HoraFinBreak": "",
+            "IdEntregaTipo": 1,
+            "IdEntregaTipoNombre": null,
+            "Abierto": true
+          }
+        ]
+      },
+      {
+        "Id": 486,
+        "NombreFantasia": "Delirios",
+        "SucursalDescription": null,
+        "Logo": "http://pehuajo.dishi.com.ar/Content/public/images/sucursales/000486.thumb.png?v=2021-03-08115059",
+        "Direccion": "Acosta 274, Pehuajó, Provincia de Buenos Aires, Argentina",
+        "Rubro": "Indumentaria",
+        "TelefonoCliente": "+5492396432458",
+        "TelefonoCelular": "+5492396432458",
+        "EmailPedido": "lucciiba@gmail.com",
+        "SitioWeb": null,
+        "Latitud": "-35.8181526",
+        "Longitud": "-61.89245260000001",
+        "TipoEntrega": 3,
+        "TieneVerMas": false,
+        "TieneDelivery": true,
+        "TieneRetiroEnTienda": true,
+        "SucursalMediosPago": [
+          {
+            "IdSucursal": 0,
+            "IdMedioPago": 18,
+            "IdUsuarioAlta": 0,
+            "FechaAlta": "0001-01-01T00:00:00",
+            "FechaModificacion": "0001-01-01T00:00:00",
+            "IdUsuarioModificacion": 0,
+            "RegistroEstado": 0,
+            "Id": 0,
+            "MedioPago": {
+              "Id": 18,
+              "IdMedioPagoTipo": null,
+              "Nombre": "Tarjeta de Debito PPT",
+              "MedioPagoTipo": null,
+              "SucursalMediosPago": [],
+              "Logo": "http://pehuajo.dishi.com.ar/Content/public/images/mediosdepago/debito.png"
+            },
+            "Sucursales": null
+          },
+          {
+            "IdSucursal": 0,
+            "IdMedioPago": 18,
+            "IdUsuarioAlta": 0,
+            "FechaAlta": "0001-01-01T00:00:00",
+            "FechaModificacion": "0001-01-01T00:00:00",
+            "IdUsuarioModificacion": 0,
+            "RegistroEstado": 0,
+            "Id": 0,
+            "MedioPago": {
+              "Id": 18,
+              "IdMedioPagoTipo": null,
+              "Nombre": "Tarjeta de Debito PPT",
+              "MedioPagoTipo": null,
+              "SucursalMediosPago": [],
+              "Logo": "http://pehuajo.dishi.com.ar/Content/public/images/mediosdepago/debito.png"
+            },
+            "Sucursales": null
+          },
+          {
+            "IdSucursal": 0,
+            "IdMedioPago": 18,
+            "IdUsuarioAlta": 0,
+            "FechaAlta": "0001-01-01T00:00:00",
+            "FechaModificacion": "0001-01-01T00:00:00",
+            "IdUsuarioModificacion": 0,
+            "RegistroEstado": 0,
+            "Id": 0,
+            "MedioPago": {
+              "Id": 18,
+              "IdMedioPagoTipo": null,
+              "Nombre": "Tarjeta de Debito PPT",
+              "MedioPagoTipo": null,
+              "SucursalMediosPago": [],
+              "Logo": "http://pehuajo.dishi.com.ar/Content/public/images/mediosdepago/debito.png"
+            },
+            "Sucursales": null
+          }
+        ],
+        "TieneMediosPago": true,
+        "SucursalHorarios": [
+          {
+            "Id": null,
+            "IdSucursal": null,
+            "Dia": 5,
+            "HoraApertura": "11:00",
+            "HoraCierre": "13:00",
+            "HoraInicioBreak": "",
+            "HoraFinBreak": "",
+            "IdEntregaTipo": 2,
+            "IdEntregaTipoNombre": null,
+            "Abierto": false
+          },
+          {
+            "Id": null,
+            "IdSucursal": null,
+            "Dia": 5,
+            "HoraApertura": "18:00",
+            "HoraCierre": "21:00",
+            "HoraInicioBreak": "",
+            "HoraFinBreak": "",
+            "IdEntregaTipo": 2,
+            "IdEntregaTipoNombre": null,
+            "Abierto": false
+          },
+          {
+            "Id": null,
+            "IdSucursal": null,
+            "Dia": 5,
+            "HoraApertura": "18:00",
+            "HoraCierre": "21:00",
+            "HoraInicioBreak": "",
+            "HoraFinBreak": "",
+            "IdEntregaTipo": 2,
+            "IdEntregaTipoNombre": null,
+            "Abierto": false
+          },
+          {
+            "Id": null,
+            "IdSucursal": null,
+            "Dia": 5,
+            "HoraApertura": "11:00",
+            "HoraCierre": "13:00",
+            "HoraInicioBreak": "",
+            "HoraFinBreak": "",
+            "IdEntregaTipo": 1,
+            "IdEntregaTipoNombre": null,
+            "Abierto": false
+          },
+          {
+            "Id": null,
+            "IdSucursal": null,
+            "Dia": 5,
+            "HoraApertura": "18:00",
+            "HoraCierre": "21:00",
+            "HoraInicioBreak": "",
+            "HoraFinBreak": "",
+            "IdEntregaTipo": 1,
+            "IdEntregaTipoNombre": null,
+            "Abierto": false
+          }
+        ]
+      },
+      {
+        "Id": 479,
+        "NombreFantasia": "La Churreria 15",
+        "SucursalDescription": null,
+        "Logo": "http://pehuajo.dishi.com.ar/Content/public/images/sucursales/000479.thumb.png?v=2021-02-22162017",
+        "Direccion": "José Hernández 670, Pehuajó, Provincia de Buenos Aires, Argentina",
+        "Rubro": "Gastronomia",
+        "TelefonoCliente": "+5492396582222",
+        "TelefonoCelular": "+5492396582222",
+        "EmailPedido": "gatoaleman@hotmail.com",
+        "SitioWeb": null,
+        "Latitud": "-35.8137192",
+        "Longitud": "-61.8975054",
+        "TipoEntrega": 3,
+        "TieneVerMas": false,
+        "TieneDelivery": true,
+        "TieneRetiroEnTienda": true,
+        "SucursalMediosPago": [
+          {
+            "IdSucursal": 0,
+            "IdMedioPago": 18,
+            "IdUsuarioAlta": 0,
+            "FechaAlta": "0001-01-01T00:00:00",
+            "FechaModificacion": "0001-01-01T00:00:00",
+            "IdUsuarioModificacion": 0,
+            "RegistroEstado": 0,
+            "Id": 0,
+            "MedioPago": {
+              "Id": 18,
+              "IdMedioPagoTipo": null,
+              "Nombre": "Tarjeta de Debito PPT",
+              "MedioPagoTipo": null,
+              "SucursalMediosPago": [],
+              "Logo": "http://pehuajo.dishi.com.ar/Content/public/images/mediosdepago/debito.png"
+            },
+            "Sucursales": null
+          },
+          {
+            "IdSucursal": 0,
+            "IdMedioPago": 18,
+            "IdUsuarioAlta": 0,
+            "FechaAlta": "0001-01-01T00:00:00",
+            "FechaModificacion": "0001-01-01T00:00:00",
+            "IdUsuarioModificacion": 0,
+            "RegistroEstado": 0,
+            "Id": 0,
+            "MedioPago": {
+              "Id": 18,
+              "IdMedioPagoTipo": null,
+              "Nombre": "Tarjeta de Debito PPT",
+              "MedioPagoTipo": null,
+              "SucursalMediosPago": [],
+              "Logo": "http://pehuajo.dishi.com.ar/Content/public/images/mediosdepago/debito.png"
+            },
+            "Sucursales": null
+          },
+          {
+            "IdSucursal": 0,
+            "IdMedioPago": 18,
+            "IdUsuarioAlta": 0,
+            "FechaAlta": "0001-01-01T00:00:00",
+            "FechaModificacion": "0001-01-01T00:00:00",
+            "IdUsuarioModificacion": 0,
+            "RegistroEstado": 0,
+            "Id": 0,
+            "MedioPago": {
+              "Id": 18,
+              "IdMedioPagoTipo": null,
+              "Nombre": "Tarjeta de Debito PPT",
+              "MedioPagoTipo": null,
+              "SucursalMediosPago": [],
+              "Logo": "http://pehuajo.dishi.com.ar/Content/public/images/mediosdepago/debito.png"
+            },
+            "Sucursales": null
+          }
+        ],
+        "TieneMediosPago": true,
+        "SucursalHorarios": [
+          {
+            "Id": null,
+            "IdSucursal": null,
+            "Dia": 5,
+            "HoraApertura": "15:00",
+            "HoraCierre": "20:00",
+            "HoraInicioBreak": "",
+            "HoraFinBreak": "",
+            "IdEntregaTipo": 2,
+            "IdEntregaTipoNombre": null,
+            "Abierto": true
+          },
+          {
+            "Id": null,
+            "IdSucursal": null,
+            "Dia": 5,
+            "HoraApertura": "15:00",
+            "HoraCierre": "20:00",
+            "HoraInicioBreak": "",
+            "HoraFinBreak": "",
+            "IdEntregaTipo": 1,
+            "IdEntregaTipoNombre": null,
+            "Abierto": true
+          }
+        ]
+      },
+      {
+        "Id": 472,
+        "NombreFantasia": "Huesitos Pet Shop",
+        "SucursalDescription": null,
+        "Logo": "http://pehuajo.dishi.com.ar/Content/public/images/sucursales/000472.thumb.png?v=2021-02-05104813",
+        "Direccion": "José Hernández 660, Pehuajó, Provincia de Buenos Aires, Argentina",
+        "Rubro": "Mascotas",
+        "TelefonoCliente": "+5492396477360",
+        "TelefonoCelular": "+5492396589999",
+        "EmailPedido": "gatoaleman@gmail.com",
+        "SitioWeb": null,
+        "Latitud": "-35.8135937",
+        "Longitud": "-61.89748700000001",
+        "TipoEntrega": 3,
+        "TieneVerMas": false,
+        "TieneDelivery": true,
+        "TieneRetiroEnTienda": true,
+        "SucursalMediosPago": [
+          {
+            "IdSucursal": 0,
+            "IdMedioPago": 17,
+            "IdUsuarioAlta": 0,
+            "FechaAlta": "0001-01-01T00:00:00",
+            "FechaModificacion": "0001-01-01T00:00:00",
+            "IdUsuarioModificacion": 0,
+            "RegistroEstado": 0,
+            "Id": 0,
+            "MedioPago": {
+              "Id": 17,
+              "IdMedioPagoTipo": null,
+              "Nombre": "Tarjeta de Credito PPT",
+              "MedioPagoTipo": null,
+              "SucursalMediosPago": [],
+              "Logo": "http://pehuajo.dishi.com.ar/Content/public/images/mediosdepago/credito.png"
+            },
+            "Sucursales": null
+          },
+          {
+            "IdSucursal": 0,
+            "IdMedioPago": 17,
+            "IdUsuarioAlta": 0,
+            "FechaAlta": "0001-01-01T00:00:00",
+            "FechaModificacion": "0001-01-01T00:00:00",
+            "IdUsuarioModificacion": 0,
+            "RegistroEstado": 0,
+            "Id": 0,
+            "MedioPago": {
+              "Id": 17,
+              "IdMedioPagoTipo": null,
+              "Nombre": "Tarjeta de Credito PPT",
+              "MedioPagoTipo": null,
+              "SucursalMediosPago": [],
+              "Logo": "http://pehuajo.dishi.com.ar/Content/public/images/mediosdepago/credito.png"
+            },
+            "Sucursales": null
+          },
+          {
+            "IdSucursal": 0,
+            "IdMedioPago": 17,
+            "IdUsuarioAlta": 0,
+            "FechaAlta": "0001-01-01T00:00:00",
+            "FechaModificacion": "0001-01-01T00:00:00",
+            "IdUsuarioModificacion": 0,
+            "RegistroEstado": 0,
+            "Id": 0,
+            "MedioPago": {
+              "Id": 17,
+              "IdMedioPagoTipo": null,
+              "Nombre": "Tarjeta de Credito PPT",
+              "MedioPagoTipo": null,
+              "SucursalMediosPago": [],
+              "Logo": "http://pehuajo.dishi.com.ar/Content/public/images/mediosdepago/credito.png"
+            },
+            "Sucursales": null
+          }
+        ],
+        "TieneMediosPago": true,
+        "SucursalHorarios": [
+          {
+            "Id": null,
+            "IdSucursal": null,
+            "Dia": 5,
+            "HoraApertura": "00:01",
+            "HoraCierre": "23:59",
+            "HoraInicioBreak": "",
+            "HoraFinBreak": "",
+            "IdEntregaTipo": 1,
+            "IdEntregaTipoNombre": null,
+            "Abierto": true
+          }
+        ]
+      },
+      {
+        "Id": 203,
+        "NombreFantasia": "Dusza Indumentaria",
+        "SucursalDescription": null,
+        "Logo": "http://pehuajo.dishi.com.ar/Content/public/images/sucursales/000203.thumb.png?v=2021-02-05105536",
+        "Direccion": "José Hernández 536, Pehuajó, Buenos Aires, Argentina",
+        "Rubro": "Indumentaria",
+        "TelefonoCliente": "+5492396414809",
+        "TelefonoCelular": "+5492396414809",
+        "EmailPedido": "alanacosta005@gmail.com",
+        "SitioWeb": null,
+        "Latitud": "-35.8126013",
+        "Longitud": "-61.8963967",
+        "TipoEntrega": 3,
+        "TieneVerMas": false,
+        "TieneDelivery": true,
+        "TieneRetiroEnTienda": true,
+        "SucursalMediosPago": [
+          {
+            "IdSucursal": 0,
+            "IdMedioPago": 17,
+            "IdUsuarioAlta": 0,
+            "FechaAlta": "0001-01-01T00:00:00",
+            "FechaModificacion": "0001-01-01T00:00:00",
+            "IdUsuarioModificacion": 0,
+            "RegistroEstado": 0,
+            "Id": 0,
+            "MedioPago": {
+              "Id": 17,
+              "IdMedioPagoTipo": null,
+              "Nombre": "Tarjeta de Credito PPT",
+              "MedioPagoTipo": null,
+              "SucursalMediosPago": [],
+              "Logo": "http://pehuajo.dishi.com.ar/Content/public/images/mediosdepago/credito.png"
+            },
+            "Sucursales": null
+          },
+          {
+            "IdSucursal": 0,
+            "IdMedioPago": 17,
+            "IdUsuarioAlta": 0,
+            "FechaAlta": "0001-01-01T00:00:00",
+            "FechaModificacion": "0001-01-01T00:00:00",
+            "IdUsuarioModificacion": 0,
+            "RegistroEstado": 0,
+            "Id": 0,
+            "MedioPago": {
+              "Id": 17,
+              "IdMedioPagoTipo": null,
+              "Nombre": "Tarjeta de Credito PPT",
+              "MedioPagoTipo": null,
+              "SucursalMediosPago": [],
+              "Logo": "http://pehuajo.dishi.com.ar/Content/public/images/mediosdepago/credito.png"
+            },
+            "Sucursales": null
+          },
+          {
+            "IdSucursal": 0,
+            "IdMedioPago": 17,
+            "IdUsuarioAlta": 0,
+            "FechaAlta": "0001-01-01T00:00:00",
+            "FechaModificacion": "0001-01-01T00:00:00",
+            "IdUsuarioModificacion": 0,
+            "RegistroEstado": 0,
+            "Id": 0,
+            "MedioPago": {
+              "Id": 17,
+              "IdMedioPagoTipo": null,
+              "Nombre": "Tarjeta de Credito PPT",
+              "MedioPagoTipo": null,
+              "SucursalMediosPago": [],
+              "Logo": "http://pehuajo.dishi.com.ar/Content/public/images/mediosdepago/credito.png"
+            },
+            "Sucursales": null
+          }
+        ],
+        "TieneMediosPago": true,
+        "SucursalHorarios": [
+          {
+            "Id": null,
+            "IdSucursal": null,
+            "Dia": 5,
+            "HoraApertura": "00:01",
+            "HoraCierre": "23:59",
+            "HoraInicioBreak": "",
+            "HoraFinBreak": "",
+            "IdEntregaTipo": 2,
+            "IdEntregaTipoNombre": null,
+            "Abierto": true
+          },
+          {
+            "Id": null,
+            "IdSucursal": null,
+            "Dia": 5,
+            "HoraApertura": "00:01",
+            "HoraCierre": "23:59",
+            "HoraInicioBreak": "",
+            "HoraFinBreak": "",
+            "IdEntregaTipo": 1,
+            "IdEntregaTipoNombre": null,
+            "Abierto": true
+          }
+        ]
+      },
+      {
+        "Id": 469,
+        "NombreFantasia": "Puro Encanto",
+        "SucursalDescription": null,
+        "Logo": "http://pehuajo.dishi.com.ar/Content/public/images/sucursales/000469.thumb.png?v=2021-02-17182922",
+        "Direccion": "José Hernández 750, Pehuajó, Provincia de Buenos Aires, Argentina",
+        "Rubro": "Estetica y cuidado personal",
+        "TelefonoCliente": "+5492396625565",
+        "TelefonoCelular": "+5492396625565",
+        "EmailPedido": "camiacosta_lautaro@hotmail.com",
+        "SitioWeb": null,
+        "Latitud": "-35.814249",
+        "Longitud": "-61.8984147",
+        "TipoEntrega": 3,
+        "TieneVerMas": false,
+        "TieneDelivery": true,
+        "TieneRetiroEnTienda": true,
+        "SucursalMediosPago": [
+          {
+            "IdSucursal": 0,
+            "IdMedioPago": 17,
+            "IdUsuarioAlta": 0,
+            "FechaAlta": "0001-01-01T00:00:00",
+            "FechaModificacion": "0001-01-01T00:00:00",
+            "IdUsuarioModificacion": 0,
+            "RegistroEstado": 0,
+            "Id": 0,
+            "MedioPago": {
+              "Id": 17,
+              "IdMedioPagoTipo": null,
+              "Nombre": "Tarjeta de Credito PPT",
+              "MedioPagoTipo": null,
+              "SucursalMediosPago": [],
+              "Logo": "http://pehuajo.dishi.com.ar/Content/public/images/mediosdepago/credito.png"
+            },
+            "Sucursales": null
+          },
+          {
+            "IdSucursal": 0,
+            "IdMedioPago": 17,
+            "IdUsuarioAlta": 0,
+            "FechaAlta": "0001-01-01T00:00:00",
+            "FechaModificacion": "0001-01-01T00:00:00",
+            "IdUsuarioModificacion": 0,
+            "RegistroEstado": 0,
+            "Id": 0,
+            "MedioPago": {
+              "Id": 17,
+              "IdMedioPagoTipo": null,
+              "Nombre": "Tarjeta de Credito PPT",
+              "MedioPagoTipo": null,
+              "SucursalMediosPago": [],
+              "Logo": "http://pehuajo.dishi.com.ar/Content/public/images/mediosdepago/credito.png"
+            },
+            "Sucursales": null
+          },
+          {
+            "IdSucursal": 0,
+            "IdMedioPago": 17,
+            "IdUsuarioAlta": 0,
+            "FechaAlta": "0001-01-01T00:00:00",
+            "FechaModificacion": "0001-01-01T00:00:00",
+            "IdUsuarioModificacion": 0,
+            "RegistroEstado": 0,
+            "Id": 0,
+            "MedioPago": {
+              "Id": 17,
+              "IdMedioPagoTipo": null,
+              "Nombre": "Tarjeta de Credito PPT",
+              "MedioPagoTipo": null,
+              "SucursalMediosPago": [],
+              "Logo": "http://pehuajo.dishi.com.ar/Content/public/images/mediosdepago/credito.png"
+            },
+            "Sucursales": null
+          }
+        ],
+        "TieneMediosPago": true,
+        "SucursalHorarios": [
+          {
+            "Id": null,
+            "IdSucursal": null,
+            "Dia": 5,
+            "HoraApertura": "00:05",
+            "HoraCierre": "23:55",
+            "HoraInicioBreak": "",
+            "HoraFinBreak": "",
+            "IdEntregaTipo": 2,
+            "IdEntregaTipoNombre": null,
+            "Abierto": true
+          }
+        ]
+      },
+      {
+        "Id": 187,
+        "NombreFantasia": "Galiani Calzados",
+        "SucursalDescription": null,
+        "Logo": "http://pehuajo.dishi.com.ar/Content/public/images/sucursales/000187.thumb.png?v=2021-02-03130833",
+        "Direccion": null,
+        "Rubro": "Calzado",
+        "TelefonoCliente": "+5492396422366",
+        "TelefonoCelular": "+5492396587589",
+        "EmailPedido": "galianicalzados@gmail.com",
+        "SitioWeb": null,
+        "Latitud": "-35.8127109",
+        "Longitud": "-61.8973382",
+        "TipoEntrega": 1,
+        "TieneVerMas": false,
+        "TieneDelivery": true,
+        "TieneRetiroEnTienda": false,
+        "SucursalMediosPago": [
+          {
+            "IdSucursal": 0,
+            "IdMedioPago": 17,
+            "IdUsuarioAlta": 0,
+            "FechaAlta": "0001-01-01T00:00:00",
+            "FechaModificacion": "0001-01-01T00:00:00",
+            "IdUsuarioModificacion": 0,
+            "RegistroEstado": 0,
+            "Id": 0,
+            "MedioPago": {
+              "Id": 17,
+              "IdMedioPagoTipo": null,
+              "Nombre": "Tarjeta de Credito PPT",
+              "MedioPagoTipo": null,
+              "SucursalMediosPago": [],
+              "Logo": "http://pehuajo.dishi.com.ar/Content/public/images/mediosdepago/credito.png"
+            },
+            "Sucursales": null
+          },
+          {
+            "IdSucursal": 0,
+            "IdMedioPago": 17,
+            "IdUsuarioAlta": 0,
+            "FechaAlta": "0001-01-01T00:00:00",
+            "FechaModificacion": "0001-01-01T00:00:00",
+            "IdUsuarioModificacion": 0,
+            "RegistroEstado": 0,
+            "Id": 0,
+            "MedioPago": {
+              "Id": 17,
+              "IdMedioPagoTipo": null,
+              "Nombre": "Tarjeta de Credito PPT",
+              "MedioPagoTipo": null,
+              "SucursalMediosPago": [],
+              "Logo": "http://pehuajo.dishi.com.ar/Content/public/images/mediosdepago/credito.png"
+            },
+            "Sucursales": null
+          },
+          {
+            "IdSucursal": 0,
+            "IdMedioPago": 17,
+            "IdUsuarioAlta": 0,
+            "FechaAlta": "0001-01-01T00:00:00",
+            "FechaModificacion": "0001-01-01T00:00:00",
+            "IdUsuarioModificacion": 0,
+            "RegistroEstado": 0,
+            "Id": 0,
+            "MedioPago": {
+              "Id": 17,
+              "IdMedioPagoTipo": null,
+              "Nombre": "Tarjeta de Credito PPT",
+              "MedioPagoTipo": null,
+              "SucursalMediosPago": [],
+              "Logo": "http://pehuajo.dishi.com.ar/Content/public/images/mediosdepago/credito.png"
+            },
+            "Sucursales": null
+          }
+        ],
+        "TieneMediosPago": true,
+        "SucursalHorarios": [
+          {
+            "Id": null,
+            "IdSucursal": null,
+            "Dia": 5,
+            "HoraApertura": "00:01",
+            "HoraCierre": "23:59",
+            "HoraInicioBreak": "",
+            "HoraFinBreak": "",
+            "IdEntregaTipo": 2,
+            "IdEntregaTipoNombre": null,
+            "Abierto": true
+          },
+          {
+            "Id": null,
+            "IdSucursal": null,
+            "Dia": 5,
+            "HoraApertura": "00:01",
+            "HoraCierre": "23:59",
+            "HoraInicioBreak": "",
+            "HoraFinBreak": "",
+            "IdEntregaTipo": 1,
+            "IdEntregaTipoNombre": null,
+            "Abierto": true
+          }
+        ]
+      }
+    ],
+    "Index": null,
+    "Count": 10,
+    "PagesCount": -1,
+    "PageCount": null,
+    "TotalCount": -1
+  }

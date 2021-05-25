@@ -20,6 +20,8 @@ import RecetasDetalle from './pages/recetas/RecetasDetalle';
 import RecetasLista from './pages/recetas/RecetasLista';
 import RegistroCasa from './pages/registro/RegistroCasa';
 import RegistroComercio from './pages/registro/RegistroComercio';
+import TiendaDetalle from './pages/tiendas/detalle/TiendaDetalle';
+import TiendaListado from './pages/tiendas/listado/TiendaListado';
 import ProtectedRoute from './routes/ProtectedRoute';
 import ProtectedRouteUser from './routes/ProtectedRouteUser';
 
@@ -38,8 +40,8 @@ function App() {
           <Route path='/promociones/:id' component={PromocionesDetalle}/>
           <Route path="/destacados" component={DestacadosPage}/>
           <Route path="/categorias/:id"  component={CategoriasPage}/>
-          <Route path="/tiendas" />
-          <Route path="/tiendas/:id"/>
+          <Route path="/tiendas" exact component={TiendaListado} />
+          <Route path="/tiendas/:id" component={TiendaDetalle}/>
           <Route path="/recetas" exact component={RecetasLista}/>
           <Route path="/recetas/:id" component={RecetasDetalle}/>
           <Route path="/busqueda" component={Busqueda}/>

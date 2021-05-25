@@ -3,7 +3,7 @@ import Slider from 'react-slick'
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import { CartContext } from '../../context/CarritoContext'
-import { useFetchProductos } from '../../hooks/useFetchProductos'
+import { useFetchProductos } from '../../hooks/productos/useFetchProductos'
 import { urlProductos } from '../../settings/requestSettings'
 import Subtitulo from '../home/Subtitulo/Subtitulo'
 import { Link } from 'react-router-dom';
