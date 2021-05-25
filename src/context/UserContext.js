@@ -41,7 +41,7 @@ export const ContextUserProvider = (props) => {
     const [updateErrorMessage, setUpdateErrorMessage] = useState(defaultErrorMessage)
     useMontoMinimo()
 
-   const [{notificaciones, cantidad}, countNotificaciones]  = useNotificaciones(user, -1)
+   const [{notificaciones, cantidad}, countNotificaciones]  = useNotificaciones(user, logged)
    const [idCompra, setIdCompra] = useState('')
 
 

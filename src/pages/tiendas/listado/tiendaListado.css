@@ -1,0 +1,269 @@
+a {
+    font-family: Inter, sans-serif !important;
+  }
+  h3.titulo-productos {
+    font-family: Inter, sans-serif !important;
+    font-weight: 400 !important;
+    color: #4b4f4d !important;
+    font-size: 2rem;
+  }
+  /* .tienda-header {
+    background-image: url(../img/header-tienda.jpg);
+    height: 250px;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+  } */
+  .tienda-header-bottom {
+    min-height: 40px;
+    background-color: #a8caf4;
+    margin-bottom: 6rem;
+  }
+  .tienda-brand {
+    width: 12.5rem;
+    height: auto;
+    margin-top: 9rem;
+    border: solid;
+    border-width: 0.7rem;
+    border-color: #fff;
+  }
+  .tienda-brand-h1 {
+    font-family: Inter, sans-serif !important;
+    color: #056ae0;
+    font-size: 2.3rem;
+    font-weight: 700;
+  }
+  .tienda-brand-h3 {
+    font-family: Inter, sans-serif !important;
+    color: #4b4f4d;
+    /* font-size: 1.5rem; */
+    font-weight: normal !important;
+  }
+  .tienda-brand-h4 {
+    font-family: Inter, sans-serif !important;
+    color: #4b4f4d;
+    font-size: 1.5rem;
+  }
+  .tienda-brand-blue {
+    color: #82b4ef;
+  }
+  .tienda-mapa {
+    height: 450px;
+    contain: content;
+    border: solid;
+    border-width: 1.2rem;
+    border-color: #fff;
+  }
+  .tienda-mapa-grande {
+    height: 650px;
+    contain: content;
+    border: solid;
+    border-width: 1.2rem;
+    border-color: #fff;
+  }
+  .tienda-texto-cards {
+    font-family: Inter, sans-serif !important;
+    color: #4b4f4d !important;
+    font-size: 0.8rem;
+  }
+  .tienda-card {
+    background-color: #82b4ef;
+  } 
+  .tienda-radius {
+    border: unset;
+    border-radius: 10px 20px 20px 10px;
+  }
+  .tienda-radius-r {
+    border: unset;
+    border-radius: 0 10px 10px 00px;
+  }
+  .tienda-texto-general {
+    font-family: Inter, sans-serif !important;
+    font-size: 0.9rem;
+    color: #4b4f4d !important;
+  }
+  
+  .tienda-slider-titulo {
+    font-family: Inter, sans-serif !important;
+    color:#fff;
+    font-size: 0.9rem;
+  }
+  
+  .tienda-icon-detail {
+    padding-right: 0.5rem;
+    font-size: 1.1rem;
+    color: #056ae0;
+  }
+  .tienda-open-badge {
+    position: absolute;
+    margin-left: 30rem;
+    margin-top: 3rem;
+    min-height: 1.5rem;
+  }
+  .tienda-brand-like {
+    position: relative;
+    left: 2.5rem;
+  }
+  .tienda-brand .like {
+    color: #82b4ef;
+    background-color: #fff;
+    border-radius: 50px;
+    padding: 0.5rem;
+  }
+  .tienda-brand .like:hover {
+    color: #82b4ef;
+    background-color: #fff;
+    border-radius: 50px;
+    padding: 0.4rem;
+    font-size: 1.2rem;
+  }
+  
+  .tienda-categorias-slider {
+  max-height: 10rem;
+  }
+  
+  .texto-envio {
+    font-size: 0.7rem;
+    color: #a5a7a6 !important;
+  }
+  .texto-envio i {
+    font-size: 1.1rem;
+    color: #82b4ef;
+  }
+  .sliders .like {
+    position: relative;
+    left: 10rem;
+    top: 3rem;
+    color: #82b4ef;
+    background-color: #fff;
+    border-radius: 50px;
+    padding: 0.5rem;
+  }
+  .sliders .like:hover {
+    position: relative;
+    left: 10rem;
+    top: 3rem;
+    color: #82b4ef;
+    background-color: #fff;
+    border-radius: 50px;
+    padding: 0.4rem;
+    font-size: 1.2rem;
+  }
+  .like-tienda {
+    position: absolute;
+    left: 17rem;
+    top: 4.5rem;
+    color: #82b4ef;
+    background-color: #fff;
+    border-radius: 50px;
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+  .like-tienda:hover {
+    position: absolute;
+    left: 17rem;
+    top: 4.5rem;
+    color: #82b4ef;
+    background-color: #fff;
+    border-radius: 50px;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+  }
+  .bottom {
+    position: relative !important;
+    bottom: 0;
+  }
+  .card-tienda {
+    width: 250px;
+    max-height: fit-content;
+    margin: auto;
+  }
+  .card-tienda img {
+    width: 250px;
+    height: auto;
+  }
+  .card-tienda-titulo {
+    background-color: #82b4ef;
+    font-family: Inter, sans-serif !important;
+    font-weight: 900 !important;
+    font-size: 1rem;
+    color: #fff;
+  }
+  /* .popover {
+    background-color: #82b4ef !important;
+    border-radius: 50px !important;
+    outline: 0 !important;
+    border: #82b4ef !important;
+    z-index: -1;
+    left: 0.5rem !important;
+  }
+  .popover-content {
+    background-color: #82b4ef;
+    color: #fff;
+    padding: 0.2rem 0.7rem 0.3rem 0.7rem !important;
+    border-radius: 50px;
+    border-bottom: none;
+  }
+  .popover .arrow {
+    display: none !important;
+  }
+  
+  .popover.bs-tether-element-attached-right::after{
+      display:none!important;
+  }
+  .popover.bs-tether-element-attached-right::before {
+      display:none!important;
+  } */
+  
+  .thumb-slider {
+    width:60px;
+    height:auto;
+    margin:0 auto;
+  }
+  .categorias-arrow-prev{
+      color: gray!important;
+      font-size: 2rem!important;
+      position: relative!important;
+      bottom: 5rem!important;
+      left: -1.5rem!important;
+  }
+  
+  .categorias-arrow-next{
+      color: gray!important;
+      font-size: 2rem!important;
+      position: relative!important;
+      bottom: 7.5rem!important;
+      right: -2.5rem!important;
+  }
+  @media only screen and (max-width: 600px) {
+    .tienda-brand-like {
+      position: relative;
+      left: 1.5rem;
+    }
+    .tienda-open-badge {
+      position: relative;
+      margin-left: 7rem;
+      margin-top: 3rem;
+      min-height: 1.5rem;
+    }
+    .tienda-brand {
+      margin-top: 4rem;
+    }
+    .tienda-mapa {
+      height: 100%;
+      contain: content;
+    }
+    .tienda-mapa img {
+      max-width:100%;
+      max-height:100%;
+    }
+    .tienda-mapa-grande {
+      height: 100%;
+      object-fit:contain;
+    }
+    .tienda-mapa-grande img {
+      max-width:100%;
+      max-height:100%;
+    }
+  }
+  

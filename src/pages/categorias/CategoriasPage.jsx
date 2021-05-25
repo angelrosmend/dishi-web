@@ -1,11 +1,12 @@
 import React, { useContext } from 'react'
 import { Spinner } from 'reactstrap'
 import Filtros from '../../components/filtros/Filtros'
+import CustomSpinner from '../../components/spinner/Spinner'
 import CardProductList from '../../components/tarjetas/listados/Producto/CardProductList'
 import { CartContext } from '../../context/CarritoContext'
 import { ContextUser } from '../../context/UserContext'
+import { useFetchProductos } from '../../hooks/productos/useFetchProductos'
 import { useFetchCategorias } from '../../hooks/useFetchCategorias'
-import { useFetchProductos } from '../../hooks/useFetchProductos'
 import { urlCategorias, urlProductos } from '../../settings/requestSettings'
 import CategoriaTitulo from './CategoriaTitulo'
 import TarjetaProductoCategoria from './TarjetaProductoCategoria'
@@ -26,14 +27,14 @@ function CategoriasPage({match}) {
 
    
   
-    const [state, setOrderby] = useFetchProductos(urlProductos, id, user)
+    const [state, setOrderby] = useFetchProductos(id, user)
 
     const {productos,loading} = state
-    if(loading)return <Spinner style={{ position: 'absolute', width: '3rem', height: '3rem', top: '50%', left: '50%' }} color='primary'/>
+    if(loading)return <CustomSpinner/>
     return (
     <div className="container">
-    <div className="row">
-        <div className="col-10 m-auto m-sm-auto ">
+       <div className="row">
+         <div className="col-10 m-auto m-sm-auto ">
              <CategoriaTitulo key={Id}
                              nombre={Nombre}
                              imagen={Imagen}/>  

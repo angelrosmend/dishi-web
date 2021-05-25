@@ -10,10 +10,9 @@ function CardTienda({id, logo, nombre, direccion, rubro}) {
     const toggleAddress = () => setShowAddress(!showAddress)
 
     return (
-    <div className="col-sm-12 col-md-12 card-container-tienda pt-4 "
+    <div className="col-sm-12 col-md-12 card-container-tienda  pt-4 "
          onMouseEnter={toggleAddress}
-         onMouseLeave={toggleAddress}
-         t>
+         onMouseLeave={toggleAddress}>
        <div className="mx-auto card-container-tienda-wrapper px-0">
            <TiendaImg imagen={logo}
                       linkId={id}/>

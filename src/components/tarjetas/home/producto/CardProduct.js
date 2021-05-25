@@ -10,7 +10,7 @@ import CardProductDescription from './components/CardProductDescription'
 import ProductImg from './components/ProductImg'
 
 function CardProduct(props) {
-   const {id, imagen, nombre, precio, sucursal, Stock, destacado} = props
+   const {id, imagen, nombre, precio, sucursal, Stock, destacado, tienda} = props
 
    const [inCart, quantity] = useQuantity(id)
 
@@ -53,6 +53,7 @@ function CardProduct(props) {
                                     precio={precio}
                                     sucursal={sucursal}
                                     stock={Stock}
+                                    tienda={tienda}
                                     />
             </div>
        </div>

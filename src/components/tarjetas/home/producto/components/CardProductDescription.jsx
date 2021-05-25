@@ -5,7 +5,7 @@ import Tippy from '@tippyjs/react';
 import RegularTooltip from '../../../../tooltip/RegularTooltip';
 
 function CardProductDescription(props) {
-    const {nombre, precio, sucursal} = props
+    const {nombre, precio, sucursal, tienda} = props
     return (
        <Fragment>
            <div className="description-precio">
@@ -13,7 +13,6 @@ function CardProductDescription(props) {
                     <p>${precio}</p>
                 </div>
                 <div className="payment-icons">
-
                         <Tippy content="Acepta billetera" placement="bottom">
                           <i id="icon-wallet" className="fas fa-wallet"/>
                         </Tippy>
@@ -25,7 +24,7 @@ function CardProductDescription(props) {
          
             </div>
             <div className="description-info">
-                 <h5><b>{sucursal}</b></h5>
+                 <h5><b>{tienda ? null : sucursal}</b></h5>
                   <p>{nombre}</p>
             </div>
        </Fragment>

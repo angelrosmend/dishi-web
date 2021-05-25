@@ -1,17 +1,16 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { requestGlobalObject } from "../helpers/requestObject";
+import { requestGlobalObject } from "../../helpers/requestObject";
+import { urlCategorias } from "../../settings/requestSettings";
 
-export const useFetchCategorias = (urlCategorias, id) => {
+export const useGetCategorias = () => {
     const [state, setState] = useState({categorias: [], loading: true, error: ''})
 
     useEffect(() => {
-        axios.post(urlCategorias, {Id: id, ...requestGlobalObject})
+        axios.post(urlCategorias, { ...requestGlobalObject})
              .then(response => {
-                 let result = response.data;
-                 let res = result.find(item => item.Id == id)
                  setState({
-                          categorias: res,
+                          categorias: response.data,
                           loading: false, 
                           error: ''
                          })
@@ -22,6 +21,6 @@ export const useFetchCategorias = (urlCategorias, id) => {
                      error: error
                  })
              });               
-    }, [id]);
+    }, []);
     return state
 }

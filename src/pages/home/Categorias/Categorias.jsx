@@ -8,11 +8,9 @@ import { sixItemsSettings, sixItemsSettingsC } from '../../../settings/CarouselS
 
 function Categorias({categorias}) {
     return (
- <Fragment>
-    
+  <Fragment>
     <Subtitulo text="Categorias"/>
-    
-    <div className="container pt-5" data-aos="fade-up" data-aos-delay="150">
+    <div id="categoriasPage" className="container pt-5" data-aos="fade-up" data-aos-delay="150">
         <Slider {...sixItemsSettingsC}>
             {categorias && categorias.map(categoria => {
                 const {Id, Nombre, Imagen} = categoria;
@@ -20,7 +18,7 @@ function Categorias({categorias}) {
             })}
         </Slider>
     </div>
-</Fragment>
+  </Fragment>
     )
 }
 

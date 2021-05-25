@@ -6,6 +6,10 @@
 /.pnp
 .pnp.js
 
+#folders
+
+/utils
+
 .history
 .eslintcache
 # testing
