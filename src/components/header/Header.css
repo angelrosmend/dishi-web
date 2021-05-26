@@ -31,10 +31,23 @@
 .search-lg-container{
     flex-basis: 30%;
 }
+.dropdown-options-container{
+    display: flex;
+    flex-basis: 5%;
+    justify-content: flex-start;
+    align-items: center;
+}
 .nav-user-container{
     flex-basis: 15%;
     display: flex;
     justify-content: flex-end;
+}
+.log-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 15%;
 }
 .nav-btn-link-wrapper{
     display: flex;
@@ -71,13 +84,7 @@
 display: block;
 }
 
-.log-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex-basis: 20%;
-}
+
 
 .log-link{
     color: #056ae0;
@@ -136,6 +143,14 @@ display: block;
     
 }
 
+.dropdown-options-icon{
+    font-size: 1.8rem;
+    color: var(--white);
+    cursor: "pointer";
+    position: 'absolute';
+    top:'12.5%';
+    margin-left: 5px;
+}
 .dropdown-menu-alt{
 	width: 1000px;
      position: absolute;

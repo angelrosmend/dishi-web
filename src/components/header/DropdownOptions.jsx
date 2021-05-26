@@ -9,17 +9,11 @@ function DropdownOptions() {
     return (
         <Dropdown isOpen={dropdownOpen} 
                   toggle={toggle}
-                  className="col-1  p-0 "
-                  style={{position: "relative"}}>
+                  className="dropdown-options-container tr">
             <DropdownToggle tag="span"
                             data-toggle="dropdown"
                             aria-expanded={dropdownOpen}>
-                <i className="fas fa-sliders-h" 
-                   style={{fontSize: "28px", 
-                   color:"#056ae0", 
-                   cursor: "pointer",
-                   position: 'absolute',
-                   top:'12.5%'}}/>
+                <i className="fas fa-sliders-h dropdown-options-icon"/>
             </DropdownToggle>
             <DropdownMenu className="dropdown-menu dropdown-menu-alt"> 
               <div className="container">

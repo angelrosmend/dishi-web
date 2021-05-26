@@ -8,6 +8,7 @@ import NavUser from './NavUser'
 import NavMisCompras from './NavMisCompras'
 import NavNotificaciones from './NavNotificaciones'
 import NavCart from './NavCart'
+import DropdownOptions from './DropdownOptions'
 
 
 
@@ -17,8 +18,9 @@ function Header() {
           <nav className="header-wrapper">
            <BrandLogo/>
             <Search/>
+            <DropdownOptions/>
             <NavUser/>
-            <div className="nav-btn-link-wrapper tg">
+            <div className="nav-btn-link-wrapper">
              <NavMisCompras/>
              <NavNotificaciones/>
              <NavCart/>
