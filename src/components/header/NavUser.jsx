@@ -20,7 +20,7 @@ function NavUser() {
     const FullName = user && user.Usuario.NombreCompleto
  
     return (
-        <div ref={ref} className=' row mr-5 justify-content-start'>
+        <div ref={ref} className='nav-user-container'>
         {logged ?
         <Fragment>
             <Link to={`/perfil/${Nombre}/datos`}>

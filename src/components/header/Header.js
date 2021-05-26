@@ -8,7 +8,6 @@ import NavUser from './NavUser'
 import NavMisCompras from './NavMisCompras'
 import NavNotificaciones from './NavNotificaciones'
 import NavCart from './NavCart'
-import { Navbar } from 'react-bootstrap'
 
 
 
@@ -19,9 +18,11 @@ function Header() {
            <BrandLogo/>
             <Search/>
             <NavUser/>
-            <NavMisCompras/>
-            <NavNotificaciones/>
-            <NavCart/>
+            <div className="nav-btn-link-wrapper tg">
+             <NavMisCompras/>
+             <NavNotificaciones/>
+             <NavCart/>
+            </div>
             <Log/>
          </nav>
        </div>

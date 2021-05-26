@@ -45,7 +45,7 @@ function NavMisCompras() {
           <Popover id="popover-contained">
             <Popover.Content  onMouseLeave={handleFade}
                               onMouseEnter={handleShow2}>
-            <div className=" p-0">
+            <div className="p-0">
              <div className=" row text-center m-0" style={{width:'100%'}}>
                     {data.length < 1 ?
                      <h6 className='mx-auto text-center text-primary p-3' >No tienes compras</h6>

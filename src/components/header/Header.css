@@ -16,6 +16,9 @@
     position: relative;
 }
 
+.logo-container{
+    flex-basis: 20%;
+}
 
 .logo{
 	width: 13rem!important;
@@ -25,6 +28,19 @@
    transform: scale(1.05);
 }
 
+.search-lg-container{
+    flex-basis: 30%;
+}
+.nav-user-container{
+    flex-basis: 15%;
+    display: flex;
+    justify-content: flex-end;
+}
+.nav-btn-link-wrapper{
+    display: flex;
+    flex-basis: 15%;
+    justify-content: flex-end;
+}
 
 .nav-wrapper-1{
     padding: auto 10vw;
@@ -58,8 +74,9 @@ display: block;
 .log-container{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    flex-basis: 20%;
 }
 
 .log-link{
