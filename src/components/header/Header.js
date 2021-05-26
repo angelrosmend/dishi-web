@@ -9,7 +9,7 @@ import Log from './Log'
 
 function Header() {
     return (
-      <div className="header-container container-fluid d-flex bordebajo">
+      <div className="header-container">
         <nav className="navbar navbar-toggleable-sm m-auto col-12">
            <BrandLogo/>
             <div className="container">
