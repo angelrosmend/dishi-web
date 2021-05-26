@@ -13,14 +13,8 @@ import NavUser from './NavUser';
 function Log() {
     const {logged} = useContext(ContextUser)
     return (
-    <div className="col-10">
-        <div className=" d-flex justify-content-end row text-log align-middle one-line-text align-content-center ">
-               
-                <NavUser/>
-                <NavMisCompras/>
-                <NavNotificaciones/>
-                <NavCart/>
-                <div className="ml-2 one-line-text row">
+     <Fragment>
+                <div className="ml-2 one-line-text row to">
 
                {logged ?
                    <ModalLogout classText='my-auto'>
@@ -33,10 +27,8 @@ function Log() {
                        <Link to='/registro'><p className="text-log trigger-btn mx-1 my-auto"> Registrase</p></Link>
                  </div>}
                 </div>
+     </Fragment>
 
-            </div>
-                
-    </div>
     )
 }
 

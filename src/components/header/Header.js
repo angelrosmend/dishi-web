@@ -4,23 +4,26 @@ import './Header.css'
 import '../../assets/css/addons.css'
 import Search from './Search'
 import Log from './Log'
+import NavUser from './NavUser'
+import NavMisCompras from './NavMisCompras'
+import NavNotificaciones from './NavNotificaciones'
+import NavCart from './NavCart'
+import { Navbar } from 'react-bootstrap'
 
 
 
 function Header() {
     return (
-      <div className="header-container">
-        <nav className="navbar navbar-toggleable-sm m-auto col-12">
+      <div className="header-container px-3">
+          <nav className="header-wrapper">
            <BrandLogo/>
-            <div className="container">
-                <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
-                <Search/> 
-                    <div className="row nav-dishi" style={{position: "relative"}}>
-                        <Log/>
-                    </div>
-                </div>
-            </div>
-        </nav>
+            <Search/>
+            <NavUser/>
+            <NavMisCompras/>
+            <NavNotificaciones/>
+            <NavCart/>
+            <Log/>
+         </nav>
        </div>
 )
 }
