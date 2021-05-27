@@ -14,7 +14,7 @@ function Log() {
     const {logged} = useContext(ContextUser)
     return (
      <Fragment>
-                <div className="ml-2 one-line-text log-container to">
+                <div className="ml-2 one-line-text log-container">
 
                {logged ?
                    <ModalLogout classText='my-auto'>

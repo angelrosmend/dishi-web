@@ -36,6 +36,7 @@
     flex-basis: 5%;
     justify-content: flex-start;
     align-items: center;
+    position: relative;
 }
 .nav-user-container{
     flex-basis: 15%;
@@ -146,16 +147,14 @@ display: block;
 .dropdown-options-icon{
     font-size: 1.8rem;
     color: var(--white);
-    cursor: "pointer";
-    position: 'absolute';
-    top:'12.5%';
+    cursor: pointer;
     margin-left: 5px;
 }
 .dropdown-menu-alt{
 	width: 1000px;
-     position: absolute;
+    position: absolute;
     top: 150%!important;
-    left: -220%!important; 
+    right: -220%!important; 
 	border-radius: 5px!important;
 	border: none!important;
 }

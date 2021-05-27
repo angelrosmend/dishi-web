@@ -13,7 +13,7 @@ function Search() {
     }
     const handleChange = (e) => setKeyWord(e.target.value)
     return (
-            <div className="search-lg-container tr">
+            <div className="search-lg-container">
                     <form id="custom-search-input" onSubmit={handlesubmit}>
                         <div className="input-group col-md-12">
                             <input className="form-control search htmlFor-search" 

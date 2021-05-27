@@ -2,14 +2,20 @@ import React,{useState} from 'react'
 import { Dropdown, DropdownMenu, DropdownToggle } from 'reactstrap';
 
 function DropdownOptions() {
-
+    const [show, setShow] = useState(false);
+    const [target, setTarget] = useState(null);
+    const ref = useRef(null);
+    const handleTrigger = (event) => {setShow(true); setTarget(event.target); }
+    const handleFade = () => {setShow(false)}
+    const handleShow = () => {setShow(true)}
+    
     const [dropdownOpen, setDropdownOpen] = useState(false);
-    const toggle = () => setDropdownOpen(prevState => !prevState);
+    const toggle = () => setDropdownOpen(!dropdownOpen);
 
     return (
         <Dropdown isOpen={dropdownOpen} 
                   toggle={toggle}
-                  className="dropdown-options-container tr">
+                  className="dropdown-options-container">
             <DropdownToggle tag="span"
                             data-toggle="dropdown"
                             aria-expanded={dropdownOpen}>

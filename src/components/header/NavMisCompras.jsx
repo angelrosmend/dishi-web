@@ -13,8 +13,9 @@ function NavMisCompras() {
     const ref = useRef(null);
 
     const handleShow = (event) => {setShow(true); setTarget(event.target); }
-    const handleFade = () => {setShow(false);  }
-    const handleShow2 = () => {setShow(true);  }
+    const handleFade = () => {setShow(false)}
+    const handleShow2 = () => {setShow(true)}
+    
     const history = useHistory()
    
     const {logged,user} = useContext(ContextUser)
