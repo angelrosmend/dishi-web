@@ -6,7 +6,7 @@
     z-index: 100;
     width: 100vw;
     display: flex;
-    border-bottom: solid 2px white 
+    border-bottom: solid 2px white;  
 }
 .header-wrapper{
     display: flex;
@@ -36,7 +36,6 @@
     flex-basis: 5%;
     justify-content: flex-start;
     align-items: center;
-    position: relative;
 }
 .nav-user-container{
     flex-basis: 15%;
@@ -151,12 +150,14 @@ display: block;
     margin-left: 5px;
 }
 .dropdown-menu-alt{
-	width: 1000px;
+	width: 75%;
     position: absolute;
-    top: 150%!important;
-    right: -220%!important; 
+    top: 120%!important;
+    right: 12.5%!important; 
 	border-radius: 5px!important;
 	border: none!important;
+    background: var(--white);
+    z-index: 3;
 }
 .dropdown-text{
     font-size: 0.8rem;

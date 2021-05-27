@@ -1,30 +1,30 @@
-import React,{useState} from 'react'
+import { Popover } from 'bootstrap';
+import React,{useRef, useState} from 'react'
+import { Fragment } from 'react';
+import { Overlay } from 'react-bootstrap';
 import { Dropdown, DropdownMenu, DropdownToggle } from 'reactstrap';
 
 function DropdownOptions() {
     const [show, setShow] = useState(false);
-    const [target, setTarget] = useState(null);
-    const ref = useRef(null);
-    const handleTrigger = (event) => {setShow(true); setTarget(event.target); }
+    
     const handleFade = () => {setShow(false)}
     const handleShow = () => {setShow(true)}
-    
+    const handleToggle = () => setShow(!show)
+
     const [dropdownOpen, setDropdownOpen] = useState(false);
     const toggle = () => setDropdownOpen(!dropdownOpen);
 
     return (
-        <Dropdown isOpen={dropdownOpen} 
-                  toggle={toggle}
-                  className="dropdown-options-container">
-            <DropdownToggle tag="span"
-                            data-toggle="dropdown"
-                            aria-expanded={dropdownOpen}>
-                <i className="fas fa-sliders-h dropdown-options-icon"/>
-            </DropdownToggle>
-            <DropdownMenu className="dropdown-menu dropdown-menu-alt"> 
+        <Fragment>
+            <div className="dropdown-options-container" >
+                    <i className="fas fa-sliders-h dropdown-options-icon"
+                       onClick={handleToggle}/>
+            </div>
+
+            <div className="dropdown-menu-alt" style={{display: show ? "block" : "none"}}> 
               <div className="container">
               <div className="row">
-                    <div className="col-5 checkbox1">
+                    <div className="col-4 checkbox1">
                         <p className="titulo3 pb-3"><b>Entrega:</b></p>
                         <div className="d-flex ">
                             <label className="custom-control custom-radio">
@@ -89,8 +89,8 @@ function DropdownOptions() {
                     </div>
                 </div>
               </div>
-            </DropdownMenu>
-        </Dropdown>
+            </div>
+        </Fragment>
     )
 }
 
