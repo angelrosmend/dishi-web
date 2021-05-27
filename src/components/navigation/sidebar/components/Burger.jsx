@@ -2,15 +2,12 @@ import React, { Fragment, useState } from 'react'
 import { logoHeader } from '../../../../assets/img'
 
 
-function Burger({toggle}) {
+function Burger({toggle, clicked, setClicked}) {
 
-    const [clicked, setClicked] = useState(false)
     const stylesBurger = {transform: `rotate(${clicked ? "180deg": "0deg"}) translateX(0px)`}
-
     const handleToggle = () => {
         setClicked(!clicked)
         toggle()
-
     }
     return (
         <div className={`${clicked ? "toggler-wrapper active" : "toggler-wrapper"}`}>
