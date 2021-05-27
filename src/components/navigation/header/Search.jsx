@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react'
 import { useHistory } from 'react-router-dom'
-import { ContextProducts } from '../../context/ProductContext'
+import { ContextProducts } from '../../../context/ProductContext'
 
 function Search() {
     const {setKeyWordBusqueda} = useContext(ContextProducts)
@@ -13,7 +13,7 @@ function Search() {
     }
     const handleChange = (e) => setKeyWord(e.target.value)
     return (
-            <div className="col-5">
+            <div className="search-lg-container">
                     <form id="custom-search-input" onSubmit={handlesubmit}>
                         <div className="input-group col-md-12">
                             <input className="form-control search htmlFor-search" 
