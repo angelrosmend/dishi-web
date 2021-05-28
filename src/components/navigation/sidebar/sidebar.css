@@ -1,5 +1,5 @@
 .toggler-wrapper{
-    height: 10vh;
+    height: 7vh;
     width: 100%;
     position: fixed;
     top: 0;
@@ -28,7 +28,7 @@
 /*Burger*/
 .custom-burger{
     position: absolute;
-    top: 25%;
+    top: 12.5%;
     left:2%;
     z-index: 4;
     width: 2.5rem!important;

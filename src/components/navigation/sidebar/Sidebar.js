@@ -1,7 +1,10 @@
 import React, { Fragment, useContext, useState } from 'react'
 import { bell } from '../../../assets/img'
 import { ContextUser } from '../../../context/UserContext'
+import LoginModal from '../../modals/login/LoginModal'
+import ModalLogout from '../../modals/logout/ModalLogout'
 import Burger from './components/Burger'
+import CartSideInfo from './components/CartSideInfo'
 import NavLinkMobile from './components/NavLinkMobile'
 import "./sidebar.css"
 
@@ -23,35 +26,29 @@ function Sidebar() {
         <Fragment>
             <Burger toggle={toggle} clicked={showHeader} setClicked={setShowHeader}/>
             <nav className={ showMenu ? "sidemenu active" : "sidemenu"}>
-            <div className="sidemenu-content-account-wrapper">
-                <h5 className="text-white">{nombreCompleto}</h5>
-                  <div className="cart-info-mobile-container">
-                      <div className="cart-info-wrapper">
-                          <h5>Carrito de Compras</h5>
-                          <p>0 Productos</p>
-                          <p>$ 0.00</p>
-                          <p>Pesos argentinos</p>
-                      </div>
-                      <div className="cart-wrapper-mobile">
-                      <i className="fa fa-shopping-cart nav-icon-2 rounded-circle p-relative"/>
-                      </div>
-                  </div>
-            </div>
+                <CartSideInfo nombre={nombreCompleto}/>
             <ul className="sidemenu-content-link-wrapper">
                 <NavLinkMobile link="/" toggle={toggle}>Inicio</NavLinkMobile>
-                <NavLinkMobile link={`/perfil/${nombre}/compras`} toggle={toggle}>Mis Compras</NavLinkMobile>
-                <NavLinkMobile link={`/perfil/${nombre}/notificaciones`} toggle={toggle}>Notificaciones</NavLinkMobile>
+                {logged &&<NavLinkMobile link={`/perfil/${nombre}/compras`} toggle={toggle}>Mis Compras</NavLinkMobile>}
+                {logged &&<NavLinkMobile link={`/perfil/${nombre}/notificaciones`} toggle={toggle}>Notificaciones</NavLinkMobile>}
                 <NavLinkMobile link="/" toggle={toggle}>Pago de Servicios</NavLinkMobile>
                 <NavLinkMobile link="/" toggle={toggle}>Recarga virtual</NavLinkMobile>
                 <NavLinkMobile link="/" toggle={toggle}>Pagar con QR</NavLinkMobile>
                 <NavLinkMobile link="/" toggle={toggle}>Noticias</NavLinkMobile>
                 <NavLinkMobile link="/" toggle={toggle}>Contacto</NavLinkMobile>
-                <NavLinkMobile link={`/perfil/${nombre}/datos`} toggle={toggle}>Mis Datos</NavLinkMobile>
-                <li className="sidemenu-link">
-                    <p>Cerrar Sesión</p>
-                </li>
-            </ul>
-
+            {logged &&<NavLinkMobile link={`/perfil/${nombre}/datos`} toggle={toggle}>Mis Datos</NavLinkMobile>}
+                {logged ? 
+                <ModalLogout>
+                <NavLinkMobile link="/" toggle={toggle}>Cerrar Sesión</NavLinkMobile>
+                </ModalLogout>
+                :
+                <Fragment>
+                 <LoginModal>
+                   <NavLinkMobile link="/" toggle={toggle}>Ingresar</NavLinkMobile>
+                 </LoginModal>
+                 <NavLinkMobile link="/registro" toggle={toggle}>Registrarse</NavLinkMobile>
+              </Fragment>}
+             </ul>
             </nav>
         </Fragment>
         

@@ -26,7 +26,7 @@ function MapaTienda({id, latitud, longitud}) {
     return (
     <div className="row">
         <div className="col-10 mx-auto">
-            <div className="tienda-mapa">
+            <div className="tienda-mapa ">
             <GoogleMap mapContainerStyle={mapContainerStyle} 
                        zoom={11}
                        center={center}

@@ -16,11 +16,9 @@ import CustomSpinner from '../../components/spinner/Spinner';
 
 
 function OtrosProductosCategoria( {categoria} ) {
-    const {user} = useContext(ContextUser)
+    const {MobileUser} = useContext(ContextUser)
 
-    
-    const {cartItems} = useContext(CartContext)
-    const [state] = useFetchProductos(urlProductos, categoria, user)
+    const [state] = useFetchProductos(categoria, MobileUser)
     const {productos, loading} = state
    
     if(!loading && productos.length < 1 )return null 
@@ -38,20 +36,17 @@ function OtrosProductosCategoria( {categoria} ) {
             {productos && productos.map(item => {
 
                 const { Id, Imagen, NombreProducto,NombreSucursal, Precio, ValorParaCajaDelivery, Stock} = item;
-                const enCarrito =  cartItems.map(item=> item.id).includes(Id)
-                const itemQuantity = cartItems.map(itemCart => itemCart).find(item => item.id === Id)
-
+  
             return <CardProduct key={Id}
                             id={Id}
                             imagen={Imagen}
                             nombre={NombreProducto}
                             sucursal={NombreSucursal}
                             precio={Precio}
-                            enCarrito={enCarrito}
                             ValorParaCajaDelivery={ValorParaCajaDelivery}
                             Tipo={0}
                             Stock={Stock}
-                            quantity={itemQuantity}
+                            
                                            />
             })}
           </SliderDishi>}
