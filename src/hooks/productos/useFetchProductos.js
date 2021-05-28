@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
+import { ordenamiento } from "../../helpers/filtros";
 import { urlProductos } from "../../settings/requestSettings";
 
 export const useFetchProductos = (id, MobileUser) => {
@@ -7,19 +8,24 @@ export const useFetchProductos = (id, MobileUser) => {
     const [state, setState] = useState({productos: [], loading: true, error: ''})
     const [orderBy, setOrderBy] = useState({direction: '', field: ''})
 
+    const pagination = {PageFrom:0,
+        PageCount:15,
+        CalculateTotalRows:false,
+        ReadCountMode:false}
 
     useEffect(() => {
         axios.post(urlProductos, {
             FilterIdCategoria: id,
             orderBy, 
-            MobileUser
+            MobileUser,
              /* ...requestGlobalObject */
+            ...pagination
     })
              .then(response => {
-                 let result = response.data.Items
-                 /* let filtradoCategorias = result.filter(item => item.ProductoCategorias[0].Categoria.Id == id) */
+                 const result = response.data.Items
+                 const listadoProductos = ordenamiento(result, orderBy)
                  setState({
-                          productos: result,
+                          productos: listadoProductos,
                           loading: false, 
                           error: ''
                          })
