@@ -1,30 +1,28 @@
-import React,{useState} from 'react'
-import { Dropdown, DropdownMenu, DropdownToggle } from 'reactstrap';
+import { Popover } from 'bootstrap';
+import React,{useRef, useState} from 'react'
+import { Fragment } from 'react';
 
 function DropdownOptions() {
+    const [show, setShow] = useState(false);
+    
+    const handleFade = () => {setShow(false)}
+    const handleShow = () => {setShow(true)}
+    const handleToggle = () => setShow(!show)
 
     const [dropdownOpen, setDropdownOpen] = useState(false);
-    const toggle = () => setDropdownOpen(prevState => !prevState);
+    const toggle = () => setDropdownOpen(!dropdownOpen);
 
     return (
-        <Dropdown isOpen={dropdownOpen} 
-                  toggle={toggle}
-                  className="col-1  p-0 "
-                  style={{position: "relative"}}>
-            <DropdownToggle tag="span"
-                            data-toggle="dropdown"
-                            aria-expanded={dropdownOpen}>
-                <i className="fas fa-sliders-h" 
-                   style={{fontSize: "28px", 
-                   color:"#056ae0", 
-                   cursor: "pointer",
-                   position: 'absolute',
-                   top:'12.5%'}}/>
-            </DropdownToggle>
-            <DropdownMenu className="dropdown-menu dropdown-menu-alt"> 
+        <Fragment>
+            <div className="dropdown-options-container" >
+                    <i className="fas fa-sliders-h dropdown-options-icon"
+                       onClick={handleToggle}/>
+            </div>
+
+            <div className="dropdown-menu-alt" style={{display: show ? "block" : "none"}}> 
               <div className="container">
               <div className="row">
-                    <div className="col-5 checkbox1">
+                    <div className="col-4 checkbox1">
                         <p className="titulo3 pb-3"><b>Entrega:</b></p>
                         <div className="d-flex ">
                             <label className="custom-control custom-radio">
@@ -66,11 +64,11 @@ function DropdownOptions() {
                         </div>
                     </div>
 
-                    <div className="col-3">
+                    <div className="col-4">
                         <p className="titulo3 pb-3"><b>Horario:</b></p>
 
                         <div className="row"  >
-                            <div className="col-10">
+                            <div className="col-6">
                                 <label className="custom-control custom-radio">
                                     <input id="radio1" name="radio" type="radio"
                                         className="custom-control-input"/>
@@ -78,7 +76,7 @@ function DropdownOptions() {
                                     <span className="custom-control-description dropdown-text">Abierto ahora</span>
                                 </label>
                             </div>
-                            <div className="col-2">
+                            <div className="col-6">
                                 <button type="button" 
                                         onClick={toggle}
                                         className="btn btn-primary boton-3 btn-aplicar-width">
@@ -89,8 +87,8 @@ function DropdownOptions() {
                     </div>
                 </div>
               </div>
-            </DropdownMenu>
-        </Dropdown>
+            </div>
+        </Fragment>
     )
 }
 

@@ -45,7 +45,7 @@ h3.titulo-productos{
     color: #056ae0;
 }
 .tienda-mapa{
-    height:450px;
+    min-height:450px;
     contain: content;
     border: solid;
     border-width: 1.2rem;
@@ -344,8 +344,6 @@ font-size: 3.6rem;
 	font-weight: 900!important;
     font-size: 1rem;
     color:white;
-    border: 1px solid orange;
-
 }
 
 .titulo-descripcion{
@@ -414,7 +412,7 @@ font-size: 1.1rem;
     }
 
     .tienda-mapa{
-        height:250px;
+        min-height:250px;
         
     }
 

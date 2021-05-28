@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react'
 import { useHistory } from 'react-router'
-import { ContextProducts } from '../../context/ProductContext'
+import { ContextProducts } from '../../../context/ProductContext'
 
 function SearchToggle() {
     const {setKeyWordBusqueda} = useContext(ContextProducts)

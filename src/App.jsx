@@ -1,7 +1,7 @@
 import { Fragment, useContext } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './App.css';
-import Header from './components/header/Header';
+import Navigation from './components/navigation/Navigation';
 import { CartContext} from './context/CarritoContext';
 import { ContextUser} from './context/UserContext';
 import Busqueda from './pages/busqueda/Busqueda';
@@ -32,7 +32,7 @@ function App() {
   return (
     <Fragment>
       <BrowserRouter>
-         <Header/>
+         <Navigation/>
           <Switch>
           <Route path='/' exact component={Home}/>
           <Route path="/detalle/:id" component={ProductoDetalle}/>

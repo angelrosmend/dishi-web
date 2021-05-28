@@ -26,8 +26,8 @@ export const useNotificaciones = (user, logged) => {
                          Field:"FechaAlta"},
                 NoLeidas:null,
                 SESSIONID:null,
-                APP_ConfigurationID:"20033",
-                Platform:"android",
+                APP_ConfigurationID:"20007",
+                Platform:"Android",
                 AppVersion:"1.0.0,1.0.0",
                 AppDebug:false,
                 Fecha: new Date().toISOString(),
@@ -47,11 +47,13 @@ export const useNotificaciones = (user, logged) => {
                 LastId:0}
    
 
-      let requestNotificaciones = axios.post(urlNotificaciones, requestConfig)
-      let requestUnreadNotificaciones =  axios.post(urlNotificacionesSinLeer, requestConfig)
+     
 
     useEffect(() => {
         if(logged){
+            let requestNotificaciones = axios.post(urlNotificaciones, requestConfig)
+            let requestUnreadNotificaciones =  axios.post(urlNotificacionesSinLeer, requestConfig)
+            
         axios.all([requestNotificaciones, requestUnreadNotificaciones])
              .then(axios.spread((...response) => {
                  const notificacion = response[0].data

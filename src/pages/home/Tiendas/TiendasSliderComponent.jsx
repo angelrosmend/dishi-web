@@ -1,6 +1,5 @@
 import React, { useContext } from 'react'
 import SliderDishi from '../../../components/slider/SliderDishi';
-import CardProduct from '../../../components/tarjetas/home/producto/CardProduct';
 import CardTienda from '../../../components/tarjetas/home/tiendas/CardTienda';
 import Subtitulo from '../Subtitulo/Subtitulo';
 

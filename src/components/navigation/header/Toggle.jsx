@@ -1,7 +1,7 @@
 import React,{Fragment, useContext, useState} from 'react'
 import { Link } from 'react-router-dom';
 import { Collapse, NavbarToggler, Nav, NavItem, NavLink } from 'reactstrap';
-import { ContextUser } from '../../context/UserContext';
+import { ContextUser } from '../../../context/UserContext';
 import ModalLogout from '../modals/logout/ModalLogout';
 import SearchToggle from './SearchToggle';
 

@@ -30,7 +30,7 @@ function GrillaProductos() {
             <div className="p-5 bg-white grilla-wrapper mt-5 ">
 
                 {productos && productos.slice(0, visible).map(item => {
-                    const { Id, Imagen, NombreProducto,NombreSucursal, Precio, ValorParaCajaDelivery, Stock} = item;
+                    const { Id, Imagen, NombreProducto,NombreSucursal, Precio, ValorParaCajaDelivery, Stock, SucursalMediosPago} = item;
                     if(loading) return <CustomSpinner/>
                     return <CardProduct key={Id}
                                         id={Id}
@@ -41,6 +41,7 @@ function GrillaProductos() {
                                         ValorParaCajaDelivery={ValorParaCajaDelivery}
                                         Tipo={0}
                                         Stock={Stock}
+                                        MediosPago={SucursalMediosPago}
                                         />
                     
                     

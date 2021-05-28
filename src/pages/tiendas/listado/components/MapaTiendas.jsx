@@ -28,9 +28,10 @@ function MapaTiendas({direcciones}) {
             googleMapsApiKey: GOOGLE_API_KEY,
             libraries
          })
+        console.log(isLoaded, loadError)
         setTimeout(()=> {
             zoomDireccion(coordenadasCiudad)
-        }, 1000)
+        }, 2000)
     if(loadError) return "Error loading maps"
     if (!isLoaded) return <CustomSpinner/>
     return (

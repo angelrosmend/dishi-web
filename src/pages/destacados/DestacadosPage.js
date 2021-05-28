@@ -1,6 +1,7 @@
 import React, { useContext } from 'react'
 import FiltrosAlt from '../../components/filtros/FiltroPromo'
 import ListLayout from '../../components/layouts/listados-layout/ListLayout'
+import SliderCategoriasFilter from '../../components/slider/categorias/SliderCategoriasFilter'
 import CardProductList from '../../components/tarjetas/listados/Producto/CardProductList'
 import Titulo from '../../components/titulo/Titulo'
 import { CartContext } from '../../context/CarritoContext'
@@ -22,6 +23,7 @@ function DestacadosPage() {
     return (
           <ListLayout>
             <Titulo text='Destacados'/>
+              <SliderCategoriasFilter/>
               <FiltrosAlt setOrderby={setOrderBy} />
 
             { productos && productos.map(item => {
