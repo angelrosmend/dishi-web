@@ -28,14 +28,15 @@ function MapaTiendas({direcciones}) {
             googleMapsApiKey: GOOGLE_API_KEY,
             libraries
          })
+        console.log(isLoaded, loadError)
         setTimeout(()=> {
             zoomDireccion(coordenadasCiudad)
-        }, 1000)
+        }, 2000)
     if(loadError) return "Error loading maps"
     if (!isLoaded) return <CustomSpinner/>
     return (
-        <div class="row">
-            <div class="col-10 mx-auto">
+        <div class="row mt-5">
+            <div class="col-10 mx-auto mt-5">
                 <div class="tienda-mapa-grande">
                 <GoogleMap mapContainerStyle={mapContainerStyle} 
                        zoom={12}

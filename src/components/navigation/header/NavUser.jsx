@@ -1,8 +1,8 @@
 import React, { useState, useRef, useContext, Fragment } from 'react';
 import { Overlay, Popover } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import { perro } from '../../assets/img';
-import { ContextUser } from '../../context/UserContext';
+import { perro } from '../../../assets/img';
+import { ContextUser } from '../../../context/UserContext';
 
 
 
@@ -20,7 +20,7 @@ function NavUser() {
     const FullName = user && user.Usuario.NombreCompleto
  
     return (
-        <div ref={ref} className=' row mr-5 justify-content-start'>
+        <div ref={ref} className='nav-user-container'>
         {logged ?
         <Fragment>
             <Link to={`/perfil/${Nombre}/datos`}>

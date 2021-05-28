@@ -1,7 +1,7 @@
 import React, { useContext, useState } from 'react'
 import { useRef } from 'react'
 import { Link } from 'react-router-dom'
-import { CartContext } from '../../context/CarritoContext'
+import { CartContext } from '../../../context/CarritoContext'
 import { Overlay, Popover } from 'react-bootstrap';
 
 

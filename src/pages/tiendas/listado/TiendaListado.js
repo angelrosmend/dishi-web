@@ -22,11 +22,13 @@ function TiendaListado() {
             <SliderCategoriasFilter filter={id} 
                                     setFilter={setTiendasPorCategoria}
                                     initialState={initialState}/>
+
             <ContadorTiendas count={tiendas.length} 
                              categoria={nombreCategoria}
                              />
+             <SliderTiendas tiendas={tiendas}/>
             <MapaTiendas direcciones={direcciones}/>
-            <SliderTiendas tiendas={tiendas}/>
+           
         </Container>
     )
 }

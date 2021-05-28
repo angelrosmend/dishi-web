@@ -1,26 +1,16 @@
 import React, { Fragment, useContext } from 'react'
 import { Link } from 'react-router-dom';
-import { ContextUser } from '../../context/UserContext';
-import LoginModal from '../modals/login/LoginModal';
-import ModalLogout from '../modals/logout/ModalLogout';
-import NavCart from './NavCart';
-import NavMisCompras from './NavMisCompras';
-import NavNotificaciones from './NavNotificaciones';
-import NavUser from './NavUser';
+import { ContextUser } from '../../../context/UserContext';
+import LoginModal from '../../modals/login/LoginModal';
+import ModalLogout from '../../modals/logout/ModalLogout';
 
 
 
 function Log() {
     const {logged} = useContext(ContextUser)
     return (
-    <div className="col-10">
-        <div className=" d-flex justify-content-end row text-log align-middle one-line-text align-content-center ">
-               
-                <NavUser/>
-                <NavMisCompras/>
-                <NavNotificaciones/>
-                <NavCart/>
-                <div className="ml-2 one-line-text row">
+     <Fragment>
+                <div className="ml-2 one-line-text log-container">
 
                {logged ?
                    <ModalLogout classText='my-auto'>
@@ -33,10 +23,8 @@ function Log() {
                        <Link to='/registro'><p className="text-log trigger-btn mx-1 my-auto"> Registrase</p></Link>
                  </div>}
                 </div>
+     </Fragment>
 
-            </div>
-                
-    </div>
     )
 }
 

@@ -11,7 +11,7 @@ function DescripcionTienda({datos}) {
              <div className="row justify-content-md-center px-4 mt-5">
                  <ItemDescripcion icon="fas fa-phone-alt">{telefono}</ItemDescripcion>
                  <ItemDescripcion icon="fab fa-whatsapp">{whatsapp}</ItemDescripcion>
-                 <ItemDescripcion icon="fas fa-clock">Lunes a viernes 11 a 21hs.</ItemDescripcion>
+                 {/* <ItemDescripcion icon="fas fa-clock">Lunes a viernes 11 a 21hs.</ItemDescripcion> */}
                  <ItemDescripcion icon="fas fa-link">{sitioWeb}</ItemDescripcion>
                  <ItemDescripcion icon="fas fa-envelope">{email}</ItemDescripcion>
              </div>

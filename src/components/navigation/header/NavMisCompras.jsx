@@ -2,9 +2,9 @@ import React,{useState, useRef, useContext} from 'react'
 import { Fragment } from 'react';
 import { Overlay, Popover } from 'react-bootstrap';
 import { Link, useHistory } from 'react-router-dom';
-import { ContextUser } from '../../context/UserContext';
-import { fechaCompraDetalle } from '../../helpers/fechas';
-import { useGetMisCompras } from '../../hooks/usuario/useGetMisCompras';
+import { ContextUser } from '../../../context/UserContext';
+import { fechaCompraDetalle } from '../../../helpers/fechas';
+import { useGetMisCompras } from '../../../hooks/usuario/useGetMisCompras';
 
 
 function NavMisCompras() {
@@ -13,8 +13,9 @@ function NavMisCompras() {
     const ref = useRef(null);
 
     const handleShow = (event) => {setShow(true); setTarget(event.target); }
-    const handleFade = () => {setShow(false);  }
-    const handleShow2 = () => {setShow(true);  }
+    const handleFade = () => {setShow(false)}
+    const handleShow2 = () => {setShow(true)}
+    
     const history = useHistory()
    
     const {logged,user} = useContext(ContextUser)
@@ -30,7 +31,7 @@ function NavMisCompras() {
        <Link to={`/perfil/${nombre}/compras`}>
        <i onMouseEnter={handleShow}
           onMouseLeave={handleFade}
-          className="fas fa-shopping-bag nav-icon-notificaciones mr-4 "></i>
+          className="fas fa-shopping-bag nav-icon-notificaciones mr-2"></i>
        </Link>
         :
        null}
@@ -45,7 +46,7 @@ function NavMisCompras() {
           <Popover id="popover-contained">
             <Popover.Content  onMouseLeave={handleFade}
                               onMouseEnter={handleShow2}>
-            <div className=" p-0">
+            <div className="p-0">
              <div className=" row text-center m-0" style={{width:'100%'}}>
                     {data.length < 1 ?
                      <h6 className='mx-auto text-center text-primary p-3' >No tienes compras</h6>

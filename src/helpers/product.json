@@ -1,0 +1,41 @@
+
+Codigo: "41"
+DescripcionProducto: "Shampoo Solido Control Caída. Libre de parabenos, sulfatos y siliconas "
+Descuento: null
+DescuentoId: null
+Id: 5284
+IdCategoria: 128
+IdMarca: 0
+IdSucursal: 347
+Imagen: "http://pehuajo.dishi.com.ar/Content/public/images/sucursalproductos/005284.thumb.png?v=2021-02-04195424"
+Iva: 0
+MarcaNombre: null
+NombreProducto: "Shampoo Sólido Control Caída "
+NombreSucursal: "Jabones Naturales Artesanales Salud & Belleza"
+Precio: 361.79
+PrecioOriginal: 0
+PrecioSinDescuento: 0
+ProductoCategorias: Array(1)
+0: {Orden: 0, IdSucursalProducto: 0, IdCategoria: 128, Id: 0, Categoria: {…}, …}
+length: 1
+__proto__: Array(0)
+Stock: 10
+Sucursal:
+Direccion: "Raúl Ricardo Alfonsín 833, Pehuajó, Buenos Aires, Argentina"
+EmailPedido: "noeliacozzarin@gmail.com"
+Id: 347
+Logo: "http://pehuajo.dishi.com.ar/Content/public/images/sucursales/000347.png"
+MontoMinimoCompra: 0
+NombreFantasia: "Jabones Naturales Artesanales Salud & Belleza"
+SucursalHorarios: (2) [{…}, {…}]
+SucursalMediosPago: (2) [{…}, {…}]
+TelefonoCelular: "+5492396616651"
+TelefonoCliente: "+5492396616651"
+TieneMediosPago: true
+TieneVerMas: false
+TipoEntrega: 3
+__proto__: Object
+TiempoPreparacion: 0
+TieneVerMas: false
+TipoDescuentoUsaDescuento: false
+ValorParaCajaDelivery: null

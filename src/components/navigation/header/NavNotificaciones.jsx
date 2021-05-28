@@ -2,8 +2,8 @@ import React,{useState, useRef, useContext, Fragment} from 'react'
 import { Overlay, Popover } from 'react-bootstrap';
 import { useHistory } from 'react-router';
 import { Link } from 'react-router-dom';
-import { ContextUser } from '../../context/UserContext';
-import { fechaNotificaciones } from '../../helpers/fechas';
+import { ContextUser } from '../../../context/UserContext';
+import { fechaNotificaciones } from '../../../helpers/fechas';
 
 
 function NavNotificaciones() {

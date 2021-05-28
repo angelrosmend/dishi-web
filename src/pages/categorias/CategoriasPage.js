@@ -1,5 +1,6 @@
 import React, { useContext } from 'react'
 import { Spinner } from 'reactstrap'
+import FiltrosAlt from '../../components/filtros/FiltroPromo'
 import Filtros from '../../components/filtros/Filtros'
 import CustomSpinner from '../../components/spinner/Spinner'
 import CardProductList from '../../components/tarjetas/listados/Producto/CardProductList'
@@ -39,7 +40,7 @@ function CategoriasPage({match}) {
                              nombre={Nombre}
                              imagen={Imagen}/>  
                              
-             <Filtros setOrderby={setOrderby}/> 
+             <FiltrosAlt setOrderby={setOrderby}/> 
             {productos.length < 1 ? 
             <h3 className='text-center'>No se encontraron productos de esta categoria</h3>
              :  
