@@ -1,5 +1,5 @@
 .toggler-wrapper{
-    height: 7vh;
+    height: 50px;
     width: 100%;
     position: fixed;
     top: 0;
@@ -179,7 +179,7 @@
     justify-content: flex-start;
     align-items: center;    
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
     .toggler-wrapper{
         display: none;
     }

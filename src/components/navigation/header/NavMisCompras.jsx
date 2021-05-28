@@ -31,7 +31,7 @@ function NavMisCompras() {
        <Link to={`/perfil/${nombre}/compras`}>
        <i onMouseEnter={handleShow}
           onMouseLeave={handleFade}
-          className="fas fa-shopping-bag nav-icon-notificaciones mr-4 "></i>
+          className="fas fa-shopping-bag nav-icon-notificaciones mr-2"></i>
        </Link>
         :
        null}

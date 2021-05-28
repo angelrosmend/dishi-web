@@ -11,8 +11,7 @@ export const useGetTiendas = (id) => {
     useEffect(() => {
         axios.post(urlTiendas, {
           /*   AppDebug: false, */
-            PageFrom:0,
-	        PageCount:20,
+            
             IdCategoria: id,
             /* ...requestGlobalObject */
         })

@@ -35,8 +35,8 @@ function MapaTiendas({direcciones}) {
     if(loadError) return "Error loading maps"
     if (!isLoaded) return <CustomSpinner/>
     return (
-        <div class="row">
-            <div class="col-10 mx-auto">
+        <div class="row mt-5">
+            <div class="col-10 mx-auto mt-5">
                 <div class="tienda-mapa-grande">
                 <GoogleMap mapContainerStyle={mapContainerStyle} 
                        zoom={12}

@@ -17,7 +17,7 @@
 }
 
 .logo-container{
-    flex-basis: 20%;
+    flex-basis: 15%;
 }
 
 .logo{
@@ -33,7 +33,7 @@
 }
 .dropdown-options-container{
     display: flex;
-    flex-basis: 5%;
+    flex-basis: 7.5%;
     justify-content: flex-start;
     align-items: center;
 }
@@ -247,7 +247,7 @@ display: block;
     }
 }
   
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
     .logo{
         width: 7.5rem!important;
     }
