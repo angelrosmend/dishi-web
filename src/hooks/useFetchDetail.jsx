@@ -5,16 +5,13 @@ import { urlProductos } from '../settings/requestSettings'
 
 
 export const useFetchDetail = (id, user, MobileUser) => {
-    const [state, setState] = useState({details: [], loading: true, error: ''})
+    const [state, setState] = useState({details: {}, loading: true, error: ''})
 
-    const IdSucursalCompra = user ? user.IdSucursalCompra : 835
+    /* const IdSucursalCompra = user ? user.IdSucursalCompra : 835 */
 
     useEffect(() => {
         axios.post(urlProductos, {
             Id: id,
-            IdSucursalCompra,
-            MobileUser,
-            ...requestGlobalObject
         })
              .then(response => {
                  setState({

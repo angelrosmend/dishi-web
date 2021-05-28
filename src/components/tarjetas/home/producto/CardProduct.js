@@ -18,7 +18,6 @@ function CardProduct(props) {
    const showBtnQty = useCallback(() => setShowBtn(true))
    const hideBtnQty = () => setShowBtn(false)
 
-
     return (
         <div className="col-sm-12 col-md-12 card-container">
             <div className="mx-auto"

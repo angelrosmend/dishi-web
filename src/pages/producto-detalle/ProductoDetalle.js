@@ -25,8 +25,7 @@ function ProductoDetalle() {
     const {details, loading} = useFetchDetail(id, user, MobileUser)
     const { Id, Imagen, NombreProducto,IdCategoria, NombreSucursal, Precio, Sucursal, DescripcionProducto, ProductoCategorias, ValorParaCajaDelivery, Stock} = details
     const [inCart, quantity] = useQuantity(cartItems, Id)
-    console.log(details)
-   
+   console.log(Sucursal)
     if(loading) return <CustomSpinner/>
     return (
 

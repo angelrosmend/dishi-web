@@ -4,7 +4,7 @@ import LikeyCarrito from './LikeyCarrito';
 
 function TarjetaProducto(props) {
     const {id, imagen, nombre, precio, sucursal, enCarrito, ValorParaCajaDelivery, Stock, itemQuantity, direccion} = props
-
+    console.log(direccion)
     return (
     <div className="col-lg-7" style={{height: '400px'}}>
     <div className=" bg-white descripcion-row row d-flex " style={{height: '100%', position: 'relative'}}>
@@ -19,9 +19,9 @@ function TarjetaProducto(props) {
                 <h3 className="titulo-productos">{nombre}</h3>
                 </div>
             </div>
-            <div class="row">
-                <div class="col mt-5 mb-5">
-                   <p class="texto-descripcion"><i class="fas fa-map-marker mr-2"></i>{direccion}</p>
+            <div className="row">
+                <div className="col mt-5 mb-5">
+                   {direccion &&<p className="texto-descripcion"><i class="fas fa-map-marker mr-2"></i>{direccion}</p>}
                 </div>
             </div>
         </div>

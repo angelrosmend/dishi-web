@@ -16,7 +16,8 @@ function NombreCategoriaProducto({categoria}) {
                 className="rounded-circle title-thumb-img" 
                 alt="..."/></div>
             <div className="col-lg-8 col-sm-auto m-auto m-sm-auto pl-0 pl-sm-0 text-lg-left text-center titulo-categorias">
-                <h4>{Nombre}</h4>
+                <h3>{Nombre}</h3>
+                
             </div>
             <div className="col-lg-3 col-sm-auto m-auto m-sm-auto text-lg-right">
                 <a href='#categoriasPage' onClick={()=> history.push('/')}><p className='text-primary'> Ver otras categorías </p></a>

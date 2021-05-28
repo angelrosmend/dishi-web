@@ -2,8 +2,8 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { urlProductos } from "../../settings/requestSettings";
 
-export const useFetchProductos = ( id, user, MobileUser) => {
-    const IdSucursalCompra = user ? user.IdSucursalCompra : 835
+export const useFetchProductos = (id, MobileUser) => {
+    
     const [state, setState] = useState({productos: [], loading: true, error: ''})
     const [orderBy, setOrderBy] = useState({direction: '', field: ''})
 
@@ -12,7 +12,6 @@ export const useFetchProductos = ( id, user, MobileUser) => {
         axios.post(urlProductos, {
             FilterIdCategoria: id,
             orderBy, 
-            IdSucursalCompra, 
             MobileUser
              /* ...requestGlobalObject */
     })
@@ -31,6 +30,6 @@ export const useFetchProductos = ( id, user, MobileUser) => {
                      error: error
                  })
              });               
-    }, [id, user, orderBy]);
+    }, [id, orderBy]);
     return [state,setOrderBy]
 }
