@@ -3,6 +3,8 @@ import Slider from "react-slick";
 import Subtitulo from "../Subtitulo/Subtitulo";
 import SliderDishi from "../../../components/slider/SliderDishi";
 import CardProduct from "../../../components/tarjetas/home/producto/CardProduct";
+import HeaderSectionHome from "../../../components/banners/headers-home/HeaderSectionHome";
+import { productType } from "../../../helpers/productTypes";
 
 
 function Destacados({destacados}) {
@@ -12,8 +14,7 @@ function Destacados({destacados}) {
    if(!destacados || destacados.length < 2) return null
    return (
   <div className="espaciado espaciado-wrapper">
-    <Subtitulo text='Super Ofertas'
-               vermas='/destacados'/>
+       <HeaderSectionHome titulo="Super Ofertas" section="ofertas"/> 
         <SliderDishi items={destacados} background="bg-white">
                {destacados && destacados.map(item => {
                   const { Id, Imagen, NombreProducto, Precio, Sucursal, ValorParaCajaDelivery, Stock, SucursalMediosPago} = item;
@@ -28,8 +29,9 @@ function Destacados({destacados}) {
                                       ValorParaCajaDelivery={ValorParaCajaDelivery}
                                       Stock={Stock}
                                       Tipo={0}
-                                      destacado={true}
-                                      MediosPago={SucursalMediosPago}/>
+                                      MediosPago={SucursalMediosPago}
+                                      type={productType.ofertas}
+                                      />
               })}
       </SliderDishi>   
       </div>

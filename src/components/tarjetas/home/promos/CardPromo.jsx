@@ -48,7 +48,7 @@ function CardPromo(props) {
                         </div>
                     </div>
              <div className="col-md-6 col-sm-12 d-flex ">
-                <div className="text3-bg-2">
+                <div className="text3-bg-2 bg-promos-hot">
                     <div className="text3-img d-flex justify-content-center">
                        {/*  <button type="button" className="btn btn-primary boton-2 ml-1">20%OFF</button> */}
                          <p className="text3-img-2 px-3 text-3" style={{margin:'auto'}}>$ {precio}</p>

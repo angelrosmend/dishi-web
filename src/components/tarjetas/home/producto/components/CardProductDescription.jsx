@@ -2,13 +2,27 @@ import React, { useRef, useState } from 'react'
 import { Fragment } from 'react'
 import {Tooltip} from "reactstrap"
 import Tippy from '@tippyjs/react';
-import RegularTooltip from '../../../../tooltip/RegularTooltip';
+import { productType } from '../../../../../helpers/productTypes';
 
 function CardProductDescription(props) {
-    const {nombre, precio, sucursal, tienda} = props
+    const {nombre, precio, sucursal, type} = props
+
+    const backgroundCard = (type) => {
+        switch(type){
+            case productType.ofertas:
+                return "bg-ofertas"
+            case productType.promos:
+                return "bg-promos-hot"
+            case productType.descuentos:
+                return "bg-promos-descuentos"
+            default:
+                return null
+        }
+    }
+
     return (
        <Fragment>
-           <div className="description-precio">
+           <div className={`description-precio ${backgroundCard(type)}`}>
                <div className="precio-container">
                     <p>${precio}</p>
                 </div>
@@ -21,10 +35,9 @@ function CardProductDescription(props) {
                         <i id="icon-credit" className="fas fa-credit-card"></i>
                         </Tippy>
                 </div>
-         
             </div>
             <div className="description-info">
-                 <h5><b>{tienda ? null : sucursal}</b></h5>
+                 <h5><b>{type === productType.tienda ? null : sucursal}</b></h5>
                   <p>{nombre}</p>
             </div>
        </Fragment>

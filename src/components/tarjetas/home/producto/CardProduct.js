@@ -10,7 +10,7 @@ import CardProductDescription from './components/CardProductDescription'
 import ProductImg from './components/ProductImg'
 
 function CardProduct(props) {
-   const {id, imagen, nombre, precio, sucursal, Stock, destacado, tienda} = props
+   const {id, imagen, nombre, precio, sucursal, Stock, destacado, tienda, type} = props
 
    const [inCart, quantity] = useQuantity(id)
 
@@ -34,6 +34,7 @@ function CardProduct(props) {
                         hideBtnQty={hideBtnQty}
                         prodInfo={props}
                         destacado={destacado}
+                        type={type}
                        />
                 <BtnFav id={id}
                         prodInfo={props}
@@ -53,6 +54,7 @@ function CardProduct(props) {
                                     sucursal={sucursal}
                                     stock={Stock}
                                     tienda={tienda}
+                                    type={type}
                                     />
             </div>
        </div>

@@ -38,7 +38,7 @@ function SliderDishi(props) {
             default:
                 return "width-5-items"
     }
-}
+   }
 
     const itemsSetting = isPromo ? twoItemsSettings : configSliderSettings(items)
 

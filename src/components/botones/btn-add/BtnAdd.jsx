@@ -1,11 +1,12 @@
 import React, { useContext, useRef, useState } from 'react'
 import { Fragment } from 'react'
 import { CartContext } from '../../../context/CarritoContext'
+import { productType } from '../../../helpers/productTypes'
 import CustomTooltip from '../../tooltip/CustomTooltip'
 import "./btncards.css"
 
 function BtnAdd(props) {
-    const {stock, inCart, showBtnQty, prodInfo,destacado, reversed} = props
+    const {stock, inCart, showBtnQty, prodInfo,destacado,type, reversed} = props
     const {CART_METHODS} = useContext(CartContext)
     const {removeFromCart, addToCart} = CART_METHODS
     console.log(inCart)
@@ -18,7 +19,7 @@ function BtnAdd(props) {
     const targetRemove  = useRef(null);
     const showQTY = showBtnQty && showBtnQty
 
-    if(destacado) return null
+    if(type === productType.ofertas)return null
     return (
         <Fragment>
              {

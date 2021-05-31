@@ -14,7 +14,7 @@ import Categorias from './Categorias/Categorias'
 import { useGrillaHome } from '../../hooks/listados/useGrillaHome'
 import PromosHot from './promos-hot/PromosHot'
 import TiendasSliderComponent from './Tiendas/TiendasSliderComponent'
-
+import "./secciones-home.css"
 
 
 function Home() {
@@ -25,7 +25,6 @@ function Home() {
   const {productos} = state
 
   const {banners, destacados,descuentos , promociones, categorias, tiendas, oportunidades} = data
-  const {monomarca} = useContext(ContextProducts)
     if(loading) return <CustomSpinner/>
     return (
         <div className='home-wrapper'>
@@ -46,7 +45,7 @@ function Home() {
             <div className="espaciado-wrapper">
                <PromosHot promos={productos}/>
             </div>
-           <div className="espaciado-wrapper d-flex">
+           <div className="espaciado-wrapper">
              <GrillaProductos/>
             </div>
 

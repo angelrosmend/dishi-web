@@ -39,6 +39,26 @@
 .description-precio:hover{
     background-color: var(--azulDishi);
 }
+  .bg-ofertas {
+    background-color: #a7ea96!important;
+  }
+  .bg-ofertas:hover {
+    background-color: #56b649!important;
+  }
+  .bg-promos-hot {
+    background-color: #f4a8cf!important;
+  }
+  .bg-promos-hot:hover {
+    background-color: #db0080!important;
+  }
+  .bg-promos-descuentos {
+    background-color: #a8caf4!important;
+  }
+  .bg-promos-descuentos:hover {
+    background-color: #0569e0!important;
+  }
+  
+
 
 .precio-container{
     flex: 1.25;
