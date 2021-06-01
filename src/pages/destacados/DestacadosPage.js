@@ -1,4 +1,6 @@
 import React, { useContext } from 'react'
+import { Fragment } from 'react'
+import HeaderLista from '../../components/banners/headers-listados/HeaderLista'
 import FiltrosAlt from '../../components/filtros/FiltroPromo'
 import ListLayout from '../../components/layouts/listados-layout/ListLayout'
 import SliderCategoriasFilter from '../../components/slider/categorias/SliderCategoriasFilter'
@@ -6,6 +8,7 @@ import CardProductList from '../../components/tarjetas/listados/Producto/CardPro
 import Titulo from '../../components/titulo/Titulo'
 import { CartContext } from '../../context/CarritoContext'
 import { ContextUser } from '../../context/UserContext'
+import { productType } from '../../helpers/productTypes'
 import { useGrillaHome } from '../../hooks/listados/useGrillaHome'
 import { useDestacados } from '../../hooks/useDestacados'
 import { urlHome, urlProductos } from '../../settings/requestSettings'
@@ -21,8 +24,9 @@ function DestacadosPage() {
     const {productos} = state
 
     return (
+      <Fragment>
+         <HeaderLista section={productType.ofertas} titulo="Super Ofertas"/>
           <ListLayout>
-            <Titulo text='Destacados'/>
               <SliderCategoriasFilter/>
               <FiltrosAlt setOrderby={setOrderBy} />
 
@@ -39,6 +43,7 @@ function DestacadosPage() {
                                           Stock={Stock}/>
                                            )})}
               </ListLayout>
+              </Fragment>
     )
 }
 

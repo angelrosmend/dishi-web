@@ -8,7 +8,7 @@ function PromosHot({promos}) {
     if(promos.length < 1 || !promos) return null
     return (
         <div className="espaciado espaciado-wrapper">
-             <HeaderSectionHome section="promos" titulo="Promos Hot"/>
+             <HeaderSectionHome section="promos" titulo="Promos Hot" link="promociones"/>
             <SliderDishi items={promos} isPromo={true}>
                 {promos && promos.map(item => {
               const {Id, Imagen, NombreProducto, Precio, NombreFantasia, ValorParaCajaDelivery, Stock} = item 

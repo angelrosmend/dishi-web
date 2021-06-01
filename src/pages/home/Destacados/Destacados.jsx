@@ -14,7 +14,7 @@ function Destacados({destacados}) {
    if(!destacados || destacados.length < 2) return null
    return (
   <div className="espaciado espaciado-wrapper">
-       <HeaderSectionHome titulo="Super Ofertas" section="ofertas"/> 
+       <HeaderSectionHome titulo="Super Ofertas" section={productType.ofertas} link="destacados"/> 
         <SliderDishi items={destacados} background="bg-white">
                {destacados && destacados.map(item => {
                   const { Id, Imagen, NombreProducto, Precio, Sucursal, ValorParaCajaDelivery, Stock, SucursalMediosPago} = item;
