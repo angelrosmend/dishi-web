@@ -44,7 +44,8 @@ function CardProduct(props) {
                         linkId={id}
                         showBTNS={showBtnQty}
                         hideBTNS={hideBtnQty}>
-               {inCart && <BtnQuantity quantity={quantity}
+               {inCart && 
+               <BtnQuantity quantity={quantity}
                                        prodInfo={props}
                                        showBtn={showBtn}
                                        />}

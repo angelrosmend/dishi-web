@@ -1,8 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { textColor } from '../../../../../helpers/productTypes'
 
 function CardListDescription({prodInfo}) {
-    const {id, sucursal,nombre, descripcion, precio} = prodInfo
+    const {id, sucursal,nombre, descripcion, precio, type} = prodInfo
+
+
     return (
     <div class=" description-wrapper px-3 py-3">
       <div class="row ">
@@ -25,7 +28,7 @@ function CardListDescription({prodInfo}) {
       </div>
       </div>
       <div class="row envio m-auto no-gutters " id="precio">
-          <div class="col-lg-5 col-sm-12  m-auto"><p class="texto-precio mb-lg-0">${precio}</p></div>
+          <div class="col-lg-5 col-sm-12  m-auto"><p class={`${textColor(type)} mb-lg-0`}>${precio}</p></div>
           <div class="col  m-auto"><p class="texto-envio mb-lg-0 text-lg-right">
               <i class="fas fa-wallet mr-2"></i>Acepta Billetera</p></div>
           <div class="col  m-auto "><p class="texto-envio mb-lg-0 text-lg-right"><i class="fas fa-motorcycle mr-2"></i>Envío a domicilio</p></div>

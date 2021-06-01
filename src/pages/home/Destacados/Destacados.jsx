@@ -9,9 +9,7 @@ import { productType } from "../../../helpers/productTypes";
 
 function Destacados({destacados}) {
 
-  console.log('prod',destacados)
-
-   if(!destacados || destacados.length < 2) return null
+   if(!destacados || destacados.length < 1) return null
    return (
   <div className="espaciado espaciado-wrapper">
        <HeaderSectionHome titulo="Super Ofertas" section={productType.ofertas} link="destacados"/> 

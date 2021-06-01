@@ -40,7 +40,8 @@ function DestacadosPage() {
                                           precio={Precio}
                                           Tipo={0}
                                           ValorParaCajaDelivery={ValorParaCajaDelivery}
-                                          Stock={Stock}/>
+                                          Stock={Stock}
+                                          type="ofertas"/>
                                            )})}
               </ListLayout>
               </Fragment>

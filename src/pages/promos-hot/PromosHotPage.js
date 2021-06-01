@@ -31,7 +31,8 @@ function PromosHotPage() {
                                       precio={Precio}
                                       Tipo={1}
                                       ValorParaCajaDelivery={ValorParaCajaDelivery}
-                                      Stock={Stock}/>
+                                      Stock={Stock}
+                                      type="promos"/>
            })}
        </ListLayout>
        </Fragment>

@@ -124,6 +124,20 @@
     text-align: center;
 }
 
+.texto-precio-producto {
+    color: var(--azulDishi);
+    font-size: 2rem;
+}
+
+.texto-precio-oferta {
+    color: var(--verdeDishi);
+    font-size: 2rem;
+}
+.texto-precio-promo {
+    color: var(--purpuraDishi);
+    font-size: 2rem;
+}
+
 
 @media only screen and (max-width: 600px) {
 .card-list-prod-container{

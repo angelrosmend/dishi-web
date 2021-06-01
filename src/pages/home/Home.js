@@ -15,6 +15,7 @@ import { useGrillaHome } from '../../hooks/listados/useGrillaHome'
 import PromosHot from './promos-hot/PromosHot'
 import TiendasSliderComponent from './Tiendas/TiendasSliderComponent'
 import "./secciones-home.css"
+import Descuentos from './Descuentos/Descuentos'
 
 
 function Home() {
@@ -25,6 +26,7 @@ function Home() {
   const {productos} = state
 
   const {banners, destacados,descuentos , promociones, categorias, tiendas, oportunidades} = data
+  console.log(descuentos)
     if(loading) return <CustomSpinner/>
     return (
         <div className='home-wrapper'>
@@ -33,17 +35,18 @@ function Home() {
                  <Banners banners={banners} />
               </div>
               <Tarjetas/>
-            <div className="container-fluid">
-              <Destacados destacados={productos} />
+            <div className="espaciad-wrapper">
+              <Destacados destacados={destacados} />
             </div>
             <div className="espaciado-wrapper" id='categoriasPage'>
             <Categorias categorias={categorias}/>
            </div>
+             <Descuentos descuentos={destacados}/>
             <div className="espaciado-wrapper">
             <TiendasSliderComponent tiendas={tiendas}/>
             </div>
             <div className="espaciado-wrapper">
-               <PromosHot promos={productos}/>
+               <PromosHot promos={oportunidades}/>
             </div>
            <div className="espaciado-wrapper">
              <GrillaProductos/>
