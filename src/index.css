@@ -19,13 +19,18 @@ body{
   --azulCelesteLight: #b4d2f6;
   --whiteOpacity: #ffffffb8;
   --mainBeige: #DBDCDB;
-  --azulDishi: #056ae0;
   --azulLightDishi: #0083C4;
   --azulMediumDishi:#0060a0;
   --azulDarkDishi: #00416fe3;
   --grdAzulDishi: linear-gradient(0deg,  hsla(212, 100%, 22%, 0.836) 5% , hsla(212, 88%, 34%, 0.937) 20%,hsl(212, 96%, 45%) 50% , hsl(222, 100%, 63%)   95%);
   --colorNavLink: #FFF;
   --white: #FFF;
+  --verdeDishi: #56b649;
+  --verdeDishiLight: #a7ea96;
+  --purpuraDishi: #db0080;
+  --purpuraDishiLight: #f4a8cf;
+  --azulDishi: #056ae0;
+  --azulDishiLight: #a8caf4;
 }
 .app{
   width: 100%;

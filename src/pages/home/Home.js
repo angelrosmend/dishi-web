@@ -33,7 +33,7 @@ function Home() {
                  <Banners banners={banners} />
               </div>
               <Tarjetas/>
-            <div className="espaciado-wrapper">
+            <div className="container-fluid">
               <Destacados destacados={productos} />
             </div>
             <div className="espaciado-wrapper" id='categoriasPage'>
